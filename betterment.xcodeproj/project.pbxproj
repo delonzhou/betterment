@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */; };
+		DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */; };
+		DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
 		DD90671F1C9C1EE70027A9EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */; };
 		DD9067211C9C1EE70027A9EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067201C9C1EE70027A9EA /* SecondViewController.swift */; };
@@ -15,6 +18,11 @@
 		DD9067291C9C1EE70027A9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9067271C9C1EE70027A9EA /* LaunchScreen.storyboard */; };
 		DD9067341C9C1EE90027A9EA /* bettermentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067331C9C1EE90027A9EA /* bettermentTests.swift */; };
 		DD90673F1C9C1EE90027A9EA /* bettermentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90673E1C9C1EE90027A9EA /* bettermentUITests.swift */; };
+		DD9067501C9C202C0027A9EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* Person.swift */; };
+		DD9067521C9C21300027A9EA /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Skill.swift */; };
+		DD9067541C9C22340027A9EA /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* Work.swift */; };
+		DDC056421C9C959E00F488D4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC056411C9C959E00F488D4 /* Welcome.storyboard */; };
+		FEEBD4E3907580C43D910054 /* Pods_betterment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig"; sourceTree = "<group>"; };
+		984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig"; sourceTree = "<group>"; };
+		DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterDetailTableViewCell.swift; sourceTree = "<group>"; };
+		DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		DD90673A1C9C1EE90027A9EA /* bettermentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bettermentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD90673E1C9C1EE90027A9EA /* bettermentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bettermentUITests.swift; sourceTree = "<group>"; };
 		DD9067401C9C1EE90027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD90674F1C9C202C0027A9EA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DD9067511C9C21300027A9EA /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		DD9067531C9C22340027A9EA /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		DDC056411C9C959E00F488D4 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEBD4E3907580C43D910054 /* Pods_betterment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77DD615F7FC8EB46A1FE60EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A805864175C3DB3F776B7226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */,
+				984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD9067101C9C1EE60027A9EA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				DD9067321C9C1EE90027A9EA /* bettermentTests */,
 				DD90673D1C9C1EE90027A9EA /* bettermentUITests */,
 				DD90671A1C9C1EE60027A9EA /* Products */,
+				A805864175C3DB3F776B7226 /* Pods */,
+				77DD615F7FC8EB46A1FE60EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +137,7 @@
 		DD90671B1C9C1EE60027A9EA /* betterment */ = {
 			isa = PBXGroup;
 			children = (
+				DD90674C1C9C1FB20027A9EA /* model */,
 				DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */,
 				DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */,
 				DD9067201C9C1EE70027A9EA /* SecondViewController.swift */,
@@ -106,6 +145,10 @@
 				DD9067251C9C1EE70027A9EA /* Assets.xcassets */,
 				DD9067271C9C1EE70027A9EA /* LaunchScreen.storyboard */,
 				DD90672A1C9C1EE80027A9EA /* Info.plist */,
+				DDC056411C9C959E00F488D4 /* Welcome.storyboard */,
+				DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */,
+				DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */,
+				DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -128,6 +171,16 @@
 			path = bettermentUITests;
 			sourceTree = "<group>";
 		};
+		DD90674C1C9C1FB20027A9EA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DD90674F1C9C202C0027A9EA /* Person.swift */,
+				DD9067511C9C21300027A9EA /* Skill.swift */,
+				DD9067531C9C22340027A9EA /* Work.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD9067431C9C1EE90027A9EA /* Build configuration list for PBXNativeTarget "betterment" */;
 			buildPhases = (
+				DD1403BCD275B8DE31A6A225 /* Check Pods Manifest.lock */,
 				DD9067151C9C1EE60027A9EA /* Sources */,
 				DD9067161C9C1EE60027A9EA /* Frameworks */,
 				DD9067171C9C1EE60027A9EA /* Resources */,
+				314D6D1D8359002274FC7ABC /* Embed Pods Frameworks */,
+				F4DBCE74862963C5C2F431F5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9067291C9C1EE70027A9EA /* LaunchScreen.storyboard in Resources */,
+				DDC056421C9C959E00F488D4 /* Welcome.storyboard in Resources */,
 				DD9067261C9C1EE70027A9EA /* Assets.xcassets in Resources */,
 				DD9067241C9C1EE70027A9EA /* Main.storyboard in Resources */,
 			);
@@ -257,6 +314,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		314D6D1D8359002274FC7ABC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterment/Pods-betterment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1403BCD275B8DE31A6A225 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4DBCE74862963C5C2F431F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-betterment/Pods-betterment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD9067151C9C1EE60027A9EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +369,12 @@
 			files = (
 				DD9067211C9C1EE70027A9EA /* SecondViewController.swift in Sources */,
 				DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */,
+				DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */,
+				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
+				DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */,
+				DD9067521C9C21300027A9EA /* Skill.swift in Sources */,
+				DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */,
+				DD9067501C9C202C0027A9EA /* Person.swift in Sources */,
 				DD90671F1C9C1EE70027A9EA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +515,7 @@
 		};
 		DD9067441C9C1EE90027A9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = betterment/Info.plist;
@@ -415,6 +527,7 @@
 		};
 		DD9067451C9C1EE90027A9EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = betterment/Info.plist;
@@ -491,6 +604,7 @@
 				DD9067451C9C1EE90027A9EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD9067461C9C1EE90027A9EA /* Build configuration list for PBXNativeTarget "bettermentTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +613,7 @@
 				DD9067481C9C1EE90027A9EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD9067491C9C1EE90027A9EA /* Build configuration list for PBXNativeTarget "bettermentUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +622,7 @@
 				DD90674B1C9C1EE90027A9EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
