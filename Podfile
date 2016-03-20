@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'betterment' do
 	pod 'RealmSwift'
+	pod 'Firebase'
 end
 
 target 'bettermentTests' do
