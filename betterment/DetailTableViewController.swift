@@ -9,6 +9,10 @@
 import UIKit
 
 class DetailTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var workButton: UIButton!
+    @IBOutlet weak var skillButton: UIButton!
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var detailImage: UIImageView!
@@ -70,6 +74,14 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
         }
         cell?.backgroundColor = UIColor.clearColor()
         return cell!
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "skills" {
+            let skillController = segue.destinationViewController as? SkillViewController
+            skillController?.skill = self.person.skill
+            skillController?.user = self.person
+        }
     }
     
 

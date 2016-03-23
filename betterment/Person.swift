@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Person {
+class Person: NSObject {
     
     var first_name: String = ""
     var last_name: String = ""

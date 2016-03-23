@@ -23,6 +23,8 @@
 		DD9067501C9C202C0027A9EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* Person.swift */; };
 		DD9067521C9C21300027A9EA /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Skill.swift */; };
 		DD9067541C9C22340027A9EA /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* Work.swift */; };
+		DDB4D3521CA14D8E00B51245 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */; };
+		DDB4D3541CA199D500B51245 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */; };
 		DDC056421C9C959E00F488D4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC056411C9C959E00F488D4 /* Welcome.storyboard */; };
 		FEEBD4E3907580C43D910054 /* Pods_betterment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		DD90674F1C9C202C0027A9EA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DD9067511C9C21300027A9EA /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		DD9067531C9C22340027A9EA /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		DDC056411C9C959E00F488D4 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +169,8 @@
 				DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */,
 				DD092BA11C9EAAC800D031AA /* betterment-Bridging-Header.h */,
 				DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */,
+				DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */,
+				DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9067211C9C1EE70027A9EA /* SecondViewController.swift in Sources */,
+				DDB4D3541CA199D500B51245 /* SkillTableViewCell.swift in Sources */,
 				DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */,
 				DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */,
 				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
@@ -393,6 +400,7 @@
 				DD9067501C9C202C0027A9EA /* Person.swift in Sources */,
 				DD8F3DDC1C9F878D0022FC63 /* LoginViewController.swift in Sources */,
 				DD90671F1C9C1EE70027A9EA /* FirstViewController.swift in Sources */,
+				DDB4D3521CA14D8E00B51245 /* SkillViewController.swift in Sources */,
 				DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,13 +11,15 @@ import RealmSwift
 
 class Skill{
     
-    var skill_name: String = ""
-    var hourly_rate: Float = 0.0
-    var experience: Int = 0
+    var skill_name: String?
+    var hourly_rate: Float?
+    var experience: Int?
+    var skill_image: String?
     
     init(skill_name: String, hourly_rate: Float, experience: Int){
         self.skill_name = skill_name
         self.hourly_rate = hourly_rate
         self.experience = experience
+        self.skill_image = self.skill_name!.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")+".png"
     }
 }

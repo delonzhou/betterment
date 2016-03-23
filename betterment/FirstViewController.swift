@@ -15,11 +15,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var current_user: Person?
     
     var users: [Person] =
-    [Person(first_name: "Mitul", last_name: "Manish", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "I know my ABCD", skill: [Skill(skill_name: "Photography", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-1.png"),
+    [Person(first_name: "Mitul", last_name: "Manish", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "I know my ABCD", skill: [Skill(skill_name: "Photography", hourly_rate: 56.87, experience: 5), Skill(skill_name: "Dancing", hourly_rate: 56.87, experience: 3),Skill(skill_name: "Sports Guidance", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-1.png"),
     Person(first_name: "Ankur", last_name: "Dabral", email: "ankur.dabral@gmail.com", city: "Melbourne", bio: "I know my ABCD", skill: [Skill(skill_name: "Start Up Counselling", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-2.png"),
     Person(first_name: "Praveen", last_name: "Mohan", email: "praveen.mohan@gmail.com", city: "Melbourne", bio: "I know my ABCD.I am the best", skill: [Skill(skill_name: "Video Editing", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-3.png"),
     Person(first_name: "Shal", last_name: "Sajwan", email: "shal.sajwan@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Dancing", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-5.png"),
-    Person(first_name: "Bijin", last_name: "Abraham", email: "bijin.abraham@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Career Advice", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "man.png"),
+    Person(first_name: "Bijin", last_name: "Abraham", email: "bijin.abraham@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Career Advice", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-5.png"),
     Person(first_name: "John", last_name: "Abraham", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Fitness Training", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-5.png"),
     Person(first_name: "Rohan", last_name: "Singh", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Sports Guidance", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-6.png"),
     Person(first_name: "Jamie", last_name: "Shaw", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Python Programming", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "people-1.png"),
@@ -78,10 +78,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
         if let indexPath = tableView.indexPathForSelectedRow {
-        let destinationController = segue.destinationViewController as!
-        DetailTableViewController
-        destinationController.person = users[indexPath.row]
-        }
+            let destinationController = segue.destinationViewController as! DetailTableViewController
+            destinationController.person = users[indexPath.row]
+            }
         }
     }
 
