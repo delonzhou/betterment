@@ -23,6 +23,8 @@
 		DD9067501C9C202C0027A9EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* Person.swift */; };
 		DD9067521C9C21300027A9EA /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Skill.swift */; };
 		DD9067541C9C22340027A9EA /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* Work.swift */; };
+		DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */; };
+		DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */; };
 		DDB4D3521CA14D8E00B51245 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */; };
 		DDB4D3541CA199D500B51245 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */; };
 		DDC056421C9C959E00F488D4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC056411C9C959E00F488D4 /* Welcome.storyboard */; };
@@ -73,6 +75,8 @@
 		DD90674F1C9C202C0027A9EA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DD9067511C9C21300027A9EA /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		DD9067531C9C22340027A9EA /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		DDC056411C9C959E00F488D4 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */,
 				DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */,
 				DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */,
+				DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */,
+				DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -394,7 +400,9 @@
 				DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */,
 				DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */,
 				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
+				DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */,
 				DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */,
+				DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */,
 				DD9067521C9C21300027A9EA /* Skill.swift in Sources */,
 				DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */,
 				DD9067501C9C202C0027A9EA /* Person.swift in Sources */,

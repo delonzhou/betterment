@@ -82,6 +82,10 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
             skillController?.skill = self.person.skill
             skillController?.user = self.person
         }
+        else if segue.identifier == "works" {
+            let workController = segue.destinationViewController as? WorkViewController
+            workController?.work = self.person.work
+        }
     }
     
 
