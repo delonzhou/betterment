@@ -40,7 +40,8 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         print(rate)
         //cell?.experienceLabel.text = String(user!.skill[indexPath.row].experience!) + " Years"
         //cell?.hourlyRateLabel.text =  NSString(format: "%.2f", user!.skill[indexPath.row].hourly_rate!) as String
-        cell?.skillImage.image = UIImage(named: "technology.png")
+        cell?.skillImage.image = UIImage(named: "sportsguidance")
+        //cell?.skillImage.image = UIImage(named: user!.skill[indexPath.row].skill_image!)
         cell?.skillNameLabel.text = user!.skill[indexPath.row].skill_name
         print(user!.skill[indexPath.row].skill_name)
         cell?.experienceLabel.text = String(user!.skill[indexPath.row].experience!) + " Years"

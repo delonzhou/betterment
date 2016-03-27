@@ -20,6 +20,6 @@ class Skill{
         self.skill_name = skill_name
         self.hourly_rate = hourly_rate
         self.experience = experience
-        self.skill_image = self.skill_name!.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")+".png"
+        self.skill_image = self.skill_name?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")
     }
 }

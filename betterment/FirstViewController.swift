@@ -59,10 +59,12 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
         NSIndexPath) -> UITableViewCell {
+        
         let cellIdentifier = "cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier,
         forIndexPath: indexPath) as? MasterTableViewCell
         // Configure the cell...
+    
         cell?.nameLabel.text = users[indexPath.row].fullName()
         cell?.locationLabel.text = users[indexPath.row].city
         cell?.skillLabel.text = users[indexPath.row].skill.first?.skill_name
@@ -80,6 +82,21 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         if let indexPath = tableView.indexPathForSelectedRow {
             let destinationController = segue.destinationViewController as! DetailTableViewController
             destinationController.person = users[indexPath.row]
+            }
+        }
+    }
+    
+    
+    
+    
+    @IBAction func backToList(segue:UIStoryboardSegue) {
+        print(segue.identifier)
+        print(segue.sourceViewController)
+        if let newSkillViewController = segue.sourceViewController as?
+            NewSkillViewController {
+            
+            if let skill_name = newSkillViewController.skill_name{
+                print(skill_name)
             }
         }
     }

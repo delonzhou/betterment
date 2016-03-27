@@ -10,6 +10,7 @@
 		DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */; };
 		DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */; };
 		DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */; };
+		DD4132561CA6D669003BB284 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4132551CA6D669003BB284 /* RatingViewController.swift */; };
 		DD8F3DDC1C9F878D0022FC63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		DD9067501C9C202C0027A9EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* Person.swift */; };
 		DD9067521C9C21300027A9EA /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Skill.swift */; };
 		DD9067541C9C22340027A9EA /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* Work.swift */; };
+		DD9704E91CA83A1200F6AA96 /* NewSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9704E81CA83A1200F6AA96 /* NewSkillViewController.swift */; };
 		DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */; };
 		DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */; };
 		DDB4D3521CA14D8E00B51245 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */; };
@@ -56,6 +58,7 @@
 		DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
 		DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		DD4132551CA6D669003BB284 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,7 @@
 		DD90674F1C9C202C0027A9EA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DD9067511C9C21300027A9EA /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		DD9067531C9C22340027A9EA /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		DD9704E81CA83A1200F6AA96 /* NewSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSkillViewController.swift; sourceTree = "<group>"; };
 		DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */,
 				DDAC3C5F1CA2ADEE00D3E97E /* WorkViewController.swift */,
 				DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */,
+				DD4132551CA6D669003BB284 /* RatingViewController.swift */,
+				DD9704E81CA83A1200F6AA96 /* NewSkillViewController.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -403,7 +409,9 @@
 				DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */,
 				DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */,
 				DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */,
+				DD9704E91CA83A1200F6AA96 /* NewSkillViewController.swift in Sources */,
 				DD9067521C9C21300027A9EA /* Skill.swift in Sources */,
+				DD4132561CA6D669003BB284 /* RatingViewController.swift in Sources */,
 				DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */,
 				DD9067501C9C202C0027A9EA /* Person.swift in Sources */,
 				DD8F3DDC1C9F878D0022FC63 /* LoginViewController.swift in Sources */,

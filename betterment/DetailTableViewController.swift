@@ -11,6 +11,9 @@ import UIKit
 class DetailTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+    @IBOutlet weak var ratingButton: UIButton!
+    
+    var rating: String?
     @IBOutlet weak var workButton: UIButton!
     @IBOutlet weak var skillButton: UIButton!
 
@@ -22,7 +25,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         detailImage.image = UIImage(named: person.profile_image)
-        tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue:
+        tableView.separatorColor = UIColor(red: 0/255.0, green: 240.0/255.0, blue:
             240.0/255.0, alpha: 0.8)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,6 +57,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? MasterDetailTableViewCell
+        
         switch(indexPath.row){
         case 0:
             cell?.fieldLabel.text = "Name"
@@ -85,6 +89,17 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
         else if segue.identifier == "works" {
             let workController = segue.destinationViewController as? WorkViewController
             workController?.work = self.person.work
+        }
+    }
+    
+    @IBAction func close(segue:UIStoryboardSegue) {
+        if let ratingViewController = segue.sourceViewController as?
+            RatingViewController {
+            if let rating = ratingViewController.userRating {
+                print(rating)
+                ratingButton.setImage(UIImage(named: rating), forState:
+                    UIControlState.Normal)
+            }
         }
     }
     
