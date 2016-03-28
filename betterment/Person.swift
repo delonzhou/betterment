@@ -18,8 +18,9 @@ class Person: NSObject {
     var skill: [Skill]
     var work: [Work]
     var profile_image: String = ""
+    var address: String?
     
-    required init(first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String){
+    required init(first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String, address: String){
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
@@ -28,6 +29,7 @@ class Person: NSObject {
         self.skill = skill
         self.work = work
         self.profile_image = profile_image
+        self.address = address
     }
     
     func fullName() -> String{

@@ -52,10 +52,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
         return 4
     }
     
-   
-
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? MasterDetailTableViewCell
         
         switch(indexPath.row){
@@ -81,6 +78,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "skills" {
             let skillController = segue.destinationViewController as? SkillViewController
             skillController?.skill = self.person.skill
@@ -89,6 +87,10 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
         else if segue.identifier == "works" {
             let workController = segue.destinationViewController as? WorkViewController
             workController?.work = self.person.work
+        }
+        else if segue.identifier == "showMap" {
+            let mapController = segue.destinationViewController as? mapViewController
+            mapController?.person = self.person
         }
     }
     

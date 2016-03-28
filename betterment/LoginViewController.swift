@@ -68,6 +68,7 @@ class LoginViewController: UIViewController {
     func navigateMain(){
          self.performSegueWithIdentifier("loginSegue", sender: self)
     }
+    
 
     /*
     // MARK: - Navigation
