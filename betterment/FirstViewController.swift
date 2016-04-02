@@ -98,16 +98,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-    @IBAction func backtoListView(segue:UIStoryboardSegue) {
+    @IBAction func backtoListViewFromWorkView(segue:UIStoryboardSegue) {
         print(segue.identifier)
         print(segue.sourceViewController)
-        if let newSkillViewController = segue.sourceViewController as?
-            NewSkillViewController {
-            
-            if let skill_name = newSkillViewController.skill_name{
-                print(skill_name)
-            }
-        }
     }
 
 

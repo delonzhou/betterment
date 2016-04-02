@@ -1,14 +1,17 @@
 //
-//  AddNewWorkTableTableViewController.swift
+//  NewWorkTableViewController.swift
 //  betterment
 //
-//  Created by Mitul Manish on 28/03/2016.
+//  Created by Mitul Manish on 2/04/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
 import UIKit
 
-class AddNewWorkTableTableViewController: UITableViewController {
+class NewWorkTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class AddNewWorkTableTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+
 
 
     /*
@@ -83,11 +87,34 @@ class AddNewWorkTableTableViewController: UITableViewController {
     }
     */
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.row == 0){
+            if ( UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary)){
+                let imagePicker = UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.allowsEditing = false
+                imagePicker.sourceType = .PhotoLibrary
+                self.presentViewController(imagePicker, animated: true, completion: nil)
+            }
+        }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
     
-    @IBAction func saveNewSkill(sender: UIBarButtonItem) {
-        performSegueWithIdentifier("backToList", sender: sender)
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        imageView.contentMode = UIViewContentMode.Center
+        imageView.highlighted = true
+        imageView.clipsToBounds = true
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     
+    @IBAction func saveWork(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier("backToListFromWork", sender: sender)
+        
+    }
 
 }

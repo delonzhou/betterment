@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD2138F61CA8EDC6007CA797 /* AddNewWorkTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2138F51CA8EDC6007CA797 /* AddNewWorkTableTableViewController.swift */; };
 		DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */; };
 		DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */; };
 		DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */; };
 		DD4132561CA6D669003BB284 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4132551CA6D669003BB284 /* RatingViewController.swift */; };
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
 		DD59C9C11CA95989006DE967 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59C9C01CA95989006DE967 /* mapViewController.swift */; };
+		DD5CC4871CAF79CD008FC632 /* NewWorkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5CC4861CAF79CD008FC632 /* NewWorkTableViewController.swift */; };
 		DD8F3DDC1C9F878D0022FC63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
 		DD90671F1C9C1EE70027A9EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */; };
-		DD9067211C9C1EE70027A9EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067201C9C1EE70027A9EA /* SecondViewController.swift */; };
 		DD9067241C9C1EE70027A9EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9067221C9C1EE70027A9EA /* Main.storyboard */; };
 		DD9067261C9C1EE70027A9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9067251C9C1EE70027A9EA /* Assets.xcassets */; };
 		DD9067291C9C1EE70027A9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9067271C9C1EE70027A9EA /* LaunchScreen.storyboard */; };
@@ -58,19 +57,18 @@
 		57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig"; sourceTree = "<group>"; };
 		984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig"; sourceTree = "<group>"; };
 		DD092BA11C9EAAC800D031AA /* betterment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betterment-Bridging-Header.h"; sourceTree = "<group>"; };
-		DD2138F51CA8EDC6007CA797 /* AddNewWorkTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewWorkTableTableViewController.swift; sourceTree = "<group>"; };
 		DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
 		DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		DD4132551CA6D669003BB284 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD59C9C01CA95989006DE967 /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		DD5CC4861CAF79CD008FC632 /* NewWorkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWorkTableViewController.swift; sourceTree = "<group>"; };
 		DD8F3DDB1C9F878D0022FC63 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DD9067201C9C1EE70027A9EA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DD9067231C9C1EE70027A9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9067251C9C1EE70027A9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9067281C9C1EE70027A9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				DD90674C1C9C1FB20027A9EA /* model */,
 				DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */,
 				DD90671E1C9C1EE70027A9EA /* FirstViewController.swift */,
-				DD9067201C9C1EE70027A9EA /* SecondViewController.swift */,
 				DD9067221C9C1EE70027A9EA /* Main.storyboard */,
 				DD9067251C9C1EE70027A9EA /* Assets.xcassets */,
 				DD9067271C9C1EE70027A9EA /* LaunchScreen.storyboard */,
@@ -191,8 +188,8 @@
 				DDAC3C611CA2B30000D3E97E /* WorkTableViewCell.swift */,
 				DD4132551CA6D669003BB284 /* RatingViewController.swift */,
 				DD9704E81CA83A1200F6AA96 /* NewSkillViewController.swift */,
-				DD2138F51CA8EDC6007CA797 /* AddNewWorkTableTableViewController.swift */,
 				DD59C9C01CA95989006DE967 /* mapViewController.swift */,
+				DD5CC4861CAF79CD008FC632 /* NewWorkTableViewController.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -417,13 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD59C9C11CA95989006DE967 /* mapViewController.swift in Sources */,
-				DD9067211C9C1EE70027A9EA /* SecondViewController.swift in Sources */,
 				DDB4D3541CA199D500B51245 /* SkillTableViewCell.swift in Sources */,
 				DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */,
 				DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */,
 				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
-				DD2138F61CA8EDC6007CA797 /* AddNewWorkTableTableViewController.swift in Sources */,
 				DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */,
+				DD5CC4871CAF79CD008FC632 /* NewWorkTableViewController.swift in Sources */,
 				DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */,
 				DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */,
 				DD9704E91CA83A1200F6AA96 /* NewSkillViewController.swift in Sources */,
