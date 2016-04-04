@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import RealmSwift
 
 class NewWorkTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -15,6 +16,7 @@ class NewWorkTableViewController: UITableViewController, UIImagePickerController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //print(Realm.Configuration.defaultConfiguration.path!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
