@@ -12,6 +12,8 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     @IBOutlet weak var tableView: UITableView!
+    
+    
     var work: [Work]?
 
     override func viewDidLoad() { 
@@ -39,6 +41,9 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
         forIndexPath: indexPath) as? WorkTableViewCell
         // Configure the cell...
         cell?.titleLabel.text = self.work![indexPath.row].title
+        cell?.descriptionLabel.text = self.work![indexPath.row].description
+        cell?.workImageView.image = UIImage(named: self.work![indexPath.row].images.first!)
+        
         return cell!
     }
     

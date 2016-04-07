@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kJV-dI-JDP">
-                                <rect key="frame" x="0.0" y="-8" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="-8" width="600" height="608"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="S7T-V9-KJf" customClass="MasterTableViewCell" customModule="betterment" customModuleProvider="target">
@@ -199,21 +199,21 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lze-d5-QzE" firstAttribute="leading" secondItem="9es-3j-scf" secondAttribute="leadingMargin" id="Pm6-T6-3a2"/>
-                                                <constraint firstItem="Oko-mm-dEA" firstAttribute="top" secondItem="lze-d5-QzE" secondAttribute="bottom" constant="4" id="ghr-xK-OpR"/>
-                                                <constraint firstItem="lze-d5-QzE" firstAttribute="trailing" secondItem="9es-3j-scf" secondAttribute="trailingMargin" id="mjx-Md-wqe"/>
-                                                <constraint firstItem="lze-d5-QzE" firstAttribute="leading" secondItem="Oko-mm-dEA" secondAttribute="leading" id="u36-dT-MAE"/>
-                                                <constraint firstItem="lze-d5-QzE" firstAttribute="top" secondItem="9es-3j-scf" secondAttribute="topMargin" id="ugD-Pd-ou9"/>
-                                                <constraint firstItem="lze-d5-QzE" firstAttribute="trailing" secondItem="Oko-mm-dEA" secondAttribute="trailing" id="yGz-gQ-oyO"/>
+                                                <constraint firstItem="lze-d5-QzE" firstAttribute="top" secondItem="9es-3j-scf" secondAttribute="topMargin" id="CQP-fM-K05"/>
+                                                <constraint firstItem="lze-d5-QzE" firstAttribute="leading" secondItem="9es-3j-scf" secondAttribute="leadingMargin" id="M8P-1Y-LSR"/>
+                                                <constraint firstItem="Oko-mm-dEA" firstAttribute="top" secondItem="lze-d5-QzE" secondAttribute="bottom" constant="4" id="MaI-Ph-GDU"/>
+                                                <constraint firstItem="lze-d5-QzE" firstAttribute="trailing" secondItem="9es-3j-scf" secondAttribute="trailingMargin" id="TbI-B7-s0f"/>
+                                                <constraint firstItem="lze-d5-QzE" firstAttribute="trailing" secondItem="Oko-mm-dEA" secondAttribute="trailing" id="aUb-6b-fOD"/>
+                                                <constraint firstItem="lze-d5-QzE" firstAttribute="leading" secondItem="Oko-mm-dEA" secondAttribute="leading" id="bXQ-Qe-IJo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.63529411759999999" green="0.87058823529999996" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="giZ-p4-Duq">
-                                        <rect key="frame" x="0.0" y="458" width="600" height="72"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="giZ-p4-Duq">
+                                        <rect key="frame" x="0.0" y="458" width="600" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="giZ-p4-Duq" id="zpu-6w-i5R">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Skill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD2-Wj-fOE">
