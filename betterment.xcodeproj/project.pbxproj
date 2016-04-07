@@ -32,6 +32,7 @@
 		DDB4D3521CA14D8E00B51245 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */; };
 		DDB4D3541CA199D500B51245 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */; };
 		DDC056421C9C959E00F488D4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC056411C9C959E00F488D4 /* Welcome.storyboard */; };
+		DDF1AFDC1CB6489400FBE97F /* SaveNewSkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1AFDB1CB6489400FBE97F /* SaveNewSkillTableViewController.swift */; };
 		FEEBD4E3907580C43D910054 /* Pods_betterment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		DDB4D3511CA14D8E00B51245 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		DDB4D3531CA199D400B51245 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		DDC056411C9C959E00F488D4 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		DDF1AFDB1CB6489400FBE97F /* SaveNewSkillTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveNewSkillTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				DD9704E81CA83A1200F6AA96 /* NewSkillViewController.swift */,
 				DD59C9C01CA95989006DE967 /* mapViewController.swift */,
 				DD5CC4861CAF79CD008FC632 /* NewWorkTableViewController.swift */,
+				DDF1AFDB1CB6489400FBE97F /* SaveNewSkillTableViewController.swift */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DDAC3C601CA2ADEF00D3E97E /* WorkViewController.swift in Sources */,
 				DD5CC4871CAF79CD008FC632 /* NewWorkTableViewController.swift in Sources */,
 				DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */,
+				DDF1AFDC1CB6489400FBE97F /* SaveNewSkillTableViewController.swift in Sources */,
 				DDAC3C621CA2B30000D3E97E /* WorkTableViewCell.swift in Sources */,
 				DD9704E91CA83A1200F6AA96 /* NewSkillViewController.swift in Sources */,
 				DD9067521C9C21300027A9EA /* Skill.swift in Sources */,
