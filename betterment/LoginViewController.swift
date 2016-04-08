@@ -39,8 +39,55 @@ class LoginViewController: UIViewController {
         let email = usernameLabel.text
         let password = passwordLabel.text
         
-        if(email != nil && password != nil){
-            FIREBASE_REF.authUser(email, password: password, withCompletionBlock: { (error, authData) -> Void in
+        let finalEmail = email!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let finalPassword = password!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        if(finalEmail.isEmpty && finalPassword.isEmpty){
+            print("Email and password are empty")
+            
+            let alertController = UIAlertController(title: "Invalid", message: "Email and Password empty", preferredStyle: .ActionSheet)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+            
+        }
+        else if(finalEmail.isEmpty){
+            let alertController = UIAlertController(title: "Invalid", message: "Email is empty", preferredStyle: .ActionSheet)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if (finalPassword.isEmpty){
+            let alertController = UIAlertController(title: "Invalid", message: "Password is empty", preferredStyle: .ActionSheet)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if(finalEmail.characters.count < 10){
+            let alertController = UIAlertController(title: "Invalid", message: "Email must not be less than 10 characters", preferredStyle: .ActionSheet)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if (finalPassword.characters.count < 8){
+            let alertController = UIAlertController(title: "Invalid", message: "Password must not be less than 8 characters", preferredStyle: .ActionSheet)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+        else{
+            
+            FIREBASE_REF.authUser(finalEmail, password: finalPassword, withCompletionBlock: { (error, authData) -> Void in
                 
                 if(error == nil){
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
@@ -48,12 +95,15 @@ class LoginViewController: UIViewController {
                     self.navigateMain()
                 }
                 else{
-                    print ("Something went wrong: \(error)")
+                    let alertController = UIAlertController(title: "Invalid", message: "Email or password is wrong", preferredStyle: .ActionSheet)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
                 }
             })
-        }
-        else{
-            print ("Notify user with message")
+            
         }
     }
     
