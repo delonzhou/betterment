@@ -808,7 +808,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOU-jo-E57" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Lw1-z4-elT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4415" y="1132"/>
+            <point key="canvasLocation" x="4331" y="1126"/>
         </scene>
         <!--LogInVIew-->
         <scene sceneID="H6I-pD-ZY8">
