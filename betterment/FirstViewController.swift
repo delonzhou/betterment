@@ -37,8 +37,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
      
         //FIREBASE_REF.setValue("Do you have data? You'll love Firebase.")
         print ("-------UID-----------")
-        let str: String = (NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String)!
-        print(str)
+        //let str: String = (NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String)!
+        //print(str)
          print ("------------------")
         print ("-------current user-----------")
         print(CURRENT_USER.authData.uid)

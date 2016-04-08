@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1D569A31CB7C74E004630A5 /* masterDetailUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A21CB7C74E004630A5 /* masterDetailUITest.swift */; };
+		A1D569A51CB7C7B2004630A5 /* detailRatingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A41CB7C7B2004630A5 /* detailRatingUITest.swift */; };
+		A1D569A71CB7C890004630A5 /* detailMapUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A61CB7C890004630A5 /* detailMapUITest.swift */; };
+		A1D569A91CB7C8F5004630A5 /* detailWorkItemUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A81CB7C8F5004630A5 /* detailWorkItemUITest.swift */; };
+		A1D569AB1CB7C93D004630A5 /* detailSkillUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569AA1CB7C93D004630A5 /* detailSkillUITest.swift */; };
 		DD29B04C1C9D3171003BAF3C /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */; };
 		DD29B04E1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */; };
 		DD29B0501C9D5693003BAF3C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29B04F1C9D5693003BAF3C /* DetailTableViewController.swift */; };
@@ -57,6 +62,11 @@
 		356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig"; sourceTree = "<group>"; };
 		984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig"; sourceTree = "<group>"; };
+		A1D569A21CB7C74E004630A5 /* masterDetailUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterDetailUITest.swift; sourceTree = "<group>"; };
+		A1D569A41CB7C7B2004630A5 /* detailRatingUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailRatingUITest.swift; sourceTree = "<group>"; };
+		A1D569A61CB7C890004630A5 /* detailMapUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMapUITest.swift; sourceTree = "<group>"; };
+		A1D569A81CB7C8F5004630A5 /* detailWorkItemUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailWorkItemUITest.swift; sourceTree = "<group>"; };
+		A1D569AA1CB7C93D004630A5 /* detailSkillUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailSkillUITest.swift; sourceTree = "<group>"; };
 		DD092BA11C9EAAC800D031AA /* betterment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betterment-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD29B04B1C9D3171003BAF3C /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
 		DD29B04D1C9D55AD003BAF3C /* MasterDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +221,11 @@
 			children = (
 				DD90673E1C9C1EE90027A9EA /* bettermentUITests.swift */,
 				DD9067401C9C1EE90027A9EA /* Info.plist */,
+				A1D569A21CB7C74E004630A5 /* masterDetailUITest.swift */,
+				A1D569A41CB7C7B2004630A5 /* detailRatingUITest.swift */,
+				A1D569A61CB7C890004630A5 /* detailMapUITest.swift */,
+				A1D569A81CB7C8F5004630A5 /* detailWorkItemUITest.swift */,
+				A1D569AA1CB7C93D004630A5 /* detailSkillUITest.swift */,
 			);
 			path = bettermentUITests;
 			sourceTree = "<group>";
@@ -450,7 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D569A51CB7C7B2004630A5 /* detailRatingUITest.swift in Sources */,
+				A1D569A31CB7C74E004630A5 /* masterDetailUITest.swift in Sources */,
 				DD90673F1C9C1EE90027A9EA /* bettermentUITests.swift in Sources */,
+				A1D569A71CB7C890004630A5 /* detailMapUITest.swift in Sources */,
+				A1D569AB1CB7C93D004630A5 /* detailSkillUITest.swift in Sources */,
+				A1D569A91CB7C8F5004630A5 /* detailWorkItemUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
