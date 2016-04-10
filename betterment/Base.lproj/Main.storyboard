@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8e5-5u-YQd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8e5-5u-YQd">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S7T-V9-KJf" id="KbR-a6-Qkf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7yP-LC-aW3">
@@ -136,7 +136,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-zG-D6T">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-zG-D6T">
                                                     <rect key="frame" x="236" y="61" width="128" height="128"/>
                                                 </imageView>
                                             </subviews>
@@ -439,7 +439,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t0o-qr-7fi" id="TVR-CA-BDC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="349.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bourkestreetbakery" translatesAutoresizingMaskIntoConstraints="NO" id="Qw2-FP-kvL">
@@ -538,7 +538,7 @@
                                             <constraint firstAttribute="height" constant="64" id="XPW-RB-zMK"/>
                                             <constraint firstAttribute="width" constant="64" id="fZV-cv-lYh"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="sad"/>
+                                        <state key="normal" title="Sad" image="sad"/>
                                         <connections>
                                             <action selector="ratingSelected:" destination="3gi-Sf-sNo" eventType="touchUpInside" id="k0J-qK-sCo"/>
                                         </connections>
@@ -580,7 +580,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bU8-42-Tfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Cbw-sS-7Tu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4372" y="265"/>
+            <point key="canvasLocation" x="3284" y="213"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="KP5-wv-x3u">
@@ -602,7 +602,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gMp-6u-HbQ" id="1GM-B4-YM3">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-Cw-JuM">
@@ -679,13 +679,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEH-b6-MFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3746" y="265"/>
+            <point key="canvasLocation" x="2638" y="221"/>
         </scene>
         <!--New Skill-->
         <scene sceneID="LgJ-Zy-WYA">
             <objects>
                 <tableViewController id="AQY-wm-bs9" customClass="SaveNewSkillTableViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HBh-re-8Ju">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HBh-re-8Ju">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -696,7 +696,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="No7-dg-9aP" id="uUl-RH-RCC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY1-2g-YD1">
@@ -712,12 +712,12 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RY1-2g-YD1" firstAttribute="trailing" secondItem="rTT-s6-Ppc" secondAttribute="trailing" id="JXz-aH-vHH"/>
                                                 <constraint firstItem="RY1-2g-YD1" firstAttribute="trailing" secondItem="uUl-RH-RCC" secondAttribute="trailingMargin" id="Q1i-To-HS2"/>
-                                                <constraint firstItem="RY1-2g-YD1" firstAttribute="leading" secondItem="rTT-s6-Ppc" secondAttribute="leading" id="Rlg-XE-DT2"/>
+                                                <constraint firstItem="rTT-s6-Ppc" firstAttribute="trailing" secondItem="RY1-2g-YD1" secondAttribute="trailing" id="ikF-Mo-Dgq"/>
                                                 <constraint firstItem="RY1-2g-YD1" firstAttribute="top" secondItem="uUl-RH-RCC" secondAttribute="topMargin" id="jYm-wf-eIs"/>
                                                 <constraint firstItem="RY1-2g-YD1" firstAttribute="leading" secondItem="uUl-RH-RCC" secondAttribute="leadingMargin" id="o5o-2m-GVF"/>
-                                                <constraint firstItem="rTT-s6-Ppc" firstAttribute="bottom" secondItem="uUl-RH-RCC" secondAttribute="bottomMargin" id="p5C-6N-SJT"/>
+                                                <constraint firstItem="rTT-s6-Ppc" firstAttribute="top" secondItem="RY1-2g-YD1" secondAttribute="bottom" constant="7" id="wCb-sB-o5s"/>
+                                                <constraint firstItem="rTT-s6-Ppc" firstAttribute="leading" secondItem="RY1-2g-YD1" secondAttribute="leading" id="zbD-WS-U2r"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -725,7 +725,7 @@
                                         <rect key="frame" x="0.0" y="139" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cpF-kh-pgU" id="lFg-Gh-8e5">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVX-hN-fgG">
@@ -741,12 +741,12 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CVX-hN-fgG" firstAttribute="leading" secondItem="Qsf-o8-yRp" secondAttribute="leading" id="WYt-0q-wyK"/>
-                                                <constraint firstItem="CVX-hN-fgG" firstAttribute="trailing" secondItem="Qsf-o8-yRp" secondAttribute="trailing" id="gzo-4o-T9g"/>
+                                                <constraint firstItem="Qsf-o8-yRp" firstAttribute="top" secondItem="CVX-hN-fgG" secondAttribute="bottom" constant="7" id="NTI-3P-Ivm"/>
+                                                <constraint firstItem="Qsf-o8-yRp" firstAttribute="trailing" secondItem="CVX-hN-fgG" secondAttribute="trailing" id="UNC-lr-AYr"/>
                                                 <constraint firstItem="CVX-hN-fgG" firstAttribute="top" secondItem="lFg-Gh-8e5" secondAttribute="topMargin" id="hbA-gz-XCX"/>
                                                 <constraint firstItem="CVX-hN-fgG" firstAttribute="leading" secondItem="lFg-Gh-8e5" secondAttribute="leadingMargin" id="iTz-L8-zFp"/>
                                                 <constraint firstItem="CVX-hN-fgG" firstAttribute="trailing" secondItem="lFg-Gh-8e5" secondAttribute="trailingMargin" id="mEL-Hh-cah"/>
-                                                <constraint firstItem="Qsf-o8-yRp" firstAttribute="bottom" secondItem="lFg-Gh-8e5" secondAttribute="bottomMargin" id="xyC-TP-CAG"/>
+                                                <constraint firstItem="Qsf-o8-yRp" firstAttribute="leading" secondItem="CVX-hN-fgG" secondAttribute="leading" id="zcp-Vf-LHD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -754,7 +754,7 @@
                                         <rect key="frame" x="0.0" y="214" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mk1-6P-OEh" id="cJc-QU-nJd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbi-yb-NOP">
@@ -770,12 +770,12 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qbi-yb-NOP" firstAttribute="leading" secondItem="eju-JJ-NQN" secondAttribute="leading" id="PD9-Oo-ODU"/>
-                                                <constraint firstItem="eju-JJ-NQN" firstAttribute="bottom" secondItem="cJc-QU-nJd" secondAttribute="bottomMargin" id="Qbw-8m-sW6"/>
+                                                <constraint firstItem="eju-JJ-NQN" firstAttribute="leading" secondItem="qbi-yb-NOP" secondAttribute="leading" id="9yg-HI-aHQ"/>
+                                                <constraint firstItem="eju-JJ-NQN" firstAttribute="top" secondItem="qbi-yb-NOP" secondAttribute="bottom" constant="7" id="Xa4-Q9-ZGc"/>
                                                 <constraint firstItem="qbi-yb-NOP" firstAttribute="trailing" secondItem="cJc-QU-nJd" secondAttribute="trailingMargin" id="chr-gB-qfX"/>
                                                 <constraint firstItem="qbi-yb-NOP" firstAttribute="top" secondItem="cJc-QU-nJd" secondAttribute="topMargin" id="ftr-Lp-6Ri"/>
                                                 <constraint firstItem="qbi-yb-NOP" firstAttribute="leading" secondItem="cJc-QU-nJd" secondAttribute="leadingMargin" id="fvt-Vb-tV3"/>
-                                                <constraint firstItem="qbi-yb-NOP" firstAttribute="trailing" secondItem="eju-JJ-NQN" secondAttribute="trailing" id="roX-36-ouE"/>
+                                                <constraint firstItem="eju-JJ-NQN" firstAttribute="trailing" secondItem="qbi-yb-NOP" secondAttribute="trailing" id="l3P-I3-mQ9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -808,7 +808,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOU-jo-E57" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Lw1-z4-elT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4331" y="1126"/>
+            <point key="canvasLocation" x="1967" y="1000"/>
         </scene>
         <!--LogInVIew-->
         <scene sceneID="H6I-pD-ZY8">
@@ -937,7 +937,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6V-XJ-FUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962" y="-1284"/>
+            <point key="canvasLocation" x="1958" y="-1284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nSy-dD-oWA">
@@ -955,7 +955,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxd-x8-Ifn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3605" y="1126"/>
+            <point key="canvasLocation" x="1967" y="204"/>
         </scene>
     </scenes>
     <resources>

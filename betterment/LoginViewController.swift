@@ -34,6 +34,10 @@ class LoginViewController: UIViewController {
         }
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
+    
     @IBAction func loginAction(sender: AnyObject) {
         
         let email = usernameLabel.text
@@ -45,7 +49,7 @@ class LoginViewController: UIViewController {
         if(finalEmail.isEmpty && finalPassword.isEmpty){
             print("Email and password are empty")
             
-            let alertController = UIAlertController(title: "Invalid", message: "Email and Password empty", preferredStyle: .ActionSheet)
+            let alertController = UIAlertController(title: "Invalid", message: "Email and Password empty", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
@@ -54,7 +58,7 @@ class LoginViewController: UIViewController {
             
         }
         else if(finalEmail.isEmpty){
-            let alertController = UIAlertController(title: "Invalid", message: "Email is empty", preferredStyle: .ActionSheet)
+            let alertController = UIAlertController(title: "Invalid", message: "Email is empty", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
@@ -62,7 +66,7 @@ class LoginViewController: UIViewController {
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if (finalPassword.isEmpty){
-            let alertController = UIAlertController(title: "Invalid", message: "Password is empty", preferredStyle: .ActionSheet)
+            let alertController = UIAlertController(title: "Invalid", message: "Password is empty", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
@@ -70,7 +74,7 @@ class LoginViewController: UIViewController {
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if(finalEmail.characters.count < 10){
-            let alertController = UIAlertController(title: "Invalid", message: "Email must not be less than 10 characters", preferredStyle: .ActionSheet)
+            let alertController = UIAlertController(title: "Invalid", message: "Email must not be less than 10 characters", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
@@ -78,7 +82,7 @@ class LoginViewController: UIViewController {
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if (finalPassword.characters.count < 8){
-            let alertController = UIAlertController(title: "Invalid", message: "Password must not be less than 8 characters", preferredStyle: .ActionSheet)
+            let alertController = UIAlertController(title: "Invalid", message: "Password must not be less than 8 characters", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
@@ -95,7 +99,7 @@ class LoginViewController: UIViewController {
                     self.navigateMain()
                 }
                 else{
-                    let alertController = UIAlertController(title: "Invalid", message: "Email or password is wrong", preferredStyle: .ActionSheet)
+                    let alertController = UIAlertController(title: "Invalid", message: "Email or password is wrong", preferredStyle: .Alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
                     alertController.addAction(defaultAction)

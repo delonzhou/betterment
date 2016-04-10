@@ -1,14 +1,14 @@
 //
-//  detailSkillUITest.swift
+//  alertControllerUITest.swift
 //  betterment
 //
-//  Created by Ankur Dabral on 8/04/2016.
+//  Created by Mitul Manish on 10/04/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
 import XCTest
 
-class detailSkillUITest: XCTestCase {
+class alertControllerUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -31,11 +31,11 @@ class detailSkillUITest: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
         let app = XCUIApplication()
-        app.tables.staticTexts["Photography"].tap()
-        app.buttons["Graduation Cap Filled 50"].tap()
+        app.buttons["Login"].tap()
         
+        let okButton = app.alerts["Invalid"].collectionViews.buttons["OK"]
+        okButton.tap()
     }
     
 }

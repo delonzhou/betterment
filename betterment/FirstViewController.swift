@@ -33,17 +33,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(users.first?.skill.first?.skill_name)
+        //print(users.first?.skill.first?.skill_name)
      
         //FIREBASE_REF.setValue("Do you have data? You'll love Firebase.")
-        print ("-------UID-----------")
+        //print ("-------UID-----------")
         //let str: String = (NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String)!
         //print(str)
-         print ("------------------")
-        print ("-------current user-----------")
-        print(CURRENT_USER.authData.uid)
-        print ("------------------")
-        print(Realm.Configuration.defaultConfiguration.path!)
+        //print(NSUserDefaults.standardUserDefaults().valueForKey("uid"))
+        //print ("------------------")
+        //print ("-------current user-----------")
+        //print(CURRENT_USER.authData.uid)
+        //print ("------------------")
+        //print(Realm.Configuration.defaultConfiguration.path!)
         // find current user and save it in a variable
        
 
@@ -71,7 +72,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell?.nameLabel.text = users[indexPath.row].fullName()
         cell?.locationLabel.text = users[indexPath.row].city
         cell?.skillLabel.text = users[indexPath.row].skill.first?.skill_name
-            cell?.thumbnailImageView.image = UIImage(named: users[indexPath.row].profile_image)
+        cell?.thumbnailImageView.image = UIImage(named: users[indexPath.row].profile_image)
         //cell.imageView?.image = UIImage(named: users[indexPath.row].profile_image)
         return cell!
     }
@@ -103,7 +104,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBAction func backtoListViewFromWorkView(segue:UIStoryboardSegue) {
         print(segue.identifier)
-        print(segue.sourceViewController)
+        print(segue.sourceViewController)  
     }
 
 

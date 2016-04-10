@@ -1,14 +1,14 @@
 //
-//  detailWorkItemUITest.swift
+//  ratingUITest.swift
 //  betterment
 //
-//  Created by Ankur Dabral on 8/04/2016.
+//  Created by Mitul Manish on 10/04/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
 import XCTest
 
-class detailWorkItemUITest: XCTestCase {
+class ratingUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -31,11 +31,27 @@ class detailWorkItemUITest: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
         let app = XCUIApplication()
-        app.tables.staticTexts["Photography"].tap()
-        app.buttons["Briefcase Filled 50"].tap()
         
+        //taking app to rating screen
+        app.tables.element.cells.elementBoundByIndex(4).tap()
+        //app.tables.cells.staticTexts["Mitul Manish"].tap()
+        
+        
+        // check number of buttons equals to 4
+        XCTAssertEqual(app.buttons.count, 4)
+        
+        //tap rating button
+        app.buttons.elementBoundByIndex(2).tap()
+        //app.buttons["star filled"].tap()
+        
+        // tap sad button
+        let sadButton = app.buttons["Sad"]
+        XCTAssertTrue(sadButton.exists)
+        sadButton.tap()
+        
+        //check if rating button does not exists
+        XCTAssertFalse(app.buttons["star filled"].exists)
     }
     
 }

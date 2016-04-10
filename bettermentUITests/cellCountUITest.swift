@@ -1,14 +1,14 @@
 //
-//  bettermentUITests.swift
-//  bettermentUITests
+//  cellCountUITest.swift
+//  betterment
 //
-//  Created by Mitul Manish on 18/03/2016.
+//  Created by Mitul Manish on 10/04/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
 import XCTest
 
-class bettermentUITests: XCTestCase {
+class cellCountUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -32,6 +32,20 @@ class bettermentUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        let app = XCUIApplication()
+        
+        //No app buttons
+        XCTAssertEqual(app.buttons.count,0)
+        
+        
+        //number of cells less than 10
+        XCTAssertLessThanOrEqual(app.cells.count,10)
+        
+        
+        // take to next screen
+        app.tables.element.cells.elementBoundByIndex(2).tap()
+        
+        app.buttons.elementBoundByIndex(0).tap()
     }
     
 }
