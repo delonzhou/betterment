@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Master-->
+        <!--Friends-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Master" id="XeL-u1-rtE">
+                    <navigationItem key="navigationItem" title="Friends" id="XeL-u1-rtE">
                         <barButtonItem key="backBarButtonItem" title="Back" id="iYu-u9-RGn"/>
                         <barButtonItem key="leftBarButtonItem" title="New Work" id="b1q-Hi-cAq">
                             <connections>
@@ -141,8 +141,8 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerY" secondItem="SwN-xZ-ONL" secondAttribute="centerY" id="raV-wN-8XS"/>
-                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerX" secondItem="SwN-xZ-ONL" secondAttribute="centerX" id="tb3-TD-9OD"/>
+                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerY" secondItem="SwN-xZ-ONL" secondAttribute="centerY" id="PTI-hW-EvI"/>
+                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerX" secondItem="SwN-xZ-ONL" secondAttribute="centerX" id="Xel-Ho-soH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="3480" y="-1273"/>
         </scene>
-        <!--Detail Table View Controller-->
+        <!--Profile-->
         <scene sceneID="Nw8-dA-YCm">
             <objects>
-                <viewController id="fai-N3-vEb" customClass="DetailTableViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="fai-N3-vEb" customClass="DetailTableViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lp9-JX-7EZ"/>
                         <viewControllerLayoutGuide type="bottom" id="XHs-4V-oi8"/>

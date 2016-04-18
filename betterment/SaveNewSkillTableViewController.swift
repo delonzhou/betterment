@@ -39,6 +39,7 @@ class SaveNewSkillTableViewController: UITableViewController {
         
         print("Button pressed")
         print(self.skillName.text)
+        self.skill = Skill(skill_name: self.skillName.text!, hourly_rate: 88.09, experience: 10)
         performSegueWithIdentifier("saveSkill", sender: sender)
     }
     // MARK: - Table view data source
