@@ -12,11 +12,10 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordLabel: UITextField!
     @IBOutlet weak var signoutButton: UIButton!
-     @IBOutlet weak var usernameLabel: UITextField!
+    @IBOutlet weak var usernameLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -45,48 +44,39 @@ class LoginViewController: UIViewController {
         
         let finalEmail = email!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         let finalPassword = password!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         
         if(finalEmail.isEmpty && finalPassword.isEmpty){
             print("Email and password are empty")
             
-            let alertController = UIAlertController(title: "Invalid", message: "Email and Password empty", preferredStyle: .Alert)
+            let alertController = self.prepareAlertController("Invalid", messageContent: "Email and Password empty")
             
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
-            
             presentViewController(alertController, animated: true, completion: nil)
             
         }
         else if(finalEmail.isEmpty){
-            let alertController = UIAlertController(title: "Invalid", message: "Email is empty", preferredStyle: .Alert)
+            let alertController = self.prepareAlertController("Invalid", messageContent:  "Email is empty")
             
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
-            
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if (finalPassword.isEmpty){
-            let alertController = UIAlertController(title: "Invalid", message: "Password is empty", preferredStyle: .Alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alertController = self.prepareAlertController("Invalid", messageContent:  "Password is empty")
+           
             alertController.addAction(defaultAction)
-            
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if(finalEmail.characters.count < 10){
-            let alertController = UIAlertController(title: "Invalid", message: "Email must not be less than 10 characters", preferredStyle: .Alert)
+            let alertController = self.prepareAlertController("Invalid", messageContent: "Email must not be less than 10 characters")
             
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
-            
             presentViewController(alertController, animated: true, completion: nil)
         }
         else if (finalPassword.characters.count < 8){
-            let alertController = UIAlertController(title: "Invalid", message: "Password must not be less than 8 characters", preferredStyle: .Alert)
+            let alertController = self.prepareAlertController("Invalid", messageContent: "Password must not be less than 8 characters")
             
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
-            
             presentViewController(alertController, animated: true, completion: nil)
         }
         else{
@@ -99,16 +89,19 @@ class LoginViewController: UIViewController {
                     self.navigateMain()
                 }
                 else{
-                    let alertController = UIAlertController(title: "Invalid", message: "Email or password is wrong", preferredStyle: .Alert)
+                    let alertController = self.prepareAlertController("Invalid", messageContent: "Email or password is wrong")
                     
-                    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
                     alertController.addAction(defaultAction)
-                    
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }
             })
             
         }
+    }
+    
+    private func prepareAlertController(messageTitle: String, messageContent: String) -> UIAlertController {
+       
+        return UIAlertController(title: messageTitle, message: messageContent, preferredStyle: .Alert)
     }
     
     
@@ -123,15 +116,4 @@ class LoginViewController: UIViewController {
          self.performSegueWithIdentifier("loginSegue", sender: self)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

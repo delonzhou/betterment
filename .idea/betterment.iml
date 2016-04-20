@@ -2,31 +2,29 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailRatingUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/masterDetailUITest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/cellCountUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/ratingUITest.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/cellCountUITest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailRatingUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailMapUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/alertControllerUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentTests/bettermentTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/SaveNewSkillTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/FirstViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/DetailTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Work.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Skill.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/NewSkillViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/new.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/LoginViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Welcome.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Person.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/DetailTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SkillTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/RatingViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SkillViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/betterment-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/Main.storyboard" isTestSource="false" />
@@ -34,9 +32,10 @@
       <sourceFolder url="file://$MODULE_DIR$/betterment/NewWorkTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/MasterTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/BaseService.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/mapViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Welcome.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkTableViewCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/SaveNewSkillTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig" isTestSource="false" />
     </content>

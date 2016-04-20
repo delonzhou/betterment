@@ -84,22 +84,21 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell?.nameLabel.text = personName
         }
     
-        //cell?.nameLabel.text = users![indexPath.row].fullName()
+
         if let personCity = users?[indexPath.row].city{
             cell?.locationLabel.text = personCity
         }
-        //cell?.locationLabel.text = users![indexPath.row].city
+
         
         if let skillName = users?[indexPath.row].skill.first?.skill_name{
             cell?.skillLabel.text = skillName
         }
-        //cell?.skillLabel.text = users![indexPath.row].skill.first?.skill_name
+
         
         if let personImage = users?[indexPath.row].profile_image{
           cell?.thumbnailImageView.image = UIImage(named: personImage)
         }
-        //cell?.thumbnailImageView.image = UIImage(named: users![indexPath.row].profile_image)
-        //cell.imageView?.image = UIImage(named: users[indexPath.row].profile_image)
+
         return cell!
     }
     
@@ -115,9 +114,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
         }
     }
-    
-
-
     
     @IBAction func backToList(segue:UIStoryboardSegue) {
         print(segue.identifier)
