@@ -141,8 +141,8 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerY" secondItem="SwN-xZ-ONL" secondAttribute="centerY" id="PTI-hW-EvI"/>
-                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerX" secondItem="SwN-xZ-ONL" secondAttribute="centerX" id="Xel-Ho-soH"/>
+                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerX" secondItem="SwN-xZ-ONL" secondAttribute="centerX" id="b65-Aa-Tcv"/>
+                                                <constraint firstItem="xVE-zG-D6T" firstAttribute="centerY" secondItem="SwN-xZ-ONL" secondAttribute="centerY" id="dTJ-1c-XET"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
