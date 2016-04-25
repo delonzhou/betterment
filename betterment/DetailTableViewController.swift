@@ -92,6 +92,16 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
             let mapController = segue.destinationViewController as? mapViewController
             mapController?.person = self.person
         }
+        
+        else if segue.identifier == "chatSegue" {
+            let navVc = segue.destinationViewController as! UINavigationController
+            let chatVc = navVc.viewControllers.first as! ChatViewController
+            chatVc.senderId = CURRENT_USER.authData.uid
+            chatVc.receiverId = self.person.user_id
+            chatVc.senderDisplayName = ""
+        }
+            
+            
     }
     
     @IBAction func close(segue:UIStoryboardSegue) {
@@ -103,6 +113,8 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
                     UIControlState.Normal)
             }
         }
+        
+        
     }
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8e5-5u-YQd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8e5-5u-YQd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -389,6 +389,13 @@
                                     <segue destination="ODK-ex-E4a" kind="show" identifier="works" id="xJf-ep-rAB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0f-pO-hLF">
+                                <rect key="frame" x="540" y="179" width="50" height="50"/>
+                                <state key="normal" image="Chat Filled-50"/>
+                                <connections>
+                                    <segue destination="YUf-xc-7Ct" kind="show" identifier="chatSegue" id="EVq-ec-QGX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fS2-Bk-0gg" secondAttribute="bottom" id="8On-eR-BY5"/>
@@ -401,7 +408,9 @@
                             <constraint firstItem="WV1-Ma-PVO" firstAttribute="leading" secondItem="ndK-co-n9I" secondAttribute="leadingMargin" id="cyC-eI-a3J"/>
                             <constraint firstItem="ScO-Ik-kWl" firstAttribute="leading" secondItem="f11-fW-Jmq" secondAttribute="leading" id="eTZ-SD-4uE"/>
                             <constraint firstItem="ScO-Ik-kWl" firstAttribute="top" secondItem="lp9-JX-7EZ" secondAttribute="bottom" constant="57" id="g3E-q6-gyP"/>
+                            <constraint firstItem="F0f-pO-hLF" firstAttribute="top" secondItem="ScO-Ik-kWl" secondAttribute="bottom" constant="8" symbolic="YES" id="iEn-tw-mKT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f11-fW-Jmq" secondAttribute="trailing" constant="-10" id="oLQ-VX-AMH"/>
+                            <constraint firstItem="F0f-pO-hLF" firstAttribute="leading" secondItem="ScO-Ik-kWl" secondAttribute="leading" id="sTa-v6-urF"/>
                             <constraint firstItem="WV1-Ma-PVO" firstAttribute="centerX" secondItem="A9W-MB-zIv" secondAttribute="centerX" id="wre-TX-9ha"/>
                         </constraints>
                     </view>
@@ -504,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11n-lG-FKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4214" y="-590"/>
+            <point key="canvasLocation" x="4264" y="-562"/>
         </scene>
         <!--Rating-->
         <scene sceneID="kch-XF-Cw8">
@@ -581,6 +590,32 @@
                 <exit id="Cbw-sS-7Tu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3284" y="213"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="7rQ-6m-yig">
+            <objects>
+                <viewController id="LwO-AE-kDR" customClass="ChatViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tJU-NT-gJh"/>
+                        <viewControllerLayoutGuide type="bottom" id="3oR-EB-D9u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LNX-tc-v5P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gWb-wL-L16">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="Y0O-cn-c55">
+                            <connections>
+                                <segue destination="pet-5Q-qET" kind="unwind" unwindAction="close:" id="sld-aJ-gqN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XY4-Dv-z6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pet-5Q-qET" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4665" y="153"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="KP5-wv-x3u">
@@ -1005,9 +1040,28 @@
             </objects>
             <point key="canvasLocation" x="1214" y="245"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WZa-4y-MS8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUf-xc-7Ct" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LCM-dd-0d3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LwO-AE-kDR" kind="relationship" relationship="rootViewController" id="X5K-t7-0vE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrK-Uv-qm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3988" y="153"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Briefcase Filled-50" width="50" height="50"/>
+        <image name="Chat Filled-50" width="50" height="50"/>
         <image name="Graduation Cap Filled-50" width="50" height="50"/>
         <image name="Marker Filled-50 (1)" width="50" height="50"/>
         <image name="Weather-24" width="24" height="24"/>

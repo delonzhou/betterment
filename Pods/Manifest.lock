@@ -1,5 +1,8 @@
 PODS:
   - Firebase (2.5.1)
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - Realm (0.98.5):
     - Realm/Headers (= 0.98.5)
   - Realm/Headers (0.98.5)
@@ -8,10 +11,13 @@ PODS:
 
 DEPENDENCIES:
   - Firebase
+  - JSQMessagesViewController
   - RealmSwift
 
 SPEC CHECKSUMS:
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Realm: db08379969e45cea2edd1c3c0a090fe9e22d2d2f
   RealmSwift: cb11ad1c35e15dc982f2dbf5afe2a3124193a358
 

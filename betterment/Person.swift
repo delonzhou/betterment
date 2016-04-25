@@ -10,6 +10,7 @@ import Foundation
 
 class Person: NSObject {
     
+    var user_id: String = ""
     var first_name: String = ""
     var last_name: String = ""
     var email: String = ""
@@ -20,7 +21,8 @@ class Person: NSObject {
     var profile_image: String = ""
     var address: String?
     
-    required init(first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String, address: String){
+    required init(user_id: String, first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String, address: String){
+        self.user_id = user_id
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
