@@ -41,16 +41,13 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
         forIndexPath: indexPath) as? SkillTableViewCell
         // Configure the cell...
-        let rate = NSString(format: "%.2f", user!.skill[indexPath.row].hourly_rate!)
+        let rate = NSString(format: "%.2f", user!.skill[indexPath.row].hourlyRate!)
         print(rate)
-        //cell?.experienceLabel.text = String(user!.skill[indexPath.row].experience!) + " Years"
-        //cell?.hourlyRateLabel.text =  NSString(format: "%.2f", user!.skill[indexPath.row].hourly_rate!) as String
-        //cell?.skillImage.image = UIImage(named: "sportsguidance")
-        cell?.skillImage.image = UIImage(named: user!.skill[indexPath.row].skill_image!)
-        cell?.skillNameLabel.text = user!.skill[indexPath.row].skill_name
-        print(user!.skill[indexPath.row].skill_name)
+        cell?.skillImage.image = UIImage(named: user!.skill[indexPath.row].skillImage!)
+        cell?.skillNameLabel.text = user!.skill[indexPath.row].skillName
+        print(user!.skill[indexPath.row].skillName)
         cell?.experienceLabel.text = String(user!.skill[indexPath.row].experience!) + " Years"
-        cell?.hourlyRateLabel.text = "$ " + (NSString(format: "%.2f", user!.skill[indexPath.row].hourly_rate!) as String) as String + " Per Hour"
+        cell?.hourlyRateLabel.text = "$ " + (NSString(format: "%.2f", user!.skill[indexPath.row].hourlyRate!) as String) as String + " Per Hour"
         return cell!
     }
 

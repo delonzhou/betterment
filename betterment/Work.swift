@@ -7,19 +7,18 @@
 //
 
 import Foundation
-import RealmSwift
 
 class Work {
     
     var title: String = ""
     var description: String = ""
-    var related_skill: String = ""
+    var relatedSkill: String = ""
     var images: [String] = []
     
-    required init(title: String, description: String, related_skill: String, images: [String]){
+    init(title: String, description: String, related_skill: String, images: [String]){
         self.title = title
         self.description = description
-        self.related_skill = related_skill
+        self.relatedSkill = related_skill
         self.images = images
     }
 }

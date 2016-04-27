@@ -89,7 +89,7 @@ class LoginViewController: UIViewController {
                     self.navigateMain()
                 }
                 else{
-                    let alertController = self.prepareAlertController("Invalid", messageContent: "Email or password is wrong")
+                   let alertController = self.prepareAlertController("Invalid", messageContent: "Email or password is wrong")
                     
                     alertController.addAction(defaultAction)
                     self.presentViewController(alertController, animated: true, completion: nil)
@@ -98,6 +98,23 @@ class LoginViewController: UIViewController {
             
         }
     }
+    
+    
+    @IBAction func anonymousMode(sender: UIButton) {
+        
+        FIREBASE_REF.authAnonymouslyWithCompletionBlock { (error, authData) in
+            if error == nil {
+                NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
+                print("Current User siging in: \(CURRENT_USER.authData.uid)")
+                self.navigateMain()
+            }
+            else{
+                print(error)
+            }
+        }
+    }
+    
+    
     
     private func prepareAlertController(messageTitle: String, messageContent: String) -> UIAlertController {
        

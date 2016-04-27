@@ -8,34 +8,34 @@
 
 import Foundation
 
-class Person: NSObject {
+class Person {
     
-    var user_id: String = ""
-    var first_name: String = ""
-    var last_name: String = ""
+    var userID: String = ""
+    var firstName: String = ""
+    var lastName: String = ""
     var email: String = ""
     var city: String = ""
     var bio: String = ""
     var skill: [Skill]
     var work: [Work]
-    var profile_image: String = ""
+    var profileImage: String = ""
     var address: String?
     
-    required init(user_id: String, first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String, address: String){
-        self.user_id = user_id
-        self.first_name = first_name
-        self.last_name = last_name
+    init(user_id: String, first_name: String, last_name: String, email: String, city: String, bio: String, skill: [Skill] = [], work: [Work] = [], profile_image: String, address: String){
+        self.userID = user_id
+        self.firstName = first_name
+        self.lastName = last_name
         self.email = email
         self.city = city
         self.bio = bio
         self.skill = skill
         self.work = work
-        self.profile_image = profile_image
+        self.profileImage = profile_image
         self.address = address
     }
     
     func fullName() -> String{
-        return self.first_name + " " + self.last_name
+        return self.firstName + " " + self.lastName
     }
     
 }

@@ -24,7 +24,7 @@
 		DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */; };
 		DDA7D3961CCCADBF0022DEBA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3881CCCADBF0022DEBA /* FirstViewController.swift */; };
 		DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3891CCCADBF0022DEBA /* LoginViewController.swift */; };
-		DDA7D3981CCCADBF0022DEBA /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D38A1CCCADBF0022DEBA /* mapViewController.swift */; };
+		DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D38A1CCCADBF0022DEBA /* MapViewController.swift */; };
 		DDA7D3991CCCADBF0022DEBA /* MasterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D38B1CCCADBF0022DEBA /* MasterDetailTableViewCell.swift */; };
 		DDA7D39A1CCCADBF0022DEBA /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D38C1CCCADBF0022DEBA /* MasterTableViewCell.swift */; };
 		DDA7D39B1CCCADBF0022DEBA /* NewSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D38D1CCCADBF0022DEBA /* NewSkillViewController.swift */; };
@@ -86,7 +86,7 @@
 		DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = betterment/DetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDA7D3881CCCADBF0022DEBA /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = betterment/FirstViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDA7D3891CCCADBF0022DEBA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = betterment/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		DDA7D38A1CCCADBF0022DEBA /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mapViewController.swift; path = betterment/mapViewController.swift; sourceTree = SOURCE_ROOT; };
+		DDA7D38A1CCCADBF0022DEBA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = betterment/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDA7D38B1CCCADBF0022DEBA /* MasterDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterDetailTableViewCell.swift; path = betterment/MasterDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DDA7D38C1CCCADBF0022DEBA /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTableViewCell.swift; path = betterment/MasterTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DDA7D38D1CCCADBF0022DEBA /* NewSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewSkillViewController.swift; path = betterment/NewSkillViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -144,7 +144,7 @@
 				DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */,
 				DDA7D3881CCCADBF0022DEBA /* FirstViewController.swift */,
 				DDA7D3891CCCADBF0022DEBA /* LoginViewController.swift */,
-				DDA7D38A1CCCADBF0022DEBA /* mapViewController.swift */,
+				DDA7D38A1CCCADBF0022DEBA /* MapViewController.swift */,
 				DDA7D38B1CCCADBF0022DEBA /* MasterDetailTableViewCell.swift */,
 				DDA7D38C1CCCADBF0022DEBA /* MasterTableViewCell.swift */,
 				DDA7D38D1CCCADBF0022DEBA /* NewSkillViewController.swift */,
@@ -458,7 +458,7 @@
 				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
 				DDA7D3A21CCCADBF0022DEBA /* WorkViewController.swift in Sources */,
 				DDA7D3961CCCADBF0022DEBA /* FirstViewController.swift in Sources */,
-				DDA7D3981CCCADBF0022DEBA /* mapViewController.swift in Sources */,
+				DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */,
 				DDA7D39B1CCCADBF0022DEBA /* NewSkillViewController.swift in Sources */,
 				DDA7D3A01CCCADBF0022DEBA /* SkillViewController.swift in Sources */,
 				DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */,

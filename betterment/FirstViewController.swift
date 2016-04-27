@@ -16,7 +16,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var current_user: Person?
     
     var users: [Person]? = []
-    
+    var currentUserSet: [Person]? = []
     
     
     // self.performSegueWithIdentifier("showShop", sender: self)
@@ -43,11 +43,12 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                  Person(user_id: "",first_name: "Alexandra", last_name: "Shaw", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Programming", hourly_rate: 56.87, experience: 5),Skill(skill_name: "Sports Guidance", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["cutmypic.png"])], profile_image: "woman-b.png", address: ""),
                  
                  Person(user_id: "",first_name: "Jennifer", last_name: "Stevens", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "anything", skill: [Skill(skill_name: "Philosophy", hourly_rate: 56.87, experience: 5), Skill(skill_name: "Editing", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["thaicafe.png"])], profile_image: "woman-a.png", address: "")]
-        // Do any additional setup after loading the view, typically from a nib.
-        //print(users.first?.skill.first?.skill_name)
-     
-        //FIREBASE_REF.setValue("Do you have data? You'll love Firebase.")
-        //print ("-------UID-----------")
+        
+        if let indexCurrentUser = findUserIndex(users!){
+            users?.removeAtIndex(indexCurrentUser)
+        }
+       
+
         let str: String = (NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String)!
         print(str)
         print(NSUserDefaults.standardUserDefaults().valueForKey("uid"))
@@ -90,12 +91,12 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
 
         
-        if let skillName = users?[indexPath.row].skill.first?.skill_name{
+        if let skillName = users?[indexPath.row].skill.first?.skillName{
             cell?.skillLabel.text = skillName
         }
 
         
-        if let personImage = users?[indexPath.row].profile_image{
+        if let personImage = users?[indexPath.row].profileImage {
           cell?.thumbnailImageView.image = UIImage(named: personImage)
         }
 
@@ -121,7 +122,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         if let newSkillViewController = segue.sourceViewController as?
             SaveNewSkillTableViewController {
             
-            if let skill_name = newSkillViewController.skill?.skill_name{
+            if let skill_name = newSkillViewController.skill?.skillName {
                 print(skill_name)
             }
         }
@@ -136,7 +137,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
         }
     }
-
-
+    
+    private func findUserIndex(userList: [Person]) -> Int? {
+        var index = 0
+        for user in userList{
+            if user.userID == CURRENT_USER.authData.uid{
+                return index
+            }
+        index += 1
+        }
+        return nil
+    }
 }
+
+
 

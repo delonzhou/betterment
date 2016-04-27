@@ -1,5 +1,5 @@
 //
-//  mapViewController.swift
+//  MapViewController.swift
 //  betterment
 //
 //  Created by Mitul Manish on 28/03/2016.
@@ -32,7 +32,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             let placemark = placemarks?.first
             let annotation = MKPointAnnotation()
             annotation.title = self.person?.fullName()
-            annotation.subtitle = self.person!.skill.first?.skill_name
+            annotation.subtitle = self.person!.skill.first?.skillName
             
             if let location = placemark?.location{
                 annotation.coordinate = location.coordinate
@@ -59,7 +59,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             annotationView?.canShowCallout = true
         }
         let leftIconView = UIImageView(frame: CGRectMake(0, 0, 53, 53))
-        leftIconView.image = UIImage(named: (self.person?.profile_image)!)
+        leftIconView.image = UIImage(named: (self.person?.profileImage)!)
         annotationView?.leftCalloutAccessoryView = leftIconView
         return annotationView
     }

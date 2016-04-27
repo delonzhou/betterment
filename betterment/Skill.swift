@@ -7,19 +7,18 @@
 //
 
 import Foundation
-import RealmSwift
 
 class Skill{
     
-    var skill_name: String?
-    var hourly_rate: Float?
+    var skillName: String?
+    var hourlyRate: Float?
     var experience: Int?
-    var skill_image: String?
+    var skillImage: String?
     
     init(skill_name: String, hourly_rate: Float, experience: Int){
-        self.skill_name = skill_name
-        self.hourly_rate = hourly_rate
+        self.skillName = skill_name
+        self.hourlyRate = hourly_rate
         self.experience = experience
-        self.skill_image = self.skill_name?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")
+        self.skillImage = self.skillName?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")
     }
 }
