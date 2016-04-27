@@ -81,6 +81,27 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         forIndexPath: indexPath) as? MasterTableViewCell
         // Configure the cell...
         
+        let person = users?[indexPath.row]
+        
+        if let personName = person?.fullName() {
+            cell?.nameLabel.text = personName
+        }
+        
+        if let personCity = person?.city {
+            cell?.locationLabel.text = personCity
+        }
+        
+        
+        if let skillName = person?.skill.first?.skillName {
+            cell?.skillLabel.text = skillName
+        }
+        
+        
+        if let personImage = person?.profileImage {
+            cell?.thumbnailImageView.image = UIImage(named: personImage)
+        }
+        
+        /*
         if let personName = users?[indexPath.row].fullName(){
             cell?.nameLabel.text = personName
         }
@@ -99,7 +120,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         if let personImage = users?[indexPath.row].profileImage {
           cell?.thumbnailImageView.image = UIImage(named: personImage)
         }
-
+        */
         return cell!
     }
     
