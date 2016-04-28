@@ -18,11 +18,16 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var users: [Person]? = []
     var currentUserSet: [Person]? = []
     
+    var searchController: UISearchController?
+    
     
     // self.performSegueWithIdentifier("showShop", sender: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //searchController = UISearchController(searchResultsController: nil)
+        //tableView.tableHeaderView = searchController?.searchBar
         
         users = [Person(user_id: "cb3cccd9-546a-444b-bffe-1e3a5128876c", first_name: "Matt", last_name: "Murdoch", email: "mitul.manish@gmail.com", city: "Melbourne", bio: "I know my ABCD", skill: [Skill(skill_name: "Photography", hourly_rate: 56.87, experience: 5), Skill(skill_name: "Dancing", hourly_rate: 56.87, experience: 3),Skill(skill_name: "Sports Guidance", hourly_rate: 56.87, experience: 5),Skill(skill_name: "Programming", hourly_rate: 56.87, experience: 5)], work: [Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["fiveleaves.png"]), Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["thaicafe.png"]),Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["donostia.png"]), Work(title: "some random title", description: "desc", related_skill: "Photography", images: ["haighschocolate.png"])], profile_image: "man-a.png", address: ""),
                  
@@ -101,26 +106,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell?.thumbnailImageView.image = UIImage(named: personImage)
         }
         
-        /*
-        if let personName = users?[indexPath.row].fullName(){
-            cell?.nameLabel.text = personName
-        }
-    
-
-        if let personCity = users?[indexPath.row].city{
-            cell?.locationLabel.text = personCity
-        }
-
-        
-        if let skillName = users?[indexPath.row].skill.first?.skillName{
-            cell?.skillLabel.text = skillName
-        }
-
-        
-        if let personImage = users?[indexPath.row].profileImage {
-          cell?.thumbnailImageView.image = UIImage(named: personImage)
-        }
-        */
         return cell!
     }
     
