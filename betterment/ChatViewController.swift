@@ -31,7 +31,12 @@ class ChatViewController: JSQMessagesViewController {
     var incomingBubbleImageView: JSQMessagesBubbleImage!
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
+        
+        print("----------")
+        print(receiverId)
+        print("----------")
         senderReceiver = String(senderId) + String(receiverId)
         receiverSender = String(receiverId) + String(senderId)
         
@@ -100,10 +105,10 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     private func observeMessages() {
-        // 1
-        let messagesQuery = messageRef.queryLimitedToLast(25)
+        
+        if let messagesQuery = messageRef?.queryLimitedToLast(25){
         // 2
-        messagesQuery.observeEventType(.ChildAdded) { (snapshot: FDataSnapshot!) in
+            messagesQuery.observeEventType(.ChildAdded) { (snapshot: FDataSnapshot!) in
             // 3
             let id = snapshot.value["senderId"] as! String
             let text = snapshot.value["text"] as! String
@@ -113,6 +118,7 @@ class ChatViewController: JSQMessagesViewController {
             
             // 5
             self.finishReceivingMessage()
+            }
         }
     }
     

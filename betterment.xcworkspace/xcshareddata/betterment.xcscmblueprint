@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "59A85591C5B5D585F473A33C38E034703945A47B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "59A85591C5B5D585F473A33C38E034703945A47B" : 0,
+    "19835036EAC3CD9CBF0B738B003E40AE63D8ACB6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D360552-526C-4CE9-AC7D-2FC900D6FE07",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "59A85591C5B5D585F473A33C38E034703945A47B" : "betterment\/",
+    "19835036EAC3CD9CBF0B738B003E40AE63D8ACB6" : "..\/Desktop\/iOS\/Mist"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "betterment",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "betterment.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mitulmanish\/Mist.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19835036EAC3CD9CBF0B738B003E40AE63D8ACB6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mitulmanish\/betterment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59A85591C5B5D585F473A33C38E034703945A47B"
+    }
+  ]
+}
