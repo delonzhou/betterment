@@ -15,8 +15,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class CurrentWeatherViewController: UIViewController {
+class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var weatherSummaryLabel: UILabel?
     
@@ -27,11 +28,13 @@ class CurrentWeatherViewController: UIViewController {
     
     @IBOutlet weak var currentPrecipProbailityLabel: UILabel?
     
+    var locationManager = CLLocationManager()
+    
     
     var currentWeatherInstance: CurrentWeather?
     
-    let latitude = -37.8136
-    let longitude = 144.9631
+    //var latitude = -37.8136
+    //var longitude = 144.9631
     private let apiKey = "c96b1383d1efcd33ea8e9f24e6b49502"
     
     var weatherService: ForecastService?
@@ -39,11 +42,41 @@ class CurrentWeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
+        
+        if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways)
+        {
+            print(locationManager.location?.coordinate.latitude)
+            print(locationManager.location?.coordinate.longitude)
+            
+            fetchWeatherData((locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
+            
+        } else {
+            print("Not found")
+        }
+        
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("didFailWithError: \(error.description)")
+    }
+    
+    func fetchWeatherData(latitude: Double, longitude: Double){
         
         let baseURL = "https://api.forecast.io/forecast"
-        
         weatherService = ForecastService(apiKey: self.apiKey, baseURL: baseURL)
-        weatherService?.getForecast(self.latitude, longitude: self.longitude){
+        
+        weatherService?.getForecast(latitude, longitude: longitude){
             (let currentWeather) in
             
             if let currentWeatherSnapshot = currentWeather{
@@ -73,13 +106,8 @@ class CurrentWeatherViewController: UIViewController {
             }
             
         }
+        
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
 }
 
