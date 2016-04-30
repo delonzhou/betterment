@@ -20,28 +20,18 @@ import CoreLocation
 class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var weatherSummaryLabel: UILabel?
-    
-    
     @IBOutlet weak var currentWeatherIcon: UIButton!
-    
     @IBOutlet weak var currentTemperatureLabel: UILabel?
-    
     @IBOutlet weak var currentPrecipProbailityLabel: UILabel?
     
     var locationManager = CLLocationManager()
-    
-    
     var currentWeatherInstance: CurrentWeather?
-    
-    //var latitude = -37.8136
-    //var longitude = 144.9631
     private let apiKey = "c96b1383d1efcd33ea8e9f24e6b49502"
-    
     var weatherService: ForecastService?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -50,10 +40,11 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate 
         if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways)
         {
-            print(locationManager.location?.coordinate.latitude)
-            print(locationManager.location?.coordinate.longitude)
+            // Use hard coded latitude and longitude values while testing with simulator
+            fetchWeatherData(-37.8879, longitude: 145.0952 )
             
-            fetchWeatherData((locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
+            // Use the phone's gps when testing on the actual device
+            //fetchWeatherData((locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
             
         } else {
             print("Not found")
