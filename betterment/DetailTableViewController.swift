@@ -20,7 +20,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var detailImage: UIImageView!
     
-    var person: Person!
+    var person: User!
     
     
     override func viewDidLoad() {

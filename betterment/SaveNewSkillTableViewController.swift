@@ -10,7 +10,7 @@ import UIKit
 
 class SaveNewSkillTableViewController: UITableViewController {
     
-    var skill: Skill?
+    var skill: Talent?
     
     @IBOutlet weak var skillName: UITextField!
     
@@ -33,7 +33,7 @@ class SaveNewSkillTableViewController: UITableViewController {
         
         print("Button pressed")
         print(self.skillName.text)
-        self.skill = Skill(skill_name: self.skillName.text!, hourly_rate: 88.09, experience: 10)
+        self.skill = Talent(skill_name: self.skillName.text!, hourly_rate: 88.09, experience: 10)
         performSegueWithIdentifier("saveSkill", sender: sender)
     }
 

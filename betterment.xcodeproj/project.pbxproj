@@ -11,19 +11,15 @@
 		A1D569A51CB7C7B2004630A5 /* detailRatingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A41CB7C7B2004630A5 /* detailRatingUITest.swift */; };
 		A1D569A71CB7C890004630A5 /* detailMapUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A61CB7C890004630A5 /* detailMapUITest.swift */; };
 		DD4579CB1CD34B1200D28A7B /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4579CA1CD34B1200D28A7B /* CurrentWeatherViewController.swift */; };
-		DD4579CD1CD34B6900D28A7B /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4579CC1CD34B6900D28A7B /* CurrentWeather.swift */; };
-		DD4579D01CD34BAB00D28A7B /* IconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4579CE1CD34BAB00D28A7B /* IconFactory.swift */; };
-		DD4579D11CD34BAB00D28A7B /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4579CF1CD34BAB00D28A7B /* NetworkOperation.swift */; };
-		DD4579D31CD34BC300D28A7B /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4579D21CD34BC300D28A7B /* ForecastService.swift */; };
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
 		DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
 		DD9067261C9C1EE70027A9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9067251C9C1EE70027A9EA /* Assets.xcassets */; };
 		DD9067341C9C1EE90027A9EA /* bettermentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067331C9C1EE90027A9EA /* bettermentTests.swift */; };
-		DD9067501C9C202C0027A9EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* Person.swift */; };
-		DD9067521C9C21300027A9EA /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Skill.swift */; };
-		DD9067541C9C22340027A9EA /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* Work.swift */; };
+		DD9067501C9C202C0027A9EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* User.swift */; };
+		DD9067521C9C21300027A9EA /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Talent.swift */; };
+		DD9067541C9C22340027A9EA /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* WorkItem.swift */; };
 		DDA7D3831CCCA4470022DEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3811CCCA4470022DEBA /* Main.storyboard */; };
 		DDA7D3861CCCA5460022DEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3841CCCA5460022DEBA /* LaunchScreen.storyboard */; };
 		DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */; };
@@ -43,6 +39,11 @@
 		DDB079A31CB962AC00DBABEC /* cellCountUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */; };
 		DDB079A51CB962CE00DBABEC /* ratingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A41CB962CE00DBABEC /* ratingUITest.swift */; };
 		DDB079A71CB9638500DBABEC /* alertControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */; };
+		DDC33A821CDB6EE500764FA1 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A811CDB6EE500764FA1 /* ForecastService.swift */; };
+		DDC33A841CDB6F5400764FA1 /* IconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A831CDB6F5400764FA1 /* IconFactory.swift */; };
+		DDC33A861CDB6F6400764FA1 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */; };
+		DDC33A881CDB6F7800764FA1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */; };
+		DDC33A8B1CDB703800764FA1 /* betterment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */; };
 		FEEBD4E3907580C43D910054 /* Pods_betterment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,10 +73,6 @@
 		A1D569A61CB7C890004630A5 /* detailMapUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMapUITest.swift; sourceTree = "<group>"; };
 		DD092BA11C9EAAC800D031AA /* betterment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betterment-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD4579CA1CD34B1200D28A7B /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeatherViewController.swift; path = betterment/CurrentWeatherViewController.swift; sourceTree = SOURCE_ROOT; };
-		DD4579CC1CD34B6900D28A7B /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeather.swift; path = ../../../Desktop/iOS/Mist/Mist/CurrentWeather.swift; sourceTree = "<group>"; };
-		DD4579CE1CD34BAB00D28A7B /* IconFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconFactory.swift; path = ../../../Desktop/iOS/Mist/Mist/IconFactory.swift; sourceTree = "<group>"; };
-		DD4579CF1CD34BAB00D28A7B /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkOperation.swift; path = ../../../Desktop/iOS/Mist/Mist/NetworkOperation.swift; sourceTree = "<group>"; };
-		DD4579D21CD34BC300D28A7B /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastService.swift; path = ../../../Desktop/iOS/Mist/Mist/ForecastService.swift; sourceTree = "<group>"; };
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = betterment/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
@@ -88,9 +85,9 @@
 		DD9067351C9C1EE90027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90673A1C9C1EE90027A9EA /* bettermentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bettermentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9067401C9C1EE90027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD90674F1C9C202C0027A9EA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		DD9067511C9C21300027A9EA /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		DD9067531C9C22340027A9EA /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		DD90674F1C9C202C0027A9EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD9067511C9C21300027A9EA /* Talent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
+		DD9067531C9C22340027A9EA /* WorkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
 		DDA7D3821CCCA4470022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3851CCCA5460022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = betterment/DetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -110,6 +107,11 @@
 		DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellCountUITest.swift; sourceTree = "<group>"; };
 		DDB079A41CB962CE00DBABEC /* ratingUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingUITest.swift; sourceTree = "<group>"; };
 		DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertControllerUITest.swift; sourceTree = "<group>"; };
+		DDC33A811CDB6EE500764FA1 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		DDC33A831CDB6F5400764FA1 /* IconFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFactory.swift; sourceTree = "<group>"; };
+		DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		DDC33A8A1CDB703800764FA1 /* betterment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = betterment.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +204,8 @@
 		DD58D3C81CA00CBB00471714 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				DD4579D21CD34BC300D28A7B /* ForecastService.swift */,
 				DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */,
+				DDC33A811CDB6EE500764FA1 /* ForecastService.swift */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -239,6 +241,7 @@
 				DD9067251C9C1EE70027A9EA /* Assets.xcassets */,
 				51170B34988F83969B343EC1 /* controller */,
 				511701A5AAA52686B1949987 /* view */,
+				DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -269,12 +272,12 @@
 		DD90674C1C9C1FB20027A9EA /* model */ = {
 			isa = PBXGroup;
 			children = (
-				DD4579CE1CD34BAB00D28A7B /* IconFactory.swift */,
-				DD4579CF1CD34BAB00D28A7B /* NetworkOperation.swift */,
-				DD4579CC1CD34B6900D28A7B /* CurrentWeather.swift */,
-				DD90674F1C9C202C0027A9EA /* Person.swift */,
-				DD9067511C9C21300027A9EA /* Skill.swift */,
-				DD9067531C9C22340027A9EA /* Work.swift */,
+				DD90674F1C9C202C0027A9EA /* User.swift */,
+				DD9067511C9C21300027A9EA /* Talent.swift */,
+				DD9067531C9C22340027A9EA /* WorkItem.swift */,
+				DDC33A831CDB6F5400764FA1 /* IconFactory.swift */,
+				DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */,
+				DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -470,24 +473,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */,
-				DD9067541C9C22340027A9EA /* Work.swift in Sources */,
-				DD4579D01CD34BAB00D28A7B /* IconFactory.swift in Sources */,
+				DD9067541C9C22340027A9EA /* WorkItem.swift in Sources */,
+				DDC33A841CDB6F5400764FA1 /* IconFactory.swift in Sources */,
 				DDA7D3A21CCCADBF0022DEBA /* WorkViewController.swift in Sources */,
-				DD4579D11CD34BAB00D28A7B /* NetworkOperation.swift in Sources */,
 				DDA7D3961CCCADBF0022DEBA /* FirstViewController.swift in Sources */,
 				DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */,
 				DDA7D39B1CCCADBF0022DEBA /* NewSkillViewController.swift in Sources */,
 				DDA7D3A01CCCADBF0022DEBA /* SkillViewController.swift in Sources */,
 				DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */,
 				DDA7D39D1CCCADBF0022DEBA /* RatingViewController.swift in Sources */,
+				DDC33A861CDB6F6400764FA1 /* CurrentWeather.swift in Sources */,
+				DDC33A821CDB6EE500764FA1 /* ForecastService.swift in Sources */,
+				DDC33A881CDB6F7800764FA1 /* NetworkOperation.swift in Sources */,
 				DDA7D39E1CCCADBF0022DEBA /* SaveNewSkillTableViewController.swift in Sources */,
 				DDA7D39C1CCCADBF0022DEBA /* NewWorkTableViewController.swift in Sources */,
-				DD4579D31CD34BC300D28A7B /* ForecastService.swift in Sources */,
-				DD9067521C9C21300027A9EA /* Skill.swift in Sources */,
-				DD4579CD1CD34B6900D28A7B /* CurrentWeather.swift in Sources */,
+				DD9067521C9C21300027A9EA /* Talent.swift in Sources */,
 				DDA7D39F1CCCADBF0022DEBA /* SkillTableViewCell.swift in Sources */,
-				DD9067501C9C202C0027A9EA /* Person.swift in Sources */,
+				DD9067501C9C202C0027A9EA /* User.swift in Sources */,
 				DDA7D3A11CCCADBF0022DEBA /* WorkTableViewCell.swift in Sources */,
+				DDC33A8B1CDB703800764FA1 /* betterment.xcdatamodeld in Sources */,
 				DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */,
 				DDA7D39A1CCCADBF0022DEBA /* MasterTableViewCell.swift in Sources */,
 				DD4579CB1CD34B1200D28A7B /* CurrentWeatherViewController.swift in Sources */,
@@ -755,6 +759,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDC33A8A1CDB703800764FA1 /* betterment.xcdatamodel */,
+			);
+			currentVersion = DDC33A8A1CDB703800764FA1 /* betterment.xcdatamodel */;
+			path = betterment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD9067111C9C1EE60027A9EA /* Project object */;
 }

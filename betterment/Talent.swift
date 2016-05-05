@@ -1,5 +1,5 @@
 //
-//  Skill.swift
+//  Talent.swift
 //  betterment
 //
 //  Created by Mitul Manish on 18/03/2016.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Skill{
+class Talent {
     
     var skillName: String?
     var hourlyRate: Float?

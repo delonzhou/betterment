@@ -14,7 +14,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    var person: Person?
+    var person: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()

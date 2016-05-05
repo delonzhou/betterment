@@ -1,5 +1,5 @@
 //
-//  Work.swift
+//  WorkItem.swift
 //  betterment
 //
 //  Created by Mitul Manish on 18/03/2016.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Work {
+class WorkItem {
     
     var title: String = ""
     var description: String = ""

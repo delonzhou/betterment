@@ -11,8 +11,8 @@ import UIKit
 class SkillViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    var user: Person?
-    var skill: [Skill]?
+    var user: User?
+    var skill: [Talent]?
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {

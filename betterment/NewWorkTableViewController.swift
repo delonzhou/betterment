@@ -10,7 +10,7 @@ import UIKit
 
 class NewWorkTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var work: Work?
+    var work: WorkItem?
     @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
@@ -60,7 +60,7 @@ class NewWorkTableViewController: UITableViewController, UIImagePickerController
     
     
     @IBAction func saveWork(sender: UIBarButtonItem) {
-        self.work = Work(title: "Check work", description: "descrip", related_skill: "nope", images: ["noone.jpg"])
+        self.work = WorkItem(title: "Check work", description: "descrip", related_skill: "nope", images: ["noone.jpg"])
         self.performSegueWithIdentifier("backToListFromWork", sender: sender)
         
     }

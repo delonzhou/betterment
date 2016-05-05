@@ -14,7 +14,7 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     
     
-    var work: [Work]?
+    var work: [WorkItem]?
 
     override func viewDidLoad() { 
         super.viewDidLoad()
