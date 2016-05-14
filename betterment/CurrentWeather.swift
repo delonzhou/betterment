@@ -19,7 +19,6 @@ struct CurrentWeather{
     
     init(weatherDictionary: [String: AnyObject]){
         
-        
         if let currentTemperature = weatherDictionary["temperature"] as? Int{
             temperatureinCelcius = ((currentTemperature - 32) * 5)/9
         }

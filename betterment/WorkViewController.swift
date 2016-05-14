@@ -14,15 +14,14 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     
     
-    var work: [WorkItem]?
-
-    override func viewDidLoad() { 
+    var works: [Work]?
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        print(work?.first?.title)
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,21 +29,22 @@ class WorkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->
         Int {
-        // Return the number of rows in the section.
-        return (self.work?.count)!
+            // Return the number of rows in the section.
+            return (self.works?.count)!
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
         NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier,
-        forIndexPath: indexPath) as? WorkTableViewCell
+                                                               forIndexPath: indexPath) as? WorkTableViewCell
         // Configure the cell...
-        cell?.titleLabel.text = self.work![indexPath.row].title
-        cell?.descriptionLabel.text = self.work![indexPath.row].description
-        cell?.workImageView.image = UIImage(named: self.work![indexPath.row].images.first!)
+        cell?.titleLabel.text = works![indexPath.row].workTitle
+        cell?.descriptionLabel.text = works![indexPath.row].workDescription
+        cell?.workImageView.image = UIImage(data: works![indexPath.row].workImage!)
         
         return cell!
     }
-
+    
 }
+

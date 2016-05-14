@@ -27,14 +27,28 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if (CURRENT_USER.authData != nil){
-          print("User logged in: \(CURRENT_USER.authData.uid)")
+        if (FIREBASE_REF.authData != nil){
+          print("User logged in: \(CURRENT_USER)")
             self.signoutButton.hidden = false
         }
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true;
+    }
+    
+    @IBAction func anonymousMode(sender: UIButton) {
+        
+        FIREBASE_REF.authAnonymouslyWithCompletionBlock { (error, authData) in
+            if error == nil {
+                NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
+                print("Current User siging in: \(CURRENT_USER)")
+                self.navigateMain()
+            }
+            else{
+                print(error)
+            }
+        }
     }
     
     @IBAction func loginAction(sender: AnyObject) {
@@ -85,7 +99,7 @@ class LoginViewController: UIViewController {
                 
                 if(error == nil){
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
-                    print("Current User siging in: \(CURRENT_USER.authData.uid)")
+                    print("Current User siging in: \(CURRENT_USER)")
                     self.navigateMain()
                 }
                 else{
@@ -99,23 +113,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func anonymousMode(sender: UIButton) {
-        
-        FIREBASE_REF.authAnonymouslyWithCompletionBlock { (error, authData) in
-            if error == nil {
-                NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
-                print("Current User siging in: \(CURRENT_USER.authData.uid)")
-                self.navigateMain()
-            }
-            else{
-                print(error)
-            }
-        }
-    }
-    
-    
-    
     private func prepareAlertController(messageTitle: String, messageContent: String) -> UIAlertController {
        
         return UIAlertController(title: messageTitle, message: messageContent, preferredStyle: .Alert)
@@ -124,7 +121,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func signOutAction(sender: AnyObject) {
-        CURRENT_USER.unauth()
+        FIREBASE_REF.unauth()
         self.signoutButton.hidden = true
         print("User Signed out")
     }

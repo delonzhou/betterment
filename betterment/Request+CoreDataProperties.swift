@@ -2,7 +2,7 @@
 //  Request+CoreDataProperties.swift
 //  betterment
 //
-//  Created by Mitul Manish on 5/05/2016.
+//  Created by Mitul Manish on 8/05/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,11 +14,16 @@ import CoreData
 
 extension Request {
 
-    @NSManaged var requester: String?
-    @NSManaged var requestee: String?
+    @NSManaged var accepted: NSNumber?
     @NSManaged var message: String?
     @NSManaged var proposedRate: NSNumber?
-    @NSManaged var accepted: NSNumber?
     @NSManaged var rejected: NSNumber?
+    @NSManaged var requestee: String?
+    @NSManaged var requester: String?
+    @NSManaged var skillName: String?
+    
+    func getRequestImageString() -> String {
+        return (self.skillName?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
+    }
 
 }

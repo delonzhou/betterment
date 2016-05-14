@@ -18,5 +18,9 @@ extension Skill {
     @NSManaged var experience: NSNumber?
     @NSManaged var hourlyRate: NSNumber?
     @NSManaged var owner: Person?
+    
+    func getSkillImageString() -> String{
+        return (self.skillName?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
+    }
 
 }

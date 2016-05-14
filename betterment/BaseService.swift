@@ -5,16 +5,13 @@
 //  Created by Mitul Manish on 21/03/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
+
 import Foundation
 import Firebase
 
 let BASE_URL = "https://mitulmanishtest.firebaseio.com/"
 let FIREBASE_REF = Firebase(url: BASE_URL)
-let FIREBASE_MESSAGE_REF = Firebase(url: BASE_URL).childByAppendingPath("messages")
 
-var CURRENT_USER: Firebase{
-    
-    let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String
-    let currentUser = Firebase(url: "\(FIREBASE_REF)").childByAppendingPath("users").childByAppendingPath(userID)
-    return currentUser
+var CURRENT_USER: String{
+    return (NSUserDefaults.standardUserDefaults().valueForKey("uid") as? String)!
 }

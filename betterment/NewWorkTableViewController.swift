@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import CoreData
 
 class NewWorkTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var work: WorkItem?
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as?
+        AppDelegate)?.managedObjectContext
+    
     @IBOutlet weak var imageView: UIImageView!
-
+    @IBOutlet weak var relatedSkill: UITextField!
+    @IBOutlet weak var workDescription: UITextField!
+    @IBOutlet weak var workTitle: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,9 +66,52 @@ class NewWorkTableViewController: UITableViewController, UIImagePickerController
     
     
     @IBAction func saveWork(sender: UIBarButtonItem) {
-        self.work = WorkItem(title: "Check work", description: "descrip", related_skill: "nope", images: ["noone.jpg"])
+        
+        print("finding User")
+        
+        let fetchRequest = NSFetchRequest(entityName: "Person")
+        fetchRequest.predicate = NSPredicate(format: "%K == %@", "userID", CURRENT_USER)
+        
+        //3
+        var fetchedUsers = [Person]()
+        do {
+            let results =
+                try managedObjectContext!.executeFetchRequest(fetchRequest)
+            fetchedUsers = (results as?[
+                Person])!
+            
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        let associatedUser = fetchedUsers.first
+        
+        print("User found")
+        
+        let workEntity = NSEntityDescription.insertNewObjectForEntityForName("Work", inManagedObjectContext: managedObjectContext!) as! Work
+        
+        workEntity.setValue(self.workTitle.text, forKey: "workTitle")
+        workEntity.setValue(self.workDescription.text, forKey: "workDescription")
+        workEntity.setValue(self.relatedSkill.text, forKey: "relatedSkill")
+        
+        if let workImage = imageView.image {
+            workEntity.workImage = UIImagePNGRepresentation(workImage)
+        }
+        
+        
+        workEntity.owner = associatedUser
+        
+        print("Saving Work")
+        do{
+            try managedObjectContext!.save()
+        }
+        catch{
+            fatalError("Unable to save object")
+        }
+        print("Done Saving Work")
+        
         self.performSegueWithIdentifier("backToListFromWork", sender: sender)
         
     }
-
+    
 }

@@ -11,16 +11,16 @@ import UIKit
 class SkillViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    var user: User?
-    var skill: [Talent]?
+    var user: Person?
+    var skills: [Skill]?
     @IBOutlet var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,26 +29,24 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return user!.skill.count
         
-        if let numberOfSkills = user?.skill.count{
-            return numberOfSkills
-        }
-        return 0
+        return user?.getNumberOfSkills() ?? 0
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
         NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
-        forIndexPath: indexPath) as? SkillTableViewCell
+                                                               forIndexPath: indexPath) as? SkillTableViewCell
         // Configure the cell...
-        let rate = NSString(format: "%.2f", user!.skill[indexPath.row].hourlyRate!)
+        let rate = user!.getSkillsAsArray()[indexPath.row].hourlyRate!
         print(rate)
-        cell?.skillImage.image = UIImage(named: user!.skill[indexPath.row].skillImage!)
-        cell?.skillNameLabel.text = user!.skill[indexPath.row].skillName
-        print(user!.skill[indexPath.row].skillName)
-        cell?.experienceLabel.text = String(user!.skill[indexPath.row].experience!) + " Years"
-        cell?.hourlyRateLabel.text = "$ " + (NSString(format: "%.2f", user!.skill[indexPath.row].hourlyRate!) as String) as String + " Per Hour"
+        cell?.skillImage.image = UIImage(named: (user?.getSkillsAsArray()[indexPath.row].getSkillImageString())!)
+        cell?.skillNameLabel.text = user!.getSkillsAsArray()[indexPath.row].skillName
+        print(user!.getSkillsAsArray()[indexPath.row].skillName)
+        cell?.experienceLabel.text = String(user!.getSkillsAsArray()[indexPath.row].experience!) + " Years"
+        cell?.hourlyRateLabel.text = "$  \(user!.getSkillsAsArray()[indexPath.row].hourlyRate!) Per Hour"
         return cell!
     }
-
+    
 }

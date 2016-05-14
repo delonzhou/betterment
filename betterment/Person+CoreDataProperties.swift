@@ -24,5 +24,25 @@ extension Person {
     @NSManaged var bio: String?
     @NSManaged var skills: NSSet?
     @NSManaged var workItems: NSSet?
-
+    
+    func getNumberOfSkills() -> Int {
+        return self.skills!.count;
+    }
+    
+    func getNumberOfWorks() -> Int {
+        return self.workItems!.count;
+    }
+    
+    func getSkillsAsArray() -> [Skill] {
+        return self.skills!.allObjects as! [Skill]
+    }
+    
+    func getWorksAsArray() -> [Work]{
+        return self.workItems!.allObjects as! [Work]
+    }
+    
+    func getfullName() -> String{
+        
+        return self.firstName! + " " + self.lastName!
+    }
 }
