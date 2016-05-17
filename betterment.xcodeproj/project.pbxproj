@@ -44,6 +44,7 @@
 		DDB079A31CB962AC00DBABEC /* cellCountUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */; };
 		DDB079A51CB962CE00DBABEC /* ratingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A41CB962CE00DBABEC /* ratingUITest.swift */; };
 		DDB079A71CB9638500DBABEC /* alertControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */; };
+		DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */; };
 		DDC26C961CDB7A6E005FAB18 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */; };
 		DDC26C971CDB7A6E005FAB18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8F1CDB7A6E005FAB18 /* Person.swift */; };
 		DDC26C9A1CDB7A6E005FAB18 /* Work+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C921CDB7A6E005FAB18 /* Work+CoreDataProperties.swift */; };
@@ -126,6 +127,7 @@
 		DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellCountUITest.swift; sourceTree = "<group>"; };
 		DDB079A41CB962CE00DBABEC /* ratingUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingUITest.swift; sourceTree = "<group>"; };
 		DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertControllerUITest.swift; sourceTree = "<group>"; };
+		DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DDC26C8F1CDB7A6E005FAB18 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DDC26C921CDB7A6E005FAB18 /* Work+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Work+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				DDF076401CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift */,
 				DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */,
 				DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */,
+				DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */,
 				DD4864A71CDE522F006AC296 /* Request.swift in Sources */,
 				DDC26C9A1CDB7A6E005FAB18 /* Work+CoreDataProperties.swift in Sources */,
+				DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */,
 				DDC26C9B1CDB7A6E005FAB18 /* Work.swift in Sources */,
 				DDA7D3A01CCCADBF0022DEBA /* SkillViewController.swift in Sources */,
 				DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */,

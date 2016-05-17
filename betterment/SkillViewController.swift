@@ -49,4 +49,15 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell!
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "sendRequest" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destinationViewController as! RequestTableViewController
+                
+                destinationController.person = self.user
+                destinationController.skill = self.skills![indexPath.row]
+            }
+        }
+    }
+    
 }

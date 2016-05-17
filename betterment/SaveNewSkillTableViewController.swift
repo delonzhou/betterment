@@ -62,18 +62,16 @@ class SaveNewSkillTableViewController: UITableViewController {
         
         let hourlyRateInput = hourlyRate.text
         if let number = Int(hourlyRateInput!) {
-            let myNumber = NSNumber(integer:number)
+            let myNumber = NSNumber(integer: number)
             skillEntity.setValue(myNumber, forKey: "hourlyRate")
-            print(myNumber)
         } else {
             print("'\(hourlyRateInput)' did not convert to an Int")
         }
         
         let experienceInput = experience.text
         if let number = Int(experienceInput!) {
-            let myNumber = NSNumber(integer:number)
+            let myNumber = NSNumber(integer: number)
             skillEntity.setValue(myNumber, forKey: "experience")
-            print(myNumber)
         } else {
             print("'\(experienceInput)' did not convert to an Int")
         }
