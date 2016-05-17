@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import RealmSwift
 import CoreData
 
 class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating{
@@ -117,13 +116,11 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
     
     
     @IBAction func backToList(segue:UIStoryboardSegue) {
-        print(segue.identifier)
-        print(segue.sourceViewController)
+        
     }
     
     @IBAction func backtoListViewFromWorkView(segue:UIStoryboardSegue) {
-        print(segue.identifier)
-        print(segue.sourceViewController)
+        
     }
     
     

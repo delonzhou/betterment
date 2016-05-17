@@ -88,8 +88,6 @@ class DetailOutgoingViewController: UITableViewController {
     
     @IBAction func rejectRequest(sender: UIButton) {
         
-        print("****** inside Reject action")
-        
         detailRequest!.rejected = 1
         
         do{
@@ -104,7 +102,6 @@ class DetailOutgoingViewController: UITableViewController {
         print("updating complete ....")
         
          // disable button
-        
         declineButton.setTitle("Rejected", forState: .Normal)
         declineButton.userInteractionEnabled = false
         

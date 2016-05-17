@@ -11,10 +11,6 @@ import UIKit
 class IncomingRequestTableViewCell: UITableViewCell {
 
     @IBOutlet weak var skillName: UILabel!
-    
-    
     @IBOutlet weak var moneyOffered: UILabel!
-   
-
     @IBOutlet weak var thumbnailImageView: UIImageView!
 }

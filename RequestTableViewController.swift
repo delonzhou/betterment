@@ -16,10 +16,7 @@ class RequestTableViewController: UITableViewController {
     
     
     @IBOutlet weak var hourlyRate: UITextField!
-    
     @IBOutlet weak var message: UITextField!
-    
-    
     @IBOutlet weak var sendRequestButton: UIButton!
     
     
@@ -28,13 +25,6 @@ class RequestTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {

@@ -89,8 +89,6 @@ class DetailIncomingViewController: UITableViewController {
     
     @IBAction func approveRequest(sender: UIButton) {
         
-        print("****** inside Approve action")
-    
         detailRequest!.accepted = 1
         
         do{

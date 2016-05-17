@@ -26,11 +26,11 @@ extension Person {
     @NSManaged var workItems: NSSet?
     
     func getNumberOfSkills() -> Int {
-        return self.skills!.count;
+        return self.skills!.count
     }
     
     func getNumberOfWorks() -> Int {
-        return self.workItems!.count;
+        return self.workItems!.count
     }
     
     func getSkillsAsArray() -> [Skill] {

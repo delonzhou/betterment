@@ -12,10 +12,7 @@ class OutgoingRequestTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
-    
-    
     @IBOutlet weak var skillName: UILabel!
-    
     @IBOutlet weak var moneyOffering: UILabel!
 
     override func awakeFromNib() {

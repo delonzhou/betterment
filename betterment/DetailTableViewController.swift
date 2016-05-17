@@ -13,7 +13,6 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet weak var ratingButton: UIButton!
     
-    var rating: String?
     @IBOutlet weak var workButton: UIButton!
     @IBOutlet weak var skillButton: UIButton!
     
@@ -21,6 +20,7 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var detailImage: UIImageView!
     
     var person: Person!
+    var rating: String?
     
     
     override func viewDidLoad() {
@@ -76,28 +76,35 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "skills" {
-            let skillController = segue.destinationViewController as! SkillViewController
-            skillController.skills = self.person.getSkillsAsArray()
-            skillController.user = self.person
-        }
-        else if segue.identifier == "works" {
-            let workController = segue.destinationViewController as! WorkViewController
-            workController.works = self.person.getWorksAsArray()
-        }
-        else if segue.identifier == "showMap" {
-            let mapController = segue.destinationViewController as! mapViewController
-            mapController.person = self.person
-        }
+        switch segue.identifier! {
             
-        else if segue.identifier == "chatSegue" {
-            let navVc = segue.destinationViewController as! UINavigationController
-            let chatVc = navVc.viewControllers.first as! ChatViewController
-            chatVc.senderId = CURRENT_USER
-            chatVc.receiverId = self.person.userID!
-            chatVc.senderDisplayName = ""
+            case "skills":
+                print("skills")
+                let skillController = segue.destinationViewController as! SkillViewController
+                skillController.skills = self.person.getSkillsAsArray()
+                skillController.user = self.person
+            
+            case "works":
+                print("works")
+                let workController = segue.destinationViewController as! WorkViewController
+                workController.works = self.person.getWorksAsArray()
+            
+            case "showMap":
+                print("Map")
+                let mapController = segue.destinationViewController as! mapViewController
+                mapController.person = self.person
+            
+            case "chatSegue":
+                print("chatSegue")
+                let navVc = segue.destinationViewController as! UINavigationController
+                let chatVc = navVc.viewControllers.first as! ChatViewController
+                chatVc.senderId = CURRENT_USER
+                chatVc.receiverId = self.person.userID!
+                chatVc.senderDisplayName = ""
+            
+            default:
+                print("default")
         }
-        
         
     }
     

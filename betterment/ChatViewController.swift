@@ -33,16 +33,12 @@ class ChatViewController: JSQMessagesViewController {
     override func viewDidLoad() {
     
         super.viewDidLoad()
-        
-        print("----------")
-        print(receiverId)
-        print("----------")
         senderReceiver = String(senderId) + String(receiverId)
         receiverSender = String(receiverId) + String(senderId)
         
-        let temp: Firebase = rootRef
+        let tempFirebaseRef: Firebase = rootRef
         
-        temp.childByAppendingPath(receiverSender).observeEventType(.Value, withBlock: { snapshot in
+        tempFirebaseRef.childByAppendingPath(receiverSender).observeEventType(.Value, withBlock: { snapshot in
             if snapshot.exists(){
                 self.messageRef = self.rootRef.childByAppendingPath(self.receiverSender)
             }
