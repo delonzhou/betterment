@@ -7,6 +7,7 @@ target 'betterment' do
 	pod 'RealmSwift'
 	pod 'Firebase'
     pod 'JSQMessagesViewController'
+    pod 'QuadratTouch', '>= 1.0'
 end
 
 target 'bettermentTests' do

@@ -1677,7 +1677,7 @@
         <!--Discover-->
         <scene sceneID="meJ-GP-Rre">
             <objects>
-                <viewController title="Discover" id="7SM-gb-Yno" sceneMemberID="viewController">
+                <viewController title="Discover" id="7SM-gb-Yno" customClass="FourSquareVenueViewController" customModule="betterment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lpe-CC-tgK"/>
                         <viewControllerLayoutGuide type="bottom" id="DP6-1A-ojW"/>
@@ -1685,9 +1685,48 @@
                     <view key="view" contentMode="scaleToFill" id="W4u-ec-bvB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-90-HWr">
+                                <rect key="frame" x="0.0" y="236" width="600" height="315"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="315" id="jff-U2-YIy"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="RVS-sF-oJp">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RVS-sF-oJp" id="PB8-v3-TEx">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7SM-gb-Yno" id="Qw3-pT-vBN"/>
+                                    <outlet property="delegate" destination="7SM-gb-Yno" id="prW-94-2aK"/>
+                                </connections>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L39-QC-gJe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="234"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rnz-90-HWr" firstAttribute="top" secondItem="L39-QC-gJe" secondAttribute="bottom" constant="2" id="E4c-LX-0pR"/>
+                            <constraint firstItem="rnz-90-HWr" firstAttribute="leading" secondItem="W4u-ec-bvB" secondAttribute="leading" id="Jp8-yk-FFg"/>
+                            <constraint firstAttribute="trailing" secondItem="rnz-90-HWr" secondAttribute="trailing" id="TPt-3d-rTR"/>
+                            <constraint firstItem="L39-QC-gJe" firstAttribute="top" secondItem="W4u-ec-bvB" secondAttribute="top" id="Zen-SK-8QS"/>
+                            <constraint firstItem="DP6-1A-ojW" firstAttribute="top" secondItem="rnz-90-HWr" secondAttribute="bottom" id="b74-U6-2pM"/>
+                            <constraint firstAttribute="trailing" secondItem="L39-QC-gJe" secondAttribute="trailing" id="nPg-Zx-tjn"/>
+                            <constraint firstItem="L39-QC-gJe" firstAttribute="leading" secondItem="W4u-ec-bvB" secondAttribute="leading" id="zlW-GQ-vJO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="Flash Light-24" id="xf0-Au-9Fn"/>
+                    <connections>
+                        <outlet property="mapView" destination="L39-QC-gJe" id="tUn-J3-fh8"/>
+                        <outlet property="tableView" destination="rnz-90-HWr" id="Oe3-kX-72c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTG-vg-FF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -87,6 +87,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-betterment/Firebase.framework"
   install_framework "Pods-betterment/JSQMessagesViewController.framework"
   install_framework "Pods-betterment/JSQSystemSoundPlayer.framework"
+  install_framework "Pods-betterment/QuadratTouch.framework"
   install_framework "Pods-betterment/Realm.framework"
   install_framework "Pods-betterment/RealmSwift.framework"
 fi
@@ -94,6 +95,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-betterment/Firebase.framework"
   install_framework "Pods-betterment/JSQMessagesViewController.framework"
   install_framework "Pods-betterment/JSQSystemSoundPlayer.framework"
+  install_framework "Pods-betterment/QuadratTouch.framework"
   install_framework "Pods-betterment/Realm.framework"
   install_framework "Pods-betterment/RealmSwift.framework"
 fi

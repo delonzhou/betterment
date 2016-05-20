@@ -44,6 +44,11 @@
 		DDB079A31CB962AC00DBABEC /* cellCountUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */; };
 		DDB079A51CB962CE00DBABEC /* ratingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A41CB962CE00DBABEC /* ratingUITest.swift */; };
 		DDB079A71CB9638500DBABEC /* alertControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */; };
+		DDC147521CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */; };
+		DDC147541CEF01A40014ECF3 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147531CEF01A40014ECF3 /* Venue.swift */; };
+		DDC147561CEF01C90014ECF3 /* VenueMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147551CEF01C90014ECF3 /* VenueMaker.swift */; };
+		DDC147581CEF01E30014ECF3 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147571CEF01E30014ECF3 /* VenueAPI.swift */; };
+		DDC1475A1CEF01FD0014ECF3 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */; };
 		DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */; };
 		DDC26C961CDB7A6E005FAB18 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */; };
 		DDC26C971CDB7A6E005FAB18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8F1CDB7A6E005FAB18 /* Person.swift */; };
@@ -127,6 +132,11 @@
 		DDB079A21CB962AC00DBABEC /* cellCountUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellCountUITest.swift; sourceTree = "<group>"; };
 		DDB079A41CB962CE00DBABEC /* ratingUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingUITest.swift; sourceTree = "<group>"; };
 		DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertControllerUITest.swift; sourceTree = "<group>"; };
+		DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareVenueViewController.swift; path = betterment/FourSquareVenueViewController.swift; sourceTree = SOURCE_ROOT; };
+		DDC147531CEF01A40014ECF3 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/Venue.swift; sourceTree = "<group>"; };
+		DDC147551CEF01C90014ECF3 /* VenueMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueMaker.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueMaker.swift; sourceTree = "<group>"; };
+		DDC147571CEF01E30014ECF3 /* VenueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueAPI.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueAPI.swift; sourceTree = "<group>"; };
+		DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueAnnotation.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueAnnotation.swift; sourceTree = "<group>"; };
 		DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DDC26C8F1CDB7A6E005FAB18 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -205,6 +215,7 @@
 				DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */,
 				DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */,
 				DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */,
+				DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -240,6 +251,7 @@
 		DD58D3C81CA00CBB00471714 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				DDC147571CEF01E30014ECF3 /* VenueAPI.swift */,
 				DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */,
 				DDC33A811CDB6EE500764FA1 /* ForecastService.swift */,
 			);
@@ -309,6 +321,9 @@
 		DD90674C1C9C1FB20027A9EA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */,
+				DDC147551CEF01C90014ECF3 /* VenueMaker.swift */,
+				DDC147531CEF01A40014ECF3 /* Venue.swift */,
 				DD90674F1C9C202C0027A9EA /* User.swift */,
 				DD9067511C9C21300027A9EA /* Talent.swift */,
 				DD9067531C9C22340027A9EA /* WorkItem.swift */,
@@ -531,12 +546,15 @@
 				DDC33A841CDB6F5400764FA1 /* IconFactory.swift in Sources */,
 				DDA7D3A21CCCADBF0022DEBA /* WorkViewController.swift in Sources */,
 				DDF0763F1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift in Sources */,
+				DDC147561CEF01C90014ECF3 /* VenueMaker.swift in Sources */,
 				DDA7D3961CCCADBF0022DEBA /* FirstViewController.swift in Sources */,
+				DDC147541CEF01A40014ECF3 /* Venue.swift in Sources */,
 				DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */,
 				DD4864A71CDE522F006AC296 /* Request.swift in Sources */,
 				DDC26C9A1CDB7A6E005FAB18 /* Work+CoreDataProperties.swift in Sources */,
 				DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */,
 				DDC26C9B1CDB7A6E005FAB18 /* Work.swift in Sources */,
+				DDC1475A1CEF01FD0014ECF3 /* VenueAnnotation.swift in Sources */,
 				DDA7D3A01CCCADBF0022DEBA /* SkillViewController.swift in Sources */,
 				DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */,
 				DDA7D39D1CCCADBF0022DEBA /* RatingViewController.swift in Sources */,
@@ -549,9 +567,11 @@
 				DDA7D39C1CCCADBF0022DEBA /* NewWorkTableViewController.swift in Sources */,
 				DDF0763D1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift in Sources */,
 				DD9067521C9C21300027A9EA /* Talent.swift in Sources */,
+				DDC147581CEF01E30014ECF3 /* VenueAPI.swift in Sources */,
 				DDC26C9D1CDB7A6E005FAB18 /* Skill.swift in Sources */,
 				DDF076411CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift in Sources */,
 				DD4864A61CDE522F006AC296 /* Request+CoreDataProperties.swift in Sources */,
+				DDC147521CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift in Sources */,
 				DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */,
 				DDA7D39F1CCCADBF0022DEBA /* SkillTableViewCell.swift in Sources */,
 				DDC26C971CDB7A6E005FAB18 /* Person.swift in Sources */,
