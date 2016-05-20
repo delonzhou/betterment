@@ -1686,20 +1686,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-90-HWr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-90-HWr">
                                 <rect key="frame" x="0.0" y="236" width="600" height="315"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="315" id="jff-U2-YIy"/>
                                 </constraints>
+                                <color key="separatorColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="RVS-sF-oJp">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="60" id="RVS-sF-oJp" customClass="FourSquareTableViewCell" customModule="betterment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RVS-sF-oJp" id="PB8-v3-TEx">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2n-ax-bx5">
+                                                    <rect key="frame" x="8" y="0.0" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="BHb-bT-DWQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJo-uJ-XSR">
+                                                    <rect key="frame" x="8" y="18" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-rt-ivP">
+                                                    <rect key="frame" x="8" y="37" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M2n-ax-bx5" firstAttribute="trailing" secondItem="PB8-v3-TEx" secondAttribute="trailingMargin" id="8y0-Ir-d1h"/>
+                                                <constraint firstItem="d5l-rt-ivP" firstAttribute="top" secondItem="M2n-ax-bx5" secondAttribute="bottom" constant="16" id="937-JC-pRz"/>
+                                                <constraint firstItem="M2n-ax-bx5" firstAttribute="leading" secondItem="PB8-v3-TEx" secondAttribute="leadingMargin" id="Bjy-LA-sCZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vJo-uJ-XSR" secondAttribute="bottom" constant="12" id="DO6-MO-Zgk"/>
+                                                <constraint firstItem="vJo-uJ-XSR" firstAttribute="trailing" secondItem="d5l-rt-ivP" secondAttribute="trailing" id="FKm-hN-PH0"/>
+                                                <constraint firstItem="vJo-uJ-XSR" firstAttribute="leading" secondItem="d5l-rt-ivP" secondAttribute="leading" id="RbR-je-9TW"/>
+                                                <constraint firstItem="M2n-ax-bx5" firstAttribute="top" secondItem="PB8-v3-TEx" secondAttribute="top" id="ShX-oZ-eQb"/>
+                                                <constraint firstItem="vJo-uJ-XSR" firstAttribute="top" secondItem="PB8-v3-TEx" secondAttribute="topMargin" constant="10" id="fMt-Pm-AyU"/>
+                                                <constraint firstItem="M2n-ax-bx5" firstAttribute="leading" secondItem="vJo-uJ-XSR" secondAttribute="leading" id="v0i-rD-4g8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="d5l-rt-ivP" secondAttribute="bottom" constant="-7" id="vFi-Pc-Z3K"/>
+                                                <constraint firstItem="M2n-ax-bx5" firstAttribute="trailing" secondItem="vJo-uJ-XSR" secondAttribute="trailing" id="w7J-Gf-lrd"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="address" destination="vJo-uJ-XSR" id="b13-8b-e5Y"/>
+                                            <outlet property="distance" destination="d5l-rt-ivP" id="5ww-Am-qZ4"/>
+                                            <outlet property="name" destination="M2n-ax-bx5" id="485-6N-aWE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

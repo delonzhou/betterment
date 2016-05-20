@@ -18,6 +18,7 @@
 		DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */; };
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
+		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
 		DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
@@ -100,6 +101,7 @@
 		DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailOutgoingViewController.swift; path = betterment/DetailOutgoingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = betterment/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,7 @@
 				DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */,
 				DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */,
 				DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */,
+				DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				DDC33A861CDB6F6400764FA1 /* CurrentWeather.swift in Sources */,
 				DDC26C961CDB7A6E005FAB18 /* Person+CoreDataProperties.swift in Sources */,
 				DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */,
+				DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */,
 				DDC33A821CDB6EE500764FA1 /* ForecastService.swift in Sources */,
 				DDC33A881CDB6F7800764FA1 /* NetworkOperation.swift in Sources */,
 				DDA7D39E1CCCADBF0022DEBA /* SaveNewSkillTableViewController.swift in Sources */,

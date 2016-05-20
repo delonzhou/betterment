@@ -47,7 +47,7 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
                     
                     (let JSONDictionary) in
                     if let venuesDictionary = JSONDictionary{
-                        //print(venuesDictionary)
+                        print(venuesDictionary)
                         
                         self.venuesList = VenueMaker.venuesAsList(venuesDictionary)
                         
@@ -125,11 +125,16 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        let currentVenue: Venue = (searchController.active) ? searchResults[indexPath.row] :
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FourSquareTableViewCell
+        let currentVenue: Venue? = (searchController.active) ? searchResults[indexPath.row] :
             (venuesList?[indexPath.row])!
         
-        cell.textLabel!.text = currentVenue.name
+        cell.name.text = currentVenue?.name
+        cell.address.text = currentVenue?.streetAddress
+        if let distance = currentVenue?.distanceInKm {
+            cell.distance.text = String(distance) + " Km"
+        }
+        
         return cell
     }
     
