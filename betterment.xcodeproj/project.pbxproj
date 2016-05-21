@@ -16,15 +16,10 @@
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
 		DD6F36B01CE5BB4E00ACBD5F /* DetailIncomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */; };
 		DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */; };
-		DD77745E1CF099DF0032A353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7774591CF099DF0032A353 /* Info.plist */; };
 		DD7774631CF0A7130032A353 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774621CF0A7130032A353 /* VenueAPI.swift */; };
 		DD7774651CF0A7230032A353 /* VenueMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774641CF0A7230032A353 /* VenueMaker.swift */; };
 		DD7774681CF0A7370032A353 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774661CF0A7370032A353 /* Venue.swift */; };
 		DD7774691CF0A7370032A353 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774671CF0A7370032A353 /* VenueAnnotation.swift */; };
-		DD77746F1CF0A8AF0032A353 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77746B1CF0A8AF0032A353 /* CoreDataHelper.swift */; };
-		DD7774701CF0A8AF0032A353 /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77746C1CF0A8AF0032A353 /* TestAdditionOfUser.swift */; };
-		DD7774711CF0A8AF0032A353 /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77746D1CF0A8AF0032A353 /* TestCurrentWeatherIcon.swift */; };
-		DD7774721CF0A8AF0032A353 /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77746E1CF0A8AF0032A353 /* TestNumberOfUsers.swift */; };
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
 		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
@@ -35,6 +30,11 @@
 		DD9067501C9C202C0027A9EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* User.swift */; };
 		DD9067521C9C21300027A9EA /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Talent.swift */; };
 		DD9067541C9C22340027A9EA /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* WorkItem.swift */; };
+		DD90B20B1CF0B29F00D73FBA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */; };
+		DD90B20C1CF0B29F00D73FBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD90B2071CF0B29F00D73FBA /* Info.plist */; };
+		DD90B20D1CF0B29F00D73FBA /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */; };
+		DD90B20E1CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */; };
+		DD90B20F1CF0B29F00D73FBA /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */; };
 		DDA7D3831CCCA4470022DEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3811CCCA4470022DEBA /* Main.storyboard */; };
 		DDA7D3861CCCA5460022DEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3841CCCA5460022DEBA /* LaunchScreen.storyboard */; };
 		DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */; };
@@ -104,16 +104,10 @@
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailIncomingViewController.swift; path = betterment/DetailIncomingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailOutgoingViewController.swift; path = betterment/DetailOutgoingViewController.swift; sourceTree = SOURCE_ROOT; };
-		DD7774591CF099DF0032A353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7774621CF0A7130032A353 /* VenueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
 		DD7774641CF0A7230032A353 /* VenueMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueMaker.swift; sourceTree = "<group>"; };
 		DD7774661CF0A7370032A353 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DD7774671CF0A7370032A353 /* VenueAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueAnnotation.swift; sourceTree = "<group>"; };
-		DD77746A1CF0A8AE0032A353 /* bettermentTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bettermentTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		DD77746B1CF0A8AF0032A353 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		DD77746C1CF0A8AF0032A353 /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
-		DD77746D1CF0A8AF0032A353 /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
-		DD77746E1CF0A8AF0032A353 /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -129,6 +123,11 @@
 		DD90674F1C9C202C0027A9EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD9067511C9C21300027A9EA /* Talent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
 		DD9067531C9C22340027A9EA /* WorkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
+		DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DD90B2071CF0B29F00D73FBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
+		DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
+		DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
 		DDA7D3821CCCA4470022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3851CCCA5460022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = betterment/DetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -312,12 +311,11 @@
 		DD9067321C9C1EE90027A9EA /* bettermentTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD77746B1CF0A8AF0032A353 /* CoreDataHelper.swift */,
-				DD77746C1CF0A8AF0032A353 /* TestAdditionOfUser.swift */,
-				DD77746D1CF0A8AF0032A353 /* TestCurrentWeatherIcon.swift */,
-				DD77746E1CF0A8AF0032A353 /* TestNumberOfUsers.swift */,
-				DD7774591CF099DF0032A353 /* Info.plist */,
-				DD77746A1CF0A8AE0032A353 /* bettermentTests-Bridging-Header.h */,
+				DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */,
+				DD90B2071CF0B29F00D73FBA /* Info.plist */,
+				DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */,
+				DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */,
+				DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */,
 			);
 			path = bettermentTests;
 			sourceTree = "<group>";
@@ -501,7 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD77745E1CF099DF0032A353 /* Info.plist in Resources */,
+				DD90B20C1CF0B29F00D73FBA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,10 +620,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD77746F1CF0A8AF0032A353 /* CoreDataHelper.swift in Sources */,
-				DD7774711CF0A8AF0032A353 /* TestCurrentWeatherIcon.swift in Sources */,
-				DD7774721CF0A8AF0032A353 /* TestNumberOfUsers.swift in Sources */,
-				DD7774701CF0A8AF0032A353 /* TestAdditionOfUser.swift in Sources */,
+				DD90B20B1CF0B29F00D73FBA /* CoreDataHelper.swift in Sources */,
+				DD90B20E1CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift in Sources */,
+				DD90B20F1CF0B29F00D73FBA /* TestNumberOfUsers.swift in Sources */,
+				DD90B20D1CF0B29F00D73FBA /* TestAdditionOfUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,7 +798,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "bettermentTests/bettermentTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betterment.app/betterment";
 			};
@@ -815,7 +813,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "bettermentTests/bettermentTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betterment.app/betterment";
 			};
 			name = Release;
