@@ -15,7 +15,7 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var tableView: UITableView!
 
     var locationManager = CLLocationManager()
-    let distanceSpan: Double = 50
+    let distanceSpan: Double = 500
     var currentLocation: CLLocation?
     
     var venuesList: [Venue]?
@@ -83,6 +83,10 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
         tableView.tableHeaderView = searchController?.searchBar
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     
@@ -206,9 +210,6 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
                         print ("Json dictionary is nil")
                     }
                 }
-                //filterContentForSearchText(searchText)
-                //dispatch_async(dispatch_get_main_queue()){
-                //self.tableView.reloadData()
             }
             
         }

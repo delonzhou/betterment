@@ -41,14 +41,21 @@ class DetailOutgoingViewController: UITableViewController {
     
     private func setUpView(){
         
-        if let rejectedState = detailRequest?.rejected{
-            print(rejectedState)
-            if rejectedState == 1 {
-                print("inside")
-                declineButton.setTitle("Rejected", forState: .Normal)
+        if let acceptedState = detailRequest?.accepted {
+            if acceptedState == 1 {
+                declineButton.setTitle("Accepted", forState: .Normal)
+                declineButton.backgroundColor = UIColor.greenColor()
                 declineButton.userInteractionEnabled = false
             }
+            else if let rejectedState = detailRequest?.rejected {
+                if rejectedState == 1 {
+                    print("inside")
+                    declineButton.setTitle("Rejected", forState: .Normal)
+                    declineButton.userInteractionEnabled = false
+                }
+            }
         }
+       
         
         if let rate = detailRequest?.proposedRate?.stringValue {
             proposedRateLabel.text = "$ " + rate

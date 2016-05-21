@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return true;
+        return true
     }
     
     @IBAction func anonymousMode(sender: UIButton) {
@@ -103,7 +103,7 @@ class LoginViewController: UIViewController {
                     self.navigateMain()
                 }
                 else{
-                   let alertController = self.prepareAlertController("Invalid", messageContent: "Email or password is wrong")
+                    let alertController = self.prepareAlertController("Invalid", messageContent: "Email or password is wrong")
                     
                     alertController.addAction(defaultAction)
                     self.presentViewController(alertController, animated: true, completion: nil)

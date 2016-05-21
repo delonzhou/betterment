@@ -62,6 +62,11 @@
 		DDC33A861CDB6F6400764FA1 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */; };
 		DDC33A881CDB6F7800764FA1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */; };
 		DDC33A8B1CDB703800764FA1 /* betterment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */; };
+		DDD393901CEFEE440010E3C4 /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */; };
+		DDD393911CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */; };
+		DDD393921CEFEE440010E3C4 /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */; };
+		DDD393931CEFEE440010E3C4 /* TestSearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */; };
+		DDD393961CEFF7C80010E3C4 /* DataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD393951CEFF7C80010E3C4 /* DataSeeder.swift */; };
 		DDF0763D1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0763C1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift */; };
 		DDF0763F1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0763E1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift */; };
 		DDF076411CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF076401CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift */; };
@@ -151,6 +156,11 @@
 		DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		DDC33A8A1CDB703800764FA1 /* betterment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = betterment.xcdatamodel; sourceTree = "<group>"; };
+		DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestAdditionOfUser.swift; path = ../../../../Downloads/bettermentTests/TestAdditionOfUser.swift; sourceTree = "<group>"; };
+		DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestCurrentWeatherIcon.swift; path = ../../../../Downloads/bettermentTests/TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
+		DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestNumberOfUsers.swift; path = ../../../../Downloads/bettermentTests/TestNumberOfUsers.swift; sourceTree = "<group>"; };
+		DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestSearchUser.swift; path = ../../../../Downloads/bettermentTests/TestSearchUser.swift; sourceTree = "<group>"; };
+		DDD393951CEFF7C80010E3C4 /* DataSeeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSeeder.swift; sourceTree = "<group>"; };
 		DDF0763C1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingRequestTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DDF0763E1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingRequestTableTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDF076401CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingRequestTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -286,6 +296,7 @@
 		DD90671B1C9C1EE60027A9EA /* betterment */ = {
 			isa = PBXGroup;
 			children = (
+				DDD393941CEFF79E0010E3C4 /* utility */,
 				DDC26C9E1CDB7AA5005FAB18 /* DataModel */,
 				DD29D7401CC54BEE00BD3274 /* misc */,
 				DD58D3C81CA00CBB00471714 /* service */,
@@ -301,6 +312,10 @@
 		DD9067321C9C1EE90027A9EA /* bettermentTests */ = {
 			isa = PBXGroup;
 			children = (
+				DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */,
+				DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */,
+				DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */,
+				DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */,
 				DD9067331C9C1EE90027A9EA /* bettermentTests.swift */,
 				DD9067351C9C1EE90027A9EA /* Info.plist */,
 			);
@@ -325,15 +340,10 @@
 			isa = PBXGroup;
 			children = (
 				DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */,
-				DDC147551CEF01C90014ECF3 /* VenueMaker.swift */,
 				DDC147531CEF01A40014ECF3 /* Venue.swift */,
-				DD90674F1C9C202C0027A9EA /* User.swift */,
-				DD9067511C9C21300027A9EA /* Talent.swift */,
-				DD9067531C9C22340027A9EA /* WorkItem.swift */,
 				DDC33A831CDB6F5400764FA1 /* IconFactory.swift */,
 				DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */,
 				DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */,
-				DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -351,6 +361,19 @@
 				DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */,
 			);
 			name = DataModel;
+			sourceTree = "<group>";
+		};
+		DDD393941CEFF79E0010E3C4 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				DDC147551CEF01C90014ECF3 /* VenueMaker.swift */,
+				DD90674F1C9C202C0027A9EA /* User.swift */,
+				DD9067531C9C22340027A9EA /* WorkItem.swift */,
+				DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */,
+				DD9067511C9C21300027A9EA /* Talent.swift */,
+				DDD393951CEFF7C80010E3C4 /* DataSeeder.swift */,
+			);
+			name = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +611,7 @@
 				DDC26C9C1CDB7A6E005FAB18 /* Skill+CoreDataProperties.swift in Sources */,
 				DD4579CB1CD34B1200D28A7B /* CurrentWeatherViewController.swift in Sources */,
 				DDA7D3991CCCADBF0022DEBA /* MasterDetailTableViewCell.swift in Sources */,
+				DDD393961CEFF7C80010E3C4 /* DataSeeder.swift in Sources */,
 				DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */,
 				DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */,
 			);
@@ -598,6 +622,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9067341C9C1EE90027A9EA /* bettermentTests.swift in Sources */,
+				DDD393911CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift in Sources */,
+				DDD393921CEFEE440010E3C4 /* TestNumberOfUsers.swift in Sources */,
+				DDD393901CEFEE440010E3C4 /* TestAdditionOfUser.swift in Sources */,
+				DDD393931CEFEE440010E3C4 /* TestSearchUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

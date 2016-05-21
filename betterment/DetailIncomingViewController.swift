@@ -41,13 +41,21 @@ class DetailIncomingViewController: UITableViewController {
     
     private func setUpView(){
         
-        if let acceptedState = detailRequest?.accepted {
-            print(acceptedState)
-            if acceptedState == 1 {
-                print("inside")
-                approveButton.setTitle("Approved", forState: .Normal)
-                approveButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+        if let cancelledState = detailRequest?.rejected {
+            if cancelledState == 1 {
+                approveButton.setTitle("Cancelled", forState: .Normal)
+                approveButton.backgroundColor = UIColor.redColor()
                 approveButton.userInteractionEnabled = false
+            }
+            else if let acceptedState = detailRequest?.accepted {
+                print(acceptedState)
+                if acceptedState == 1 {
+                    print("inside")
+                    approveButton.setTitle("Accepted", forState: .Normal)
+                    approveButton.backgroundColor = UIColor.greenColor()
+                    approveButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+                    approveButton.userInteractionEnabled = false
+                }
             }
         }
         
@@ -98,6 +106,8 @@ class DetailIncomingViewController: UITableViewController {
             fatalError("Unable to save object")
         }
         
+        approveButton.setTitle("Accepted", forState: .Normal)
+        approveButton.backgroundColor = UIColor.greenColor()
         approveButton.userInteractionEnabled = false
         
         print("updating complete ....")

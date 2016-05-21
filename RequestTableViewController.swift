@@ -66,6 +66,18 @@ class RequestTableViewController: UITableViewController {
         print("Saving Request")
         do{
             try managedObjectContext!.save()
+            
+            let confirmationAction = UIAlertAction(title: "OK", style: .Default, handler: {
+                (_)in
+                self.performSegueWithIdentifier("unwindToMenu", sender: self)
+            })
+            
+            let alertController = UIAlertController(title: "Message Sent", message: "You offered $ \(prepareDataForAlertController().0) to \(prepareDataForAlertController().2) for \(prepareDataForAlertController().1)", preferredStyle: .Alert)
+            
+            
+            alertController.addAction(confirmationAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
         catch{
             fatalError("Unable to save object")
@@ -74,6 +86,26 @@ class RequestTableViewController: UITableViewController {
         
         sendRequestButton.setTitle("Request Sent", forState: .Normal)
         sendRequestButton.userInteractionEnabled = false
+    }
+    
+    func prepareDataForAlertController () -> (Int, String, String) {
+        
+        var result: (offeredRate: Int, skillName: String, personName: String) = (0, "", "")
+        
+        let hourlyRateInput = hourlyRate.text
+        if let formattedRate = Int(hourlyRateInput!) {
+            result.offeredRate = formattedRate
+        }
+        
+        if let skillName = skill?.skillName {
+            result.skillName = skillName
+        }
+        
+        if let requesteeName = person?.getfullName() {
+            result.personName = requesteeName
+        }
+        
+    return result
     }
 
 }

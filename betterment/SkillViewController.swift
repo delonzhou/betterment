@@ -41,9 +41,9 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Configure the cell...
         let rate = user!.getSkillsAsArray()[indexPath.row].hourlyRate!
         print(rate)
-        cell?.skillImage.image = UIImage(named: (user?.getSkillsAsArray()[indexPath.row].getSkillImageString())!)
+        cell?.skillImage.image = UIImage(named: (user?.getSkillsAsArray()[indexPath.row].getSkillImageString())!) ?? UIImage(named: "default-skill.png")
         cell?.skillNameLabel.text = user!.getSkillsAsArray()[indexPath.row].skillName
-        print(user!.getSkillsAsArray()[indexPath.row].skillName)
+      
         cell?.experienceLabel.text = String(user!.getSkillsAsArray()[indexPath.row].experience!) + " Years"
         cell?.hourlyRateLabel.text = "$  \(user!.getSkillsAsArray()[indexPath.row].hourlyRate!) Per Hour"
         return cell!
@@ -58,6 +58,10 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
                 destinationController.skill = self.skills![indexPath.row]
             }
         }
+    }
+    
+    @IBAction func backToSkillView(segue: UIStoryboardSegue) {
+        
     }
     
 }
