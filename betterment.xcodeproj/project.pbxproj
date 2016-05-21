@@ -16,6 +16,11 @@
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
 		DD6F36B01CE5BB4E00ACBD5F /* DetailIncomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */; };
 		DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */; };
+		DD77745D1CF099DF0032A353 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774581CF099DF0032A353 /* CoreDataHelper.swift */; };
+		DD77745E1CF099DF0032A353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7774591CF099DF0032A353 /* Info.plist */; };
+		DD77745F1CF099DF0032A353 /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */; };
+		DD7774601CF099DF0032A353 /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */; };
+		DD7774611CF099DF0032A353 /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */; };
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
 		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
@@ -23,7 +28,6 @@
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
 		DD9067261C9C1EE70027A9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9067251C9C1EE70027A9EA /* Assets.xcassets */; };
-		DD9067341C9C1EE90027A9EA /* bettermentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067331C9C1EE90027A9EA /* bettermentTests.swift */; };
 		DD9067501C9C202C0027A9EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* User.swift */; };
 		DD9067521C9C21300027A9EA /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Talent.swift */; };
 		DD9067541C9C22340027A9EA /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* WorkItem.swift */; };
@@ -62,10 +66,6 @@
 		DDC33A861CDB6F6400764FA1 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */; };
 		DDC33A881CDB6F7800764FA1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */; };
 		DDC33A8B1CDB703800764FA1 /* betterment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */; };
-		DDD393901CEFEE440010E3C4 /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */; };
-		DDD393911CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */; };
-		DDD393921CEFEE440010E3C4 /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */; };
-		DDD393931CEFEE440010E3C4 /* TestSearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */; };
 		DDD393961CEFF7C80010E3C4 /* DataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD393951CEFF7C80010E3C4 /* DataSeeder.swift */; };
 		DDF0763D1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0763C1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift */; };
 		DDF0763F1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0763E1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift */; };
@@ -104,6 +104,11 @@
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailIncomingViewController.swift; path = betterment/DetailIncomingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailOutgoingViewController.swift; path = betterment/DetailOutgoingViewController.swift; sourceTree = SOURCE_ROOT; };
+		DD7774581CF099DF0032A353 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DD7774591CF099DF0032A353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
+		DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
+		DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -114,8 +119,6 @@
 		DD9067251C9C1EE70027A9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD90672A1C9C1EE80027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90672F1C9C1EE90027A9EA /* bettermentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bettermentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD9067331C9C1EE90027A9EA /* bettermentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bettermentTests.swift; sourceTree = "<group>"; };
-		DD9067351C9C1EE90027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90673A1C9C1EE90027A9EA /* bettermentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bettermentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9067401C9C1EE90027A9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90674F1C9C202C0027A9EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -156,10 +159,6 @@
 		DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		DDC33A8A1CDB703800764FA1 /* betterment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = betterment.xcdatamodel; sourceTree = "<group>"; };
-		DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestAdditionOfUser.swift; path = ../../../../Downloads/bettermentTests/TestAdditionOfUser.swift; sourceTree = "<group>"; };
-		DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestCurrentWeatherIcon.swift; path = ../../../../Downloads/bettermentTests/TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
-		DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestNumberOfUsers.swift; path = ../../../../Downloads/bettermentTests/TestNumberOfUsers.swift; sourceTree = "<group>"; };
-		DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestSearchUser.swift; path = ../../../../Downloads/bettermentTests/TestSearchUser.swift; sourceTree = "<group>"; };
 		DDD393951CEFF7C80010E3C4 /* DataSeeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSeeder.swift; sourceTree = "<group>"; };
 		DDF0763C1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingRequestTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DDF0763E1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingRequestTableTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -312,12 +311,11 @@
 		DD9067321C9C1EE90027A9EA /* bettermentTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDD3938C1CEFEE440010E3C4 /* TestAdditionOfUser.swift */,
-				DDD3938D1CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift */,
-				DDD3938E1CEFEE440010E3C4 /* TestNumberOfUsers.swift */,
-				DDD3938F1CEFEE440010E3C4 /* TestSearchUser.swift */,
-				DD9067331C9C1EE90027A9EA /* bettermentTests.swift */,
-				DD9067351C9C1EE90027A9EA /* Info.plist */,
+				DD7774581CF099DF0032A353 /* CoreDataHelper.swift */,
+				DD7774591CF099DF0032A353 /* Info.plist */,
+				DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */,
+				DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */,
+				DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */,
 			);
 			path = bettermentTests;
 			sourceTree = "<group>";
@@ -441,7 +439,7 @@
 		DD9067111C9C1EE60027A9EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Mitul Manish";
 				TargetAttributes = {
@@ -501,6 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD77745E1CF099DF0032A353 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,11 +620,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9067341C9C1EE90027A9EA /* bettermentTests.swift in Sources */,
-				DDD393911CEFEE440010E3C4 /* TestCurrentWeatherIcon.swift in Sources */,
-				DDD393921CEFEE440010E3C4 /* TestNumberOfUsers.swift in Sources */,
-				DDD393901CEFEE440010E3C4 /* TestAdditionOfUser.swift in Sources */,
-				DDD393931CEFEE440010E3C4 /* TestSearchUser.swift in Sources */,
+				DD77745D1CF099DF0032A353 /* CoreDataHelper.swift in Sources */,
+				DD7774601CF099DF0032A353 /* TestCurrentWeatherIcon.swift in Sources */,
+				DD7774611CF099DF0032A353 /* TestNumberOfUsers.swift in Sources */,
+				DD77745F1CF099DF0032A353 /* TestAdditionOfUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,10 +793,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = bettermentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betterment.app/betterment";
 			};
 			name = Debug;
@@ -807,6 +807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = bettermentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests;

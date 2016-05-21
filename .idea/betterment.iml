@@ -1,63 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/Venue.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/Venue.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueAPI.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueAPI.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueAnnotation.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueAnnotation.swift" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueMaker.swift">
+      <sourceFolder url="file://$MODULE_DIR$/../../iOS/foursquareAPI/foursquareAPI/VenueMaker.swift" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/OutgoingRequestTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OutgoingRequestTableTableViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailMapUITest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailRatingUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/masterDetailUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/ratingUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/cellCountUITest.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailRatingUITest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/detailMapUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUITests/alertControllerUITest.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IncomingRequestTableViewCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/OutgoingRequestTableViewCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RequestTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentTests/bettermentTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/MasterTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SaveNewSkillTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/RatingViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/DataSeeder.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Talent.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SkillTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/MasterDetailTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkRequest.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/BaseService.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/DetailTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/CurrentWeatherViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/FourSquareTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/FirstViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Work+CoreDataProperties.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/NetworkOperation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/DetailIncomingViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/NewWorkTableViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Request.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/IncomingRequestTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkItem.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Person+CoreDataProperties.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/mapViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/FourSquareVenueViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/MapViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Work.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/betterment-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/IconFactory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/ChatViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/AppDelegate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/BaseService.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SkillViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/User.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Request+CoreDataProperties.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Person.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Skill+CoreDataProperties.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Skill.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/DetailOutgoingViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/Person.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/DetailTableViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Request+CoreDataProperties.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/CurrentWeather.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/ForecastService.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/betterment/IncomingRequestTableViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/Person+CoreDataProperties.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/betterment.xcdatamodeld/betterment.xcdatamodel" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Downloads/bettermentTests/TestAdditionOfUser.swift">
+      <sourceFolder url="file://$USER_HOME$/Downloads/bettermentTests/TestAdditionOfUser.swift" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Downloads/bettermentTests/TestCurrentWeatherIcon.swift">
+      <sourceFolder url="file://$USER_HOME$/Downloads/bettermentTests/TestCurrentWeatherIcon.swift" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Downloads/bettermentTests/TestNumberOfUsers.swift">
+      <sourceFolder url="file://$USER_HOME$/Downloads/bettermentTests/TestNumberOfUsers.swift" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Downloads/bettermentTests/TestSearchUser.swift">
+      <sourceFolder url="file://$USER_HOME$/Downloads/bettermentTests/TestSearchUser.swift" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

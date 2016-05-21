@@ -9,7 +9,7 @@
 import XCTest
 @testable import betterment
 
-class bettermentTests: XCTestCase {
+class TestCurrentWeatherIcon: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,10 +21,13 @@ class bettermentTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCurrentWeatherStatusIcon() {
+        let imageIcon = IconFactory(iconName: "clear-day").toImage()
+        XCTAssertEqual(UIImage(named: "clear-day.png"), imageIcon, "images are equal")
     }
+    
+
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

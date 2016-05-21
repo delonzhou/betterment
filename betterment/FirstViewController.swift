@@ -140,6 +140,36 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
             return nameMatch != nil
         })
     }
+
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath
+
+    indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+
+        // Social Sharing Button
+
+        let shareAction = UITableViewRowAction(style:
+
+        UITableViewRowActionStyle.Default, title: "Thank", handler: { (action,
+
+                                                                       indexPath) -> Void in
+            let shareActionText = "Thanks for your help \(self.users![indexPath.row].getfullName())"
+
+            if let imageToShare = UIImage(named: self.users![indexPath.row].profileImage!) {
+
+                let activityController = UIActivityViewController(activityItems:
+
+                [shareActionText, imageToShare], applicationActivities: nil)
+
+                self.presentViewController(activityController, animated: true,
+
+                        completion: nil)
+
+            }
+
+        })
+
+        return [shareAction]
+    }
     
 }
 

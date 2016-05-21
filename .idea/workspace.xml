@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f6d10ba-b06b-402a-938c-d7964d5f0805" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Cancel-50.imageset/Cancel-50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Checked-48.imageset/Checked-48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Checkmark Filled-100.imageset/Checkmark Filled-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Down Filled-24.imageset/Down Filled-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Flash Light-24.imageset/Flash Light-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Idea-24.imageset/Idea-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Up Filled-24.imageset/Up Filled-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutgoingRequestTableViewCell.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Cancel-50.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Checked-48.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Checkmark Filled-100.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Down Filled-24.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Flash Light-24.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Idea-24.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/Assets.xcassets/Up Filled-24.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/DetailIncomingViewController.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/DetailOutgoingViewController.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/IncomingRequestTableViewController.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterment/WorkRequest.swift" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/betterment/NewSkillViewController.swift" afterPath="$PROJECT_DIR$/IncomingRequestTableViewCell.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcworkspace/xcuserdata/mitulmanish.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/betterment.xcworkspace/xcuserdata/mitulmanish.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/betterment.iml" afterPath="$PROJECT_DIR$/.idea/betterment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/betterment.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/AppDelegate.swift" afterPath="$PROJECT_DIR$/betterment/AppDelegate.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/betterment/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/BaseService.swift" afterPath="$PROJECT_DIR$/betterment/BaseService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/CurrentWeather.swift" afterPath="$PROJECT_DIR$/betterment/CurrentWeather.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/DetailTableViewController.swift" afterPath="$PROJECT_DIR$/betterment/DetailTableViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/FirstViewController.swift" afterPath="$PROJECT_DIR$/betterment/FirstViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/LoginViewController.swift" afterPath="$PROJECT_DIR$/betterment/LoginViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/Person+CoreDataProperties.swift" afterPath="$PROJECT_DIR$/betterment/Person+CoreDataProperties.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/Request+CoreDataProperties.swift" afterPath="$PROJECT_DIR$/betterment/Request+CoreDataProperties.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/Request.swift" afterPath="$PROJECT_DIR$/betterment/Request.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/Skill+CoreDataProperties.swift" afterPath="$PROJECT_DIR$/betterment/Skill+CoreDataProperties.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/betterment.xcdatamodeld/betterment.xcdatamodel/contents" afterPath="$PROJECT_DIR$/betterment/betterment.xcdatamodeld/betterment.xcdatamodel/contents" />
     </list>
     <ignored path="betterment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +19,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_9c208ebc6672065514594266ed1ba5737f6496b9" />
   <component name="FavoritesManager">
     <favorites_list name="betterment" />
   </component>
@@ -61,8 +28,8 @@
       <file leaf-file-name="FirstViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/betterment/FirstViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3085443">
-              <caret line="94" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+            <state vertical-scroll-proportion="-2.7317073">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -167,7 +134,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -323,7 +290,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="712" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -728,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/betterment/FirstViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3085443">
-          <caret line="94" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+        <state vertical-scroll-proportion="-2.7317073">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>
