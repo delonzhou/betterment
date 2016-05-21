@@ -75,18 +75,22 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
             UITableViewRowActionStyle.Default, title: "Thank", handler: { (action,
                 
                 indexPath) -> Void in
-                let shareActionText = "\(self.user?.getfullName()) Thanks for your help with \(self.skills![indexPath.row].skillName)"
                 
-                if let imageToShare = UIImage(named: self.skills![indexPath.row].getSkillImageString()) {
+                if let userName = self.user?.getfullName(), skillName = self.skills![indexPath.row].skillName {
+                   let shareActionText = "\(userName) Thanks for your help with \(skillName)"
                     
-                    let activityController = UIActivityViewController(activityItems:
+                    let skillImageString = self.skills![indexPath.row].getSkillImageString()
+                    
+                    if let imageToShare = UIImage(named: skillImageString) {
                         
-                        [shareActionText, imageToShare], applicationActivities: nil)
-                    
-                    self.presentViewController(activityController, animated: true,
+                        let activityController = UIActivityViewController(activityItems:
+                            
+                            [shareActionText, imageToShare], applicationActivities: nil)
                         
-                        completion: nil)
-                    
+                        self.presentViewController(activityController, animated: true,
+                            
+                            completion: nil)
+                    }
                 }
                 
         })

@@ -16,11 +16,11 @@
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
 		DD6F36B01CE5BB4E00ACBD5F /* DetailIncomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */; };
 		DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */; };
-		DD77745D1CF099DF0032A353 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774581CF099DF0032A353 /* CoreDataHelper.swift */; };
 		DD77745E1CF099DF0032A353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7774591CF099DF0032A353 /* Info.plist */; };
-		DD77745F1CF099DF0032A353 /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */; };
-		DD7774601CF099DF0032A353 /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */; };
-		DD7774611CF099DF0032A353 /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */; };
+		DD7774631CF0A7130032A353 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774621CF0A7130032A353 /* VenueAPI.swift */; };
+		DD7774651CF0A7230032A353 /* VenueMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774641CF0A7230032A353 /* VenueMaker.swift */; };
+		DD7774681CF0A7370032A353 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774661CF0A7370032A353 /* Venue.swift */; };
+		DD7774691CF0A7370032A353 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774671CF0A7370032A353 /* VenueAnnotation.swift */; };
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
 		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
@@ -50,10 +50,6 @@
 		DDB079A51CB962CE00DBABEC /* ratingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A41CB962CE00DBABEC /* ratingUITest.swift */; };
 		DDB079A71CB9638500DBABEC /* alertControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */; };
 		DDC147521CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */; };
-		DDC147541CEF01A40014ECF3 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147531CEF01A40014ECF3 /* Venue.swift */; };
-		DDC147561CEF01C90014ECF3 /* VenueMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147551CEF01C90014ECF3 /* VenueMaker.swift */; };
-		DDC147581CEF01E30014ECF3 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147571CEF01E30014ECF3 /* VenueAPI.swift */; };
-		DDC1475A1CEF01FD0014ECF3 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */; };
 		DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */; };
 		DDC26C961CDB7A6E005FAB18 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */; };
 		DDC26C971CDB7A6E005FAB18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC26C8F1CDB7A6E005FAB18 /* Person.swift */; };
@@ -104,11 +100,11 @@
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailIncomingViewController.swift; path = betterment/DetailIncomingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailOutgoingViewController.swift; path = betterment/DetailOutgoingViewController.swift; sourceTree = SOURCE_ROOT; };
-		DD7774581CF099DF0032A353 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		DD7774591CF099DF0032A353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
-		DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
-		DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
+		DD7774621CF0A7130032A353 /* VenueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
+		DD7774641CF0A7230032A353 /* VenueMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueMaker.swift; sourceTree = "<group>"; };
+		DD7774661CF0A7370032A353 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		DD7774671CF0A7370032A353 /* VenueAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueAnnotation.swift; sourceTree = "<group>"; };
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -143,10 +139,6 @@
 		DDB079A41CB962CE00DBABEC /* ratingUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingUITest.swift; sourceTree = "<group>"; };
 		DDB079A61CB9638500DBABEC /* alertControllerUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertControllerUITest.swift; sourceTree = "<group>"; };
 		DDC147511CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareVenueViewController.swift; path = betterment/FourSquareVenueViewController.swift; sourceTree = SOURCE_ROOT; };
-		DDC147531CEF01A40014ECF3 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/Venue.swift; sourceTree = "<group>"; };
-		DDC147551CEF01C90014ECF3 /* VenueMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueMaker.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueMaker.swift; sourceTree = "<group>"; };
-		DDC147571CEF01E30014ECF3 /* VenueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueAPI.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueAPI.swift; sourceTree = "<group>"; };
-		DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueAnnotation.swift; path = ../../../iOS/foursquareAPI/foursquareAPI/VenueAnnotation.swift; sourceTree = "<group>"; };
 		DDC1FCA01CE9D3ED00ACCD6E /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DDC26C8E1CDB7A6E005FAB18 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DDC26C8F1CDB7A6E005FAB18 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -263,7 +255,7 @@
 		DD58D3C81CA00CBB00471714 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				DDC147571CEF01E30014ECF3 /* VenueAPI.swift */,
+				DD7774621CF0A7130032A353 /* VenueAPI.swift */,
 				DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */,
 				DDC33A811CDB6EE500764FA1 /* ForecastService.swift */,
 			);
@@ -311,11 +303,7 @@
 		DD9067321C9C1EE90027A9EA /* bettermentTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD7774581CF099DF0032A353 /* CoreDataHelper.swift */,
 				DD7774591CF099DF0032A353 /* Info.plist */,
-				DD77745A1CF099DF0032A353 /* TestAdditionOfUser.swift */,
-				DD77745B1CF099DF0032A353 /* TestCurrentWeatherIcon.swift */,
-				DD77745C1CF099DF0032A353 /* TestNumberOfUsers.swift */,
 			);
 			path = bettermentTests;
 			sourceTree = "<group>";
@@ -337,8 +325,8 @@
 		DD90674C1C9C1FB20027A9EA /* model */ = {
 			isa = PBXGroup;
 			children = (
-				DDC147591CEF01FD0014ECF3 /* VenueAnnotation.swift */,
-				DDC147531CEF01A40014ECF3 /* Venue.swift */,
+				DD7774661CF0A7370032A353 /* Venue.swift */,
+				DD7774671CF0A7370032A353 /* VenueAnnotation.swift */,
 				DDC33A831CDB6F5400764FA1 /* IconFactory.swift */,
 				DDC33A851CDB6F6400764FA1 /* CurrentWeather.swift */,
 				DDC33A871CDB6F7800764FA1 /* NetworkOperation.swift */,
@@ -364,7 +352,7 @@
 		DDD393941CEFF79E0010E3C4 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				DDC147551CEF01C90014ECF3 /* VenueMaker.swift */,
+				DD7774641CF0A7230032A353 /* VenueMaker.swift */,
 				DD90674F1C9C202C0027A9EA /* User.swift */,
 				DD9067531C9C22340027A9EA /* WorkItem.swift */,
 				DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */,
@@ -571,15 +559,13 @@
 				DDC33A841CDB6F5400764FA1 /* IconFactory.swift in Sources */,
 				DDA7D3A21CCCADBF0022DEBA /* WorkViewController.swift in Sources */,
 				DDF0763F1CE0D8A000080BA1 /* OutgoingRequestTableTableViewController.swift in Sources */,
-				DDC147561CEF01C90014ECF3 /* VenueMaker.swift in Sources */,
 				DDA7D3961CCCADBF0022DEBA /* FirstViewController.swift in Sources */,
-				DDC147541CEF01A40014ECF3 /* Venue.swift in Sources */,
 				DDA7D3981CCCADBF0022DEBA /* MapViewController.swift in Sources */,
 				DD4864A71CDE522F006AC296 /* Request.swift in Sources */,
 				DDC26C9A1CDB7A6E005FAB18 /* Work+CoreDataProperties.swift in Sources */,
+				DD7774651CF0A7230032A353 /* VenueMaker.swift in Sources */,
 				DDC1FCA11CE9D3ED00ACCD6E /* RequestTableViewController.swift in Sources */,
 				DDC26C9B1CDB7A6E005FAB18 /* Work.swift in Sources */,
-				DDC1475A1CEF01FD0014ECF3 /* VenueAnnotation.swift in Sources */,
 				DDA7D3A01CCCADBF0022DEBA /* SkillViewController.swift in Sources */,
 				DDA7D3971CCCADBF0022DEBA /* LoginViewController.swift in Sources */,
 				DDA7D39D1CCCADBF0022DEBA /* RatingViewController.swift in Sources */,
@@ -593,16 +579,18 @@
 				DDA7D39C1CCCADBF0022DEBA /* NewWorkTableViewController.swift in Sources */,
 				DDF0763D1CE0C15700080BA1 /* IncomingRequestTableViewCell.swift in Sources */,
 				DD9067521C9C21300027A9EA /* Talent.swift in Sources */,
-				DDC147581CEF01E30014ECF3 /* VenueAPI.swift in Sources */,
 				DDC26C9D1CDB7A6E005FAB18 /* Skill.swift in Sources */,
+				DD7774631CF0A7130032A353 /* VenueAPI.swift in Sources */,
 				DDF076411CE0DE8600080BA1 /* OutgoingRequestTableViewCell.swift in Sources */,
 				DD4864A61CDE522F006AC296 /* Request+CoreDataProperties.swift in Sources */,
+				DD7774691CF0A7370032A353 /* VenueAnnotation.swift in Sources */,
 				DDC147521CEEFEBF0014ECF3 /* FourSquareVenueViewController.swift in Sources */,
 				DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */,
 				DDA7D39F1CCCADBF0022DEBA /* SkillTableViewCell.swift in Sources */,
 				DDC26C971CDB7A6E005FAB18 /* Person.swift in Sources */,
 				DD9067501C9C202C0027A9EA /* User.swift in Sources */,
 				DDA7D3A11CCCADBF0022DEBA /* WorkTableViewCell.swift in Sources */,
+				DD7774681CF0A7370032A353 /* Venue.swift in Sources */,
 				DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */,
 				DDC33A8B1CDB703800764FA1 /* betterment.xcdatamodeld in Sources */,
 				DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */,
@@ -620,10 +608,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD77745D1CF099DF0032A353 /* CoreDataHelper.swift in Sources */,
-				DD7774601CF099DF0032A353 /* TestCurrentWeatherIcon.swift in Sources */,
-				DD7774611CF099DF0032A353 /* TestNumberOfUsers.swift in Sources */,
-				DD77745F1CF099DF0032A353 /* TestAdditionOfUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
