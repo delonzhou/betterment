@@ -64,4 +64,34 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath
+        
+        indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        // Social Sharing Button
+        
+        let shareAction = UITableViewRowAction(style:
+            
+            UITableViewRowActionStyle.Default, title: "Thank", handler: { (action,
+                
+                indexPath) -> Void in
+                let shareActionText = "\(self.user?.getfullName()) Thanks for your help with \(self.skills![indexPath.row].skillName)"
+                
+                if let imageToShare = UIImage(named: self.skills![indexPath.row].getSkillImageString()) {
+                    
+                    let activityController = UIActivityViewController(activityItems:
+                        
+                        [shareActionText, imageToShare], applicationActivities: nil)
+                    
+                    self.presentViewController(activityController, animated: true,
+                        
+                        completion: nil)
+                    
+                }
+                
+        })
+        
+        return [shareAction]
+    }
+    
 }
