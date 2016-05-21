@@ -1774,7 +1774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTG-vg-FF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828" y="260"/>
+            <point key="canvasLocation" x="1829" y="224"/>
         </scene>
         <!--Weather-->
         <scene sceneID="1bL-QW-FdH">
@@ -1908,7 +1908,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xaf-36-QrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="265"/>
+            <point key="canvasLocation" x="1184" y="224"/>
         </scene>
     </scenes>
     <resources>
