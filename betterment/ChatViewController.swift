@@ -103,19 +103,17 @@ class ChatViewController: JSQMessagesViewController {
     private func observeMessages() {
         
         if let messagesQuery = messageRef?.queryLimitedToLast(25){
-        // 2
             messagesQuery.observeEventType(.ChildAdded) { (snapshot: FDataSnapshot!) in
-            // 3
-            let id = snapshot.value["senderId"] as! String
-            let text = snapshot.value["text"] as! String
-            
-            // 4
-            self.addMessage(id, text: text)
-            
-            // 5
-            self.finishReceivingMessage()
+                
+                let id = snapshot.value.objectForKey("senderId") as! String
+                let text = snapshot.value.objectForKey("text") as! String
+                
+                self.addMessage(id, text: text)
+                self.finishReceivingMessage()
             }
+            
         }
+        
     }
     
     private func observeTyping() {
