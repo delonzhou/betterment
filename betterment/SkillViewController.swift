@@ -72,7 +72,7 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let shareAction = UITableViewRowAction(style:
             
-            UITableViewRowActionStyle.Default, title: "Thank", handler: { (action,
+            UITableViewRowActionStyle.Default, title: "Share", handler: { (action,
                 
                 indexPath) -> Void in
                 
