@@ -1,5 +1,5 @@
 //
-//  TestSearchUser.swift
+//  TestNumberOfUsers.swift
 //  betterment
 //
 //  Created by Mitul Manish on 22/05/2016.
@@ -10,7 +10,7 @@ import XCTest
 import CoreData
 @testable import betterment
 
-class TestSearchUser: XCTestCase {
+class TestNumberOfUsers: XCTestCase {
     
     var managedObjectContext: NSManagedObjectContext!
     
@@ -37,21 +37,16 @@ class TestSearchUser: XCTestCase {
     }
     
     func testCountOfUser() {
-        var pass = false
         // Check the number of rows in core data
+        
+        DataSeeder.seedData()
+        
         do {
             //fetch person entity
             let fetchRequest = NSFetchRequest(entityName:"Person")
             let fetchedResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Person]
-            //check for user in fetched results
-            for Person in fetchedResults! {
-                if (Person.getfullName() == "Mitul Manish") {
-                    pass = true
-                }
-            }
-            //check if count if equal to desired output
-            //XCTAssert(pass, "User is in the list")
-            XCTAssertFalse(pass, "User is not in the list")
+            //check if list of the user id not empty
+            XCTAssert(0 != fetchedResults!.count, "list id not empty")
         }  catch let error as NSError
         {
             print("Could not fetch \(error), \(error.userInfo)")

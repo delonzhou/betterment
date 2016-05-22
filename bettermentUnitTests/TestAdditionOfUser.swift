@@ -2,7 +2,7 @@
 //  TestAdditionOfUser.swift
 //  betterment
 //
-//  Created by Ankur Dabral on 20/05/2016.
+//  Created by Mitul Manish on 22/05/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ class TestAdditionOfUser: XCTestCase {
     
     func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
         let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+            UIApplication.sharedApplication().delegate as! AppDelegate
         var managedContext: NSManagedObjectContext
             {
             get{
@@ -36,7 +36,7 @@ class TestAdditionOfUser: XCTestCase {
         super.tearDown()
     }
     
-
+    
     func testIncrementInUser() {
         //check if a number of rows are incremented when user is added
         do {
@@ -78,4 +78,5 @@ class TestAdditionOfUser: XCTestCase {
         }
         
     }
+    
 }

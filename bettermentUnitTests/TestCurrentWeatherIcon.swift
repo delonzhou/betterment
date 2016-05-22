@@ -1,10 +1,11 @@
 //
-//  bettermentTests.swift
-//  bettermentTests
+//  TestCurrentWeatherIcon.swift
+//  betterment
 //
-//  Created by Mitul Manish on 18/03/2016.
+//  Created by Mitul Manish on 22/05/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
+
 
 import XCTest
 @testable import betterment
@@ -26,7 +27,7 @@ class TestCurrentWeatherIcon: XCTestCase {
         XCTAssertEqual(UIImage(named: "clear-day.png"), imageIcon, "images are equal")
     }
     
-
+    
     
     
     func testPerformanceExample() {

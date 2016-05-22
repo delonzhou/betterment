@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f6d10ba-b06b-402a-938c-d7964d5f0805" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/CoreDataHelper.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/TestAdditionOfUser.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/TestCurrentWeatherIcon.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/TestNumberOfUsers.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bettermentUnitTests/TestSearchUse.swift" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/CoreDataHelper.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/TestAdditionOfUser.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/TestCurrentWeatherIcon.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/TestNumberOfUsers.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bettermentTests/TestSearchUser.swift" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcworkspace/xcuserdata/mitulmanish.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/betterment.xcworkspace/xcuserdata/mitulmanish.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/betterment.iml" afterPath="$PROJECT_DIR$/.idea/betterment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/FirstViewController.swift" afterPath="$PROJECT_DIR$/betterment/FirstViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/betterment.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcodeproj/xcuserdata/mitulmanish.xcuserdatad/xcschemes/betterment.xcscheme" afterPath="$PROJECT_DIR$/betterment.xcodeproj/xcuserdata/mitulmanish.xcuserdatad/xcschemes/betterment.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment.xcodeproj/xcuserdata/mitulmanish.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/betterment.xcodeproj/xcuserdata/mitulmanish.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betterment/AppDelegate.swift" afterPath="$PROJECT_DIR$/betterment/AppDelegate.swift" />
     </list>
     <ignored path="betterment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +44,8 @@
       <file leaf-file-name="FirstViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/betterment/FirstViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7317073">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.023847377">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -134,7 +150,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,7 +242,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,8 +306,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="712" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -695,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/betterment/FirstViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7317073">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.023847377">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -1,8 +1,8 @@
 //
-//  TestPerson.swift
+//  TestSearchUse.swift
 //  betterment
 //
-//  Created by Ankur Dabral on 20/05/2016.
+//  Created by Mitul Manish on 22/05/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
@@ -10,13 +10,13 @@ import XCTest
 import CoreData
 @testable import betterment
 
-class TestNumberOfUsers: XCTestCase {
+class TestSearchUse: XCTestCase {
     
     var managedObjectContext: NSManagedObjectContext!
     
     func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
         let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+            UIApplication.sharedApplication().delegate as! AppDelegate
         var managedContext: NSManagedObjectContext
             {
             get{
@@ -36,17 +36,49 @@ class TestNumberOfUsers: XCTestCase {
         super.tearDown()
     }
     
-    func testCountOfUser() {
+    func testSearchUser() {
+        
+        var pass = false
+        
         // Check the number of rows in core data
+        
         do {
+            
             //fetch person entity
+            
             let fetchRequest = NSFetchRequest(entityName:"Person")
+            
             let fetchedResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Person]
+            
+            //check for user in fetched results
+            
+            for Person in fetchedResults! {
+                
+                if (Person.getfullName() == "Mitul Manish") {
+                    
+                    pass = true
+                    
+                }
+                
+            }
+            
             //check if count if equal to desired output
-            XCTAssert(0 != fetchedResults!.count, "Incorrect number of rows in `Person` entity.")
+            
+            //XCTAssert(pass, "User is in the list")
+            
+            XCTAssertFalse(pass, "User is not in the list")
+            
         }  catch let error as NSError
+            
+            
         {
+            
             print("Could not fetch \(error), \(error.userInfo)")
+            
         }
+        
     }
+    
+    
+    
 }

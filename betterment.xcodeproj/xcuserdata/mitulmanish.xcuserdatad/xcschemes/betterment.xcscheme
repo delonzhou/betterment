@@ -48,6 +48,16 @@
                ReferencedContainer = "container:betterment.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DD8C35651CF189820085D7CA"
+               BuildableName = "bettermentUnitTests.xctest"
+               BlueprintName = "bettermentUnitTests"
+               ReferencedContainer = "container:betterment.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

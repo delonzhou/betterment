@@ -23,7 +23,12 @@
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
 		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
-		DD8C35611CF187030085D7CA /* TestSearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35601CF187030085D7CA /* TestSearchUser.swift */; };
+		DD8C35711CF18AAC0085D7CA /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35701CF18AAC0085D7CA /* TestAdditionOfUser.swift */; };
+		DD8C35731CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */; };
+		DD8C35751CF18AF80085D7CA /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */; };
+		DD8C35771CF18B190085D7CA /* TestSearchUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35761CF18B190085D7CA /* TestSearchUse.swift */; };
+		DD8C35791CF18BCF0085D7CA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */; };
+		DD8C357B1CF194DB0085D7CA /* TestUserSkillsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */; };
 		DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
@@ -31,11 +36,6 @@
 		DD9067501C9C202C0027A9EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90674F1C9C202C0027A9EA /* User.swift */; };
 		DD9067521C9C21300027A9EA /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067511C9C21300027A9EA /* Talent.swift */; };
 		DD9067541C9C22340027A9EA /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9067531C9C22340027A9EA /* WorkItem.swift */; };
-		DD90B20B1CF0B29F00D73FBA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */; };
-		DD90B20C1CF0B29F00D73FBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD90B2071CF0B29F00D73FBA /* Info.plist */; };
-		DD90B20D1CF0B29F00D73FBA /* TestAdditionOfUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */; };
-		DD90B20E1CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */; };
-		DD90B20F1CF0B29F00D73FBA /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */; };
 		DDA7D3831CCCA4470022DEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3811CCCA4470022DEBA /* Main.storyboard */; };
 		DDA7D3861CCCA5460022DEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA7D3841CCCA5460022DEBA /* LaunchScreen.storyboard */; };
 		DDA7D3951CCCADBF0022DEBA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */; };
@@ -75,6 +75,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DD8C356B1CF189820085D7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9067111C9C1EE60027A9EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9067181C9C1EE60027A9EA;
+			remoteInfo = betterment;
+		};
 		DD9067301C9C1EE90027A9EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD9067111C9C1EE60027A9EA /* Project object */;
@@ -112,7 +119,14 @@
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		DD8C35601CF187030085D7CA /* TestSearchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSearchUser.swift; sourceTree = "<group>"; };
+		DD8C35661CF189820085D7CA /* bettermentUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bettermentUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8C356A1CF189820085D7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8C35701CF18AAC0085D7CA /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
+		DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
+		DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
+		DD8C35761CF18B190085D7CA /* TestSearchUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSearchUse.swift; sourceTree = "<group>"; };
+		DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUserSkillsCount.swift; sourceTree = "<group>"; };
 		DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = betterment/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +139,6 @@
 		DD90674F1C9C202C0027A9EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD9067511C9C21300027A9EA /* Talent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
 		DD9067531C9C22340027A9EA /* WorkItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
-		DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		DD90B2071CF0B29F00D73FBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditionOfUser.swift; sourceTree = "<group>"; };
-		DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
-		DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
 		DDA7D3821CCCA4470022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3851CCCA5460022DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = betterment/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		DDA7D3871CCCADBF0022DEBA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = betterment/DetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -168,6 +177,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD8C35631CF189820085D7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD9067161C9C1EE60027A9EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,12 +288,26 @@
 			name = service;
 			sourceTree = "<group>";
 		};
+		DD8C35671CF189820085D7CA /* bettermentUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD8C356A1CF189820085D7CA /* Info.plist */,
+				DD8C35701CF18AAC0085D7CA /* TestAdditionOfUser.swift */,
+				DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */,
+				DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */,
+				DD8C35761CF18B190085D7CA /* TestSearchUse.swift */,
+				DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */,
+				DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */,
+			);
+			path = bettermentUnitTests;
+			sourceTree = "<group>";
+		};
 		DD9067101C9C1EE60027A9EA = {
 			isa = PBXGroup;
 			children = (
 				DD90671B1C9C1EE60027A9EA /* betterment */,
-				DD9067321C9C1EE90027A9EA /* bettermentTests */,
 				DD90673D1C9C1EE90027A9EA /* bettermentUITests */,
+				DD8C35671CF189820085D7CA /* bettermentUnitTests */,
 				DD90671A1C9C1EE60027A9EA /* Products */,
 				A805864175C3DB3F776B7226 /* Pods */,
 				77DD615F7FC8EB46A1FE60EE /* Frameworks */,
@@ -290,6 +320,7 @@
 				DD9067191C9C1EE60027A9EA /* betterment.app */,
 				DD90672F1C9C1EE90027A9EA /* bettermentTests.xctest */,
 				DD90673A1C9C1EE90027A9EA /* bettermentUITests.xctest */,
+				DD8C35661CF189820085D7CA /* bettermentUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,19 +339,6 @@
 				DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */,
 			);
 			path = betterment;
-			sourceTree = "<group>";
-		};
-		DD9067321C9C1EE90027A9EA /* bettermentTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD90B2061CF0B29F00D73FBA /* CoreDataHelper.swift */,
-				DD90B2071CF0B29F00D73FBA /* Info.plist */,
-				DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */,
-				DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */,
-				DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */,
-				DD8C35601CF187030085D7CA /* TestSearchUser.swift */,
-			);
-			path = bettermentTests;
 			sourceTree = "<group>";
 		};
 		DD90673D1C9C1EE90027A9EA /* bettermentUITests */ = {
@@ -380,6 +398,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DD8C35651CF189820085D7CA /* bettermentUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD8C356D1CF189820085D7CA /* Build configuration list for PBXNativeTarget "bettermentUnitTests" */;
+			buildPhases = (
+				DD8C35621CF189820085D7CA /* Sources */,
+				DD8C35631CF189820085D7CA /* Frameworks */,
+				DD8C35641CF189820085D7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD8C356C1CF189820085D7CA /* PBXTargetDependency */,
+			);
+			name = bettermentUnitTests;
+			productName = bettermentUnitTests;
+			productReference = DD8C35661CF189820085D7CA /* bettermentUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DD9067181C9C1EE60027A9EA /* betterment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD9067431C9C1EE90027A9EA /* Build configuration list for PBXNativeTarget "betterment" */;
@@ -446,6 +482,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Mitul Manish";
 				TargetAttributes = {
+					DD8C35651CF189820085D7CA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RNF8E69GKB;
+						TestTargetID = DD9067181C9C1EE60027A9EA;
+					};
 					DD9067181C9C1EE60027A9EA = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = RNF8E69GKB;
@@ -483,11 +524,19 @@
 				DD9067181C9C1EE60027A9EA /* betterment */,
 				DD90672E1C9C1EE90027A9EA /* bettermentTests */,
 				DD9067391C9C1EE90027A9EA /* bettermentUITests */,
+				DD8C35651CF189820085D7CA /* bettermentUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DD8C35641CF189820085D7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD9067171C9C1EE60027A9EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,7 +551,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD90B20C1CF0B29F00D73FBA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +612,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD8C35621CF189820085D7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C35791CF18BCF0085D7CA /* CoreDataHelper.swift in Sources */,
+				DD8C35771CF18B190085D7CA /* TestSearchUse.swift in Sources */,
+				DD8C35731CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift in Sources */,
+				DD8C357B1CF194DB0085D7CA /* TestUserSkillsCount.swift in Sources */,
+				DD8C35751CF18AF80085D7CA /* TestNumberOfUsers.swift in Sources */,
+				DD8C35711CF18AAC0085D7CA /* TestAdditionOfUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD9067151C9C1EE60027A9EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -623,11 +684,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD90B20B1CF0B29F00D73FBA /* CoreDataHelper.swift in Sources */,
-				DD90B20E1CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift in Sources */,
-				DD90B20F1CF0B29F00D73FBA /* TestNumberOfUsers.swift in Sources */,
-				DD90B20D1CF0B29F00D73FBA /* TestAdditionOfUser.swift in Sources */,
-				DD8C35611CF187030085D7CA /* TestSearchUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +703,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DD8C356C1CF189820085D7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9067181C9C1EE60027A9EA /* betterment */;
+			targetProxy = DD8C356B1CF189820085D7CA /* PBXContainerItemProxy */;
+		};
 		DD9067311C9C1EE90027A9EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DD9067181C9C1EE60027A9EA /* betterment */;
@@ -679,6 +740,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DD8C356E1CF189820085D7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = bettermentUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests.bettermentUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betterment.app/betterment";
+			};
+			name = Debug;
+		};
+		DD8C356F1CF189820085D7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = bettermentUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.bettermentTests.bettermentUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/betterment.app/betterment";
+			};
+			name = Release;
+		};
 		DD9067411C9C1EE90027A9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -849,6 +938,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD8C356D1CF189820085D7CA /* Build configuration list for PBXNativeTarget "bettermentUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8C356E1CF189820085D7CA /* Debug */,
+				DD8C356F1CF189820085D7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DD9067141C9C1EE60027A9EA /* Build configuration list for PBXProject "betterment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

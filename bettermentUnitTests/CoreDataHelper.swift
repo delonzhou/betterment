@@ -2,10 +2,11 @@
 //  CoreDataHelper.swift
 //  betterment
 //
-//  Created by Ankur Dabral on 20/05/2016.
+//  Created by Mitul Manish on 22/05/2016.
 //  Copyright © 2016 Mitul Manish. All rights reserved.
 //
 
+import Foundation
 import CoreData
 
 func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
