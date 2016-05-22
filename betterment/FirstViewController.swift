@@ -33,7 +33,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
     func fetch(){
         let fetchRequest = NSFetchRequest(entityName: "Person")
         // eliminating the current user from the list
-        //fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
+        fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
         
         do {
             let results = try managedObjectContext!.executeFetchRequest(fetchRequest)
