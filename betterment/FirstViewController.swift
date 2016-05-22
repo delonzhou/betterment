@@ -24,7 +24,11 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Please uncomment the code below while running the app for the
+        // first time.This method seeds data into the database.
+        
+        //DataSeeder.seedData()
         
         fetch()
         setUpSearchBar()
@@ -101,7 +105,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return true;
+        return true
     }
     
     
