@@ -27,7 +27,6 @@
 		DD8C35731CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */; };
 		DD8C35751CF18AF80085D7CA /* TestNumberOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */; };
 		DD8C35771CF18B190085D7CA /* TestSearchUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35761CF18B190085D7CA /* TestSearchUse.swift */; };
-		DD8C35791CF18BCF0085D7CA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */; };
 		DD8C357B1CF194DB0085D7CA /* TestUserSkillsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */; };
 		DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
@@ -125,7 +124,6 @@
 		DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCurrentWeatherIcon.swift; sourceTree = "<group>"; };
 		DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumberOfUsers.swift; sourceTree = "<group>"; };
 		DD8C35761CF18B190085D7CA /* TestSearchUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSearchUse.swift; sourceTree = "<group>"; };
-		DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUserSkillsCount.swift; sourceTree = "<group>"; };
 		DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = betterment/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 				DD8C35721CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift */,
 				DD8C35741CF18AF80085D7CA /* TestNumberOfUsers.swift */,
 				DD8C35761CF18B190085D7CA /* TestSearchUse.swift */,
-				DD8C35781CF18BCF0085D7CA /* CoreDataHelper.swift */,
 				DD8C357A1CF194DB0085D7CA /* TestUserSkillsCount.swift */,
 			);
 			path = bettermentUnitTests;
@@ -616,7 +613,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD8C35791CF18BCF0085D7CA /* CoreDataHelper.swift in Sources */,
 				DD8C35771CF18B190085D7CA /* TestSearchUse.swift in Sources */,
 				DD8C35731CF18ADD0085D7CA /* TestCurrentWeatherIcon.swift in Sources */,
 				DD8C357B1CF194DB0085D7CA /* TestUserSkillsCount.swift in Sources */,
@@ -945,6 +941,7 @@
 				DD8C356F1CF189820085D7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD9067141C9C1EE60027A9EA /* Build configuration list for PBXProject "betterment" */ = {
 			isa = XCConfigurationList;

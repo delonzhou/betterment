@@ -15,13 +15,13 @@
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/TestUserSkillsCount.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/TestNumberOfUsers.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/TestSearchUse.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/CoreDataHelper.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/TestAdditionOfUser.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bettermentUnitTests/TestCurrentWeatherIcon.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RequestTableViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/MasterTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/SaveNewSkillTableViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/betterment/CoreDataOperation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/RatingViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/CurrentWeather.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/betterment/WorkViewController.swift" isTestSource="false" />
