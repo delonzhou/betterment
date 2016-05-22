@@ -23,6 +23,7 @@
 		DD7FCAD71CDF001D00F0CB22 /* WorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */; };
 		DD7FCAD91CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */; };
 		DD87A2581CEF2A3A00BEE12F /* FourSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */; };
+		DD8C35611CF187030085D7CA /* TestSearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C35601CF187030085D7CA /* TestSearchUser.swift */; };
 		DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */; };
 		DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */; };
 		DD90671D1C9C1EE70027A9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90671C1C9C1EE70027A9EA /* AppDelegate.swift */; };
@@ -111,6 +112,7 @@
 		DD7FCAD61CDF001D00F0CB22 /* WorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkRequest.swift; sourceTree = "<group>"; };
 		DD7FCAD81CDF08FD00F0CB22 /* IncomingRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingRequestTableViewController.swift; path = betterment/IncomingRequestTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD87A2571CEF2A3A00BEE12F /* FourSquareTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourSquareTableViewCell.swift; path = betterment/FourSquareTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		DD8C35601CF187030085D7CA /* TestSearchUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSearchUser.swift; sourceTree = "<group>"; };
 		DD8D598D1CCCB2EC00875D39 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = betterment/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD8F3DDD1C9FB91D0022FC63 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		DD9067191C9C1EE60027A9EA /* betterment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betterment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +318,7 @@
 				DD90B2081CF0B29F00D73FBA /* TestAdditionOfUser.swift */,
 				DD90B2091CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift */,
 				DD90B20A1CF0B29F00D73FBA /* TestNumberOfUsers.swift */,
+				DD8C35601CF187030085D7CA /* TestSearchUser.swift */,
 			);
 			path = bettermentTests;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				DD90B20E1CF0B29F00D73FBA /* TestCurrentWeatherIcon.swift in Sources */,
 				DD90B20F1CF0B29F00D73FBA /* TestNumberOfUsers.swift in Sources */,
 				DD90B20D1CF0B29F00D73FBA /* TestAdditionOfUser.swift in Sources */,
+				DD8C35611CF187030085D7CA /* TestSearchUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
