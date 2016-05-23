@@ -29,7 +29,7 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return user!.skill.count
         
-        return user?.getNumberOfSkills() ?? 0
+        return skills?.count ?? 0
         
     }
     
@@ -94,7 +94,7 @@ class SkillViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
                 
         })
-        
+        shareAction.backgroundColor = UIColor(red: 135.0/255.0, green: 211.0/255.0, blue: 124.0/255.0, alpha: 1.0)
         return [shareAction]
     }
     

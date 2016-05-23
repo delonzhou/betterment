@@ -10,10 +10,12 @@ import UIKit
 import Firebase
 import CoreData
 
-class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating{
+class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating, NSFetchedResultsControllerDelegate {
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as?
         AppDelegate)?.managedObjectContext
+    
+    var fetchResultController:NSFetchedResultsController!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -30,8 +32,29 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         //DataSeeder.seedData()
         
-        fetch()
+        newFetch()
         setUpSearchBar()
+    }
+    
+    func newFetch() {
+        let fetchRequest = NSFetchRequest(entityName: "Person")
+        let sortDescriptor = NSSortDescriptor(key: "firstName", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
+        
+        
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            
+            fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+            fetchResultController.delegate = self
+            
+            do {
+                try fetchResultController.performFetch()
+                users = fetchResultController.fetchedObjects as? [Person]
+            } catch {
+                print(error)
+            }
+        }
     }
     
     func fetch(){
@@ -93,8 +116,12 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
             cell?.locationLabel.text = personCity
         }
         
-    
-        cell?.skillLabel.text = person?.getSkillsAsArray().first?.skillName ?? "N/A"
+        if let skillName = person?.getSkillsAsArray().first?.skillName {
+            cell?.skillLabel.text = skillName.capitalizedString
+        }
+        else {
+            cell?.skillLabel.text = ""
+        }
         
         
         if let personImage = person?.profileImage {
@@ -171,8 +198,69 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
             }
 
         })
-
-        return [shareAction]
+        
+        // Delete button
+        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete",handler: { (action, indexPath) -> Void in
+            
+            // Delete the row from the database
+            if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+                
+                let personToDelete = self.fetchResultController.objectAtIndexPath(indexPath) as! Person
+                managedObjectContext.deleteObject(personToDelete)
+                
+                do {
+                    try managedObjectContext.save()
+                } catch {
+                    print(error)
+                }
+            }
+        })
+        
+        deleteAction.backgroundColor = UIColor(red: 207.0/255.0, green: 0.0/255.0, blue: 15.0/255.0, alpha: 1.0)
+        shareAction.backgroundColor = UIColor(red: 135.0/255.0, green: 211.0/255.0, blue: 124.0/255.0, alpha: 1.0)
+        
+        return [shareAction, deleteAction]
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            users?.removeAtIndex(indexPath.row)
+        }
+        
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+    }
+    
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        
+        switch type {
+        case .Insert:
+            if let _newIndexPath = newIndexPath {
+                tableView.insertRowsAtIndexPaths([_newIndexPath], withRowAnimation: .Fade)
+            }
+        case .Delete:
+            if let _indexPath = indexPath {
+                tableView.deleteRowsAtIndexPaths([_indexPath], withRowAnimation: .Fade)
+            }
+        case .Update:
+            if let _indexPath = indexPath {
+                tableView.reloadRowsAtIndexPaths([_indexPath], withRowAnimation: .Fade)
+            }
+            
+        default:
+            tableView.reloadData()
+        }
+        
+        users = controller.fetchedObjects as? [Person]
+    }
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.endUpdates()
     }
     
 }

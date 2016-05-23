@@ -47,7 +47,6 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
                     
                     (let JSONDictionary) in
                     if let venuesDictionary = JSONDictionary{
-                        print(venuesDictionary)
                         
                         self.venuesList = VenueMaker.venuesAsList(venuesDictionary)
                         
@@ -179,7 +178,6 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
-            print(searchText)
             if searchText.characters.count >= 3 {
                 self.currentLocation = locationManager.location
                 
@@ -187,7 +185,6 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
                     
                     (let JSONDictionary) in
                     if let venuesDictionary = JSONDictionary{
-                        print(venuesDictionary)
                         
                         self.searchResults = VenueMaker.venuesAsList(venuesDictionary)
                         
