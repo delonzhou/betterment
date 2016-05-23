@@ -23,12 +23,26 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
     var rating: String?
     
     
+    var ratingIdentifier: String? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         detailImage.image = UIImage(named: person.profileImage!)
         tableView.separatorColor = UIColor(red: 0/255.0, green: 240.0/255.0, blue:
             240.0/255.0, alpha: 0.8)
+        
+        let selectedUserID = person.userID
+        ratingIdentifier = "\(CURRENT_USER)\(selectedUserID)"
+        
+        
+        if let userRating = NSUserDefaults.standardUserDefaults().valueForKey(ratingIdentifier!) as? String {
+            ratingButton.setImage(UIImage(named: userRating), forState:
+                UIControlState.Normal)
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -113,6 +127,9 @@ class DetailTableViewController: UIViewController, UITableViewDataSource, UITabl
             RatingViewController {
             if let rating = ratingViewController.userRating {
                 print(rating)
+        
+                NSUserDefaults.standardUserDefaults().setValue(rating, forKey: ratingIdentifier!)
+                
                 ratingButton.setImage(UIImage(named: rating), forState:
                     UIControlState.Normal)
             }
