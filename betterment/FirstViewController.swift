@@ -40,7 +40,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         let fetchRequest = NSFetchRequest(entityName: "Person")
         let sortDescriptor = NSSortDescriptor(key: "firstName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
-        fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
+        //fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
         
         
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
