@@ -20,31 +20,31 @@ struct ForecastService{
         self.baseURL = NSURL(string: base! + "/" + self.apiKey! + "/")
     }
     
-    func getForecast(latitude: Double, longitude: Double, completionHandler: (CurrentWeather? -> Void)){
+    func getForecast(latitude: Double, longitude: Double, completionHandler: (CurrentWeather? -> Void)) {
         
-        if let forecastUrl = NSURL(string: "\(latitude),\(longitude)", relativeToURL: self.baseURL){
+        if let forecastUrl = NSURL(string: "\(latitude),\(longitude)", relativeToURL: self.baseURL) {
             let networkOperation = NetworkOperation(url: forecastUrl)
-            networkOperation.downloadJSONFromURL(){
+            networkOperation.downloadJSONFromURL() {
                 (let JSONDictionary) in
-                if let weatherDictionary = JSONDictionary{
+                if let weatherDictionary = JSONDictionary {
                     completionHandler(self.currentWeatherFromJson(weatherDictionary))
                 }
-                else{
+                else {
                     print ("Json dictionary is nil")
                 }
             }
         }
-        else{
+        else {
             print("Problem in creating the forecast URL")
         }
         
     }
     
-    func currentWeatherFromJson(JSONDictionary: [String: AnyObject]?) -> CurrentWeather?{
-        if let currentJSONDictionary = JSONDictionary?["currently"] as? [String: AnyObject]{
+    func currentWeatherFromJson(JSONDictionary: [String: AnyObject]?) -> CurrentWeather? {
+        if let currentJSONDictionary = JSONDictionary?["currently"] as? [String: AnyObject] {
             return  CurrentWeather(weatherDictionary: currentJSONDictionary)
         }
-        else{
+        else {
             print("No currently key found or content is nil")
             return nil
         }

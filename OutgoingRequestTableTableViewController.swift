@@ -30,7 +30,7 @@ class OutgoingRequestTableTableViewController: UITableViewController, NSFetchedR
         let fetchRequest = NSFetchRequest(entityName: "Request")
         let sortDescriptor = NSSortDescriptor(key: "skillName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
-        fetchRequest.predicate = NSPredicate(format: "%K == %@", "requester", CURRENT_USER)
+        fetchRequest.predicate = NSPredicate(format: "%K == %@", "requester", CURRENT_USER!)
         
         
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {

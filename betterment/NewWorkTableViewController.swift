@@ -70,7 +70,7 @@ class NewWorkTableViewController: UITableViewController, UIImagePickerController
         print("finding User")
         
         let fetchRequest = NSFetchRequest(entityName: "Person")
-        fetchRequest.predicate = NSPredicate(format: "%K == %@", "userID", CURRENT_USER)
+        fetchRequest.predicate = NSPredicate(format: "%K == %@", "userID", CURRENT_USER!)
         
         //3
         var fetchedUsers = [Person]()

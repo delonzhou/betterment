@@ -32,11 +32,11 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         //DataSeeder.seedData()
         
-        newFetch()
+        fetch()
         setUpSearchBar()
     }
     
-    func newFetch() {
+    func fetch() {
         let fetchRequest = NSFetchRequest(entityName: "Person")
         let sortDescriptor = NSSortDescriptor(key: "firstName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -54,19 +54,6 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
             } catch {
                 print(error)
             }
-        }
-    }
-    
-    func fetch(){
-        let fetchRequest = NSFetchRequest(entityName: "Person")
-        // eliminating the current user from the list
-        fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
-        
-        do {
-            let results = try managedObjectContext!.executeFetchRequest(fetchRequest)
-            users = results as? [Person]
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
         }
     }
     
@@ -178,11 +165,8 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
 
         // Social Sharing Button
 
-        let shareAction = UITableViewRowAction(style:
-
-        UITableViewRowActionStyle.Default, title: "Share", handler: { (action,
-
-                                                                       indexPath) -> Void in
+        let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Share",
+                handler: { (action, indexPath) -> Void in
             let shareActionText = "Thanks for your help \(self.users![indexPath.row].getfullName())"
 
             if let imageToShare = UIImage(named: self.users![indexPath.row].profileImage!) {

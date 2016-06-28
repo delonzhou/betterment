@@ -11,10 +11,7 @@ import UIKit
 class FourSquareTableViewCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
-    
-
     @IBOutlet weak var address: UILabel!
-    
     @IBOutlet weak var distance: UILabel!
     
     override func awakeFromNib() {
