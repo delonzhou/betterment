@@ -18,30 +18,24 @@ class VenueMaker {
             
             let venueObject: Venue = Venue()
             
-            if let id = venue["id"] as? String
-            {
+            if let id = venue["id"] as? String {
                 venueObject.id = id
             }
             
-            if let name = venue["name"] as? String
-            {
+            if let name = venue["name"] as? String {
                 venueObject.name = name
             }
             
-            if  let location = venue["location"] as? [String: AnyObject]
-            {
-                if let longitude = location["lng"] as? Double
-                {
+            if  let location = venue["location"] as? [String: AnyObject] {
+                if let longitude = location["lng"] as? Double {
                     venueObject.longitude = longitude
                 }
                 
-                if let latitude = location["lat"] as? Double
-                {
+                if let latitude = location["lat"] as? Double {
                     venueObject.latitude = latitude
                 }
                 
-                if let distance = location["distance"] as? Int
-                {
+                if let distance = location["distance"] as? Int {
                     venueObject.distance = distance
                 }
                 
@@ -49,8 +43,7 @@ class VenueMaker {
                     venueObject.streetAddress = shortAddress
                 }
                 
-                if let formattedAddress = location["formattedAddress"] as? [String]
-                {
+                if let formattedAddress = location["formattedAddress"] as? [String] {
                     venueObject.address = formattedAddress.joinWithSeparator(" ")
                 }
                 
