@@ -43,6 +43,11 @@
 
 ![searchplaces](https://cloud.githubusercontent.com/assets/8016341/16444862/85de6d30-3e23-11e6-92b5-ff7e974a84e7.gif)
 
-
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
 
