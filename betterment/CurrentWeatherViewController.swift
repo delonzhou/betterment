@@ -41,10 +41,10 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate 
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways)
         {
             // Use hard coded latitude and longitude values while testing with simulator
-            fetchWeatherData(-37.8879, longitude: 145.0952 )
+            //fetchWeatherData(-37.8879, longitude: 145.0952 )
             
             // Use the phone's gps when testing on the actual device
-            //fetchWeatherData((locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
+            fetchWeatherData((locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
             
         } else {
             print("Not found")
@@ -82,7 +82,7 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate 
                     }
                     
                     if let precipitation = currentWeatherSnapshot.precipProbability{
-                        self.currentPrecipProbailityLabel?.text = "\(precipitation)%"
+                        self.currentPrecipProbailityLabel?.text = "Rain Chance: \(precipitation)%"
                     }
                     
                     if let iconString = currentWeatherSnapshot.currentWeatherCondition{
