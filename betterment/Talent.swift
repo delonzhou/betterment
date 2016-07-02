@@ -11,11 +11,11 @@ import Foundation
 class Talent {
     
     var skillName: String?
-    var hourlyRate: Float?
+    var hourlyRate: Int?
     var experience: Int?
     var skillImage: String?
     
-    init(skill_name: String, hourly_rate: Float, experience: Int){
+    init(skill_name: String, hourly_rate: Int, experience: Int){
         self.skillName = skill_name
         self.hourlyRate = hourly_rate
         self.experience = experience

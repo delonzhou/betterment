@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5117002400C79CC2257ED873 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51170F848446144638441DBA /* DataAccess.swift */; };
 		A1D569A31CB7C74E004630A5 /* masterDetailUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A21CB7C74E004630A5 /* masterDetailUITest.swift */; };
 		A1D569A51CB7C7B2004630A5 /* detailRatingUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A41CB7C7B2004630A5 /* detailRatingUITest.swift */; };
 		A1D569A71CB7C890004630A5 /* detailMapUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D569A61CB7C890004630A5 /* detailMapUITest.swift */; };
@@ -99,6 +100,7 @@
 
 /* Begin PBXFileReference section */
 		356B151CB5B217C4E9E1FA14 /* Pods_betterment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_betterment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51170F848446144638441DBA /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		57FBE1D55B84FC5B395A3D85 /* Pods-betterment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.debug.xcconfig"; sourceTree = "<group>"; };
 		984592E2647987A862C89FE7 /* Pods-betterment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-betterment.release.xcconfig"; path = "Pods/Target Support Files/Pods-betterment/Pods-betterment.release.xcconfig"; sourceTree = "<group>"; };
 		A1D569A21CB7C74E004630A5 /* masterDetailUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterDetailUITest.swift; sourceTree = "<group>"; };
@@ -248,6 +250,14 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		51170BC6D02CD5E19D8F9A8E /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				51170F848446144638441DBA /* DataAccess.swift */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
 		77DD615F7FC8EB46A1FE60EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +344,7 @@
 				51170B34988F83969B343EC1 /* controller */,
 				511701A5AAA52686B1949987 /* view */,
 				DDC33A891CDB703800764FA1 /* betterment.xcdatamodeld */,
+				51170BC6D02CD5E19D8F9A8E /* Data Access */,
 			);
 			path = betterment;
 			sourceTree = "<group>";
@@ -673,6 +684,7 @@
 				DDD393961CEFF7C80010E3C4 /* DataSeeder.swift in Sources */,
 				DD8D598E1CCCB2EC00875D39 /* ChatViewController.swift in Sources */,
 				DD8F3DDE1C9FB91D0022FC63 /* BaseService.swift in Sources */,
+				5117002400C79CC2257ED873 /* DataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

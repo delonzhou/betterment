@@ -13,12 +13,12 @@ class WorkItem {
     var title: String = ""
     var description: String = ""
     var relatedSkill: String = ""
-    var images: [String] = []
+    var image: String = ""
     
-    init(title: String, description: String, related_skill: String, images: [String]){
+    init(title: String, description: String, related_skill: String, image: String){
         self.title = title
         self.description = description
         self.relatedSkill = related_skill
-        self.images = images
+        self.image = image
     }
 }

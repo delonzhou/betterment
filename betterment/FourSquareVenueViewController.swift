@@ -13,7 +13,7 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var tableView: UITableView!
-
+    
     var locationManager = CLLocationManager()
     let distanceSpan: Double = 500
     var currentLocation: CLLocation?
@@ -212,5 +212,5 @@ class FourSquareVenueViewController: UIViewController, UITableViewDelegate, UITa
         }
         
     }
-
+    
 }

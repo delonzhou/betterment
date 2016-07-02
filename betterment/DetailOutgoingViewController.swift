@@ -49,7 +49,6 @@ class DetailOutgoingViewController: UITableViewController {
             }
             else if let rejectedState = detailRequest?.rejected {
                 if rejectedState == 1 {
-                    print("inside")
                     declineButton.setTitle("Rejected", forState: .Normal)
                     declineButton.userInteractionEnabled = false
                 }

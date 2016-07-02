@@ -10,10 +10,9 @@ import UIKit
 import CoreData
 
 class RequestTableViewController: UITableViewController {
-
+    
     var person: Person?
     var skill: Skill?
-    
     
     @IBOutlet weak var hourlyRate: UITextField!
     @IBOutlet weak var message: UITextField!
@@ -26,7 +25,7 @@ class RequestTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,7 +38,7 @@ class RequestTableViewController: UITableViewController {
         requestEntity.setValue(CURRENT_USER, forKey: "requester")
         
         if let requestee = person?.userID{
-          requestEntity.setValue(requestee, forKey: "requestee")
+            requestEntity.setValue(requestee, forKey: "requestee")
         }
         
         if let skillName = skill?.skillName {
@@ -88,7 +87,7 @@ class RequestTableViewController: UITableViewController {
         sendRequestButton.userInteractionEnabled = false
     }
     
-    func prepareDataForAlertController () -> (Int, String, String) {
+    func prepareDataForAlertController() -> (Int, String, String) {
         
         var result: (offeredRate: Int, skillName: String, personName: String) = (0, "", "")
         
@@ -105,7 +104,7 @@ class RequestTableViewController: UITableViewController {
             result.personName = requesteeName
         }
         
-    return result
+        return result
     }
-
+    
 }

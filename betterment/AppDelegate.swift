@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         //let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment_dev.sqlite")
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment16.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment19.sqlite")
        
         var failureReason = "There was an error creating or loading the application's saved data."
         do {

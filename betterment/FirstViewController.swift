@@ -30,10 +30,12 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         // Please uncomment the code below while running the app for the
         // first time.This method seeds data into the database.
         
-        //DataSeeder.seedData()
+        //DataSeeder.sharedInstance.seedData()
         
         fetch()
         setUpSearchBar()
+        
+        //DataSeeder.sharedInstance.populateSkill(users!)
     }
     
     func fetch() {
@@ -41,7 +43,6 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         let sortDescriptor = NSSortDescriptor(key: "firstName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         //fetchRequest.predicate = NSPredicate(format: "%K != %@", "userID", CURRENT_USER)
-        
         
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             

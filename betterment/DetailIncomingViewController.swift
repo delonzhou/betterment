@@ -50,7 +50,6 @@ class DetailIncomingViewController: UITableViewController {
             else if let acceptedState = detailRequest?.accepted {
                 print(acceptedState)
                 if acceptedState == 1 {
-                    print("inside")
                     approveButton.setTitle("Accepted", forState: .Normal)
                     approveButton.backgroundColor = UIColor.greenColor()
                     approveButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
