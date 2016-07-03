@@ -21,11 +21,11 @@
 
 * Login through Firebase
 
-![logindemo](https://cloud.githubusercontent.com/assets/8016341/16443636/4c58a432-3e1d-11e6-8a0e-0dc2a1d7b195.gif)
+![login](https://cloud.githubusercontent.com/assets/8016341/16545120/5dc41730-4163-11e6-87a6-d8218b0b62f0.gif)
 
-* Adding New Skill
+* Exploring Profiles for skills
 
-![addskill](https://cloud.githubusercontent.com/assets/8016341/16444781/1ee62bea-3e23-11e6-9544-290e559811cd.gif)
+![skills](https://cloud.githubusercontent.com/assets/8016341/16545121/5f43a13e-4163-11e6-9c70-c0c41c9696ce.gif)
 
 * Adding Work Item
 
