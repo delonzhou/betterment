@@ -19,7 +19,7 @@
 
 ## Demo
 
-* Exploring Profile for skills
+#### Exploring Profile for skills
 
 ![skills](https://cloud.githubusercontent.com/assets/8016341/16545121/5f43a13e-4163-11e6-9c70-c0c41c9696ce.gif)
 
