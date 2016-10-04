@@ -15,6 +15,7 @@
 		DD4864A61CDE522F006AC296 /* Request+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4864A41CDE522F006AC296 /* Request+CoreDataProperties.swift */; };
 		DD4864A71CDE522F006AC296 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4864A51CDE522F006AC296 /* Request.swift */; };
 		DD59C9BF1CA95276006DE967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD59C9BE1CA95276006DE967 /* MapKit.framework */; };
+		DD64F1181D4DFD4E00609AA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD64F1171D4DFD4E00609AA0 /* GoogleService-Info.plist */; };
 		DD6F36B01CE5BB4E00ACBD5F /* DetailIncomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */; };
 		DD6F36B21CE5D14F00ACBD5F /* DetailOutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */; };
 		DD7774631CF0A7130032A353 /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7774621CF0A7130032A353 /* VenueAPI.swift */; };
@@ -111,6 +112,7 @@
 		DD4864A41CDE522F006AC296 /* Request+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD4864A51CDE522F006AC296 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		DD59C9BE1CA95276006DE967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DD64F1171D4DFD4E00609AA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD6F36AF1CE5BB4E00ACBD5F /* DetailIncomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailIncomingViewController.swift; path = betterment/DetailIncomingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD6F36B11CE5D14F00ACBD5F /* DetailOutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailOutgoingViewController.swift; path = betterment/DetailOutgoingViewController.swift; sourceTree = SOURCE_ROOT; };
 		DD7774621CF0A7130032A353 /* VenueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		DD90671B1C9C1EE60027A9EA /* betterment */ = {
 			isa = PBXGroup;
 			children = (
+				DD64F1171D4DFD4E00609AA0 /* GoogleService-Info.plist */,
 				DDD393941CEFF79E0010E3C4 /* utility */,
 				DDC26C9E1CDB7AA5005FAB18 /* DataModel */,
 				DD29D7401CC54BEE00BD3274 /* misc */,
@@ -550,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA7D3861CCCA5460022DEBA /* LaunchScreen.storyboard in Resources */,
+				DD64F1181D4DFD4E00609AA0 /* GoogleService-Info.plist in Resources */,
 				DD9067261C9C1EE70027A9EA /* Assets.xcassets in Resources */,
 				DDA7D3831CCCA4470022DEBA /* Main.storyboard in Resources */,
 			);

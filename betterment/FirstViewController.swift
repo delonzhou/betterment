@@ -185,7 +185,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         })
         
         // Delete button
-        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete",handler: { (action, indexPath) -> Void in
+        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete", handler: { (action, indexPath) -> Void in
             
             // Delete the row from the database
             if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {

@@ -10,7 +10,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D360552-526C-4CE9-AC7D-2FC900D6FE07",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "59A85591C5B5D585F473A33C38E034703945A47B" : "betterment\/",
-    "19835036EAC3CD9CBF0B738B003E40AE63D8ACB6" : "..\/Desktop\/iOS\/Mist"
+    "19835036EAC3CD9CBF0B738B003E40AE63D8ACB6" : "iOS\/Mist\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "betterment",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

@@ -5,7 +5,8 @@ use_frameworks!
 
 target 'betterment' do
 	pod 'RealmSwift'
-	pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
     pod 'JSQMessagesViewController'
     pod 'QuadratTouch', '>= 1.0'
 end

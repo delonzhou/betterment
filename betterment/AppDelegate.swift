@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
         return true
     }
 
@@ -63,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         //let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment_dev.sqlite")
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment20.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("betterment21.sqlite")
        
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
